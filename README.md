@@ -2,7 +2,7 @@
 description: DESCRIPTION -->
 ---
 
-# COURSENAME
+# TCM - Linux 101
 
 LOGO/PICTURE Here -------------------->
 
