@@ -1,6 +1,6 @@
 # Table of contents
 
-* [COURSENAME](README.md)
+* [TCM - Linux 101](README.md)
 
 ## COURSENAME
 
