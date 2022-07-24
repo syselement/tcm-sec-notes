@@ -1,10 +1,10 @@
 # 🌐 References
 
-* General Links
+* [TCM Linux101-Resources](https://github.com/beskridge/Linux101-Resources)
 
 ## Introduction
 
-* Link1
+* [Linux Distributions Timeline](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
 * Link2
 
 ## Topic #1
