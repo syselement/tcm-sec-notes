@@ -5,14 +5,42 @@
 ## Introduction
 
 * [Linux Distributions Timeline](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
-* Link2
+  * [Ubuntu](https://ubuntu.com/)
+  * [Kali](https://www.kali.org/)
+  * [ParrotOS](https://www.parrotsec.org/)
 
-## Topic #1
+## Command Line basics
 
-* Link1
-* Link2
+- 
 
-## Topic #2
+## Files and the Filesystem
 
-* Link1
-* Link2
+- 
+
+## Users and Groups
+
+- 
+
+## Installing Software
+
+- 
+
+## Shell basics
+
+- 
+
+## Utilities and File editors
+
+- 
+
+## Process Management
+
+- 
+
+## Regular Expressions
+
+- 
+
+## Bash Scripting
+
+- 

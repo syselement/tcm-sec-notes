@@ -2,9 +2,9 @@
 description: Linux 101 by Brent Eskridge - a practical hands-on course
 ---
 
-# TCM - Linux 101
+# **TCM - Linux 101**
 
-LOGO/PICTURE Here -------------------->
+![Linux 101 - academy.tcm-sec.com - © TCM Security](.gitbook/assets/linux101.png)
 
 ### Course Goals and Objectives
 
@@ -16,7 +16,7 @@ LOGO/PICTURE Here -------------------->
 ~	5:50 hours
 
 1. [Introduction - Linux Distributions and Installation](linux-101/1-linux-distributions/README.md)
-2. Command Line basics
+2. [Command Line basics](linux-101\2-command-line\README.md) 
 3. Files and the Filesystem
 4. Users and Groups
 5. Installing Software
