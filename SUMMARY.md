@@ -1,6 +1,6 @@
 # Table of contents
 
-* [TCM Security Academy Notes - by syselement](README.md)
+* [TCM Security Academy Notes](README.md)
 
 ## Linux 101
 
@@ -20,3 +20,4 @@
 ***
 
 - [🏠 syselement's Blog Home](https://syselement.gitbook.io/blog/)
+

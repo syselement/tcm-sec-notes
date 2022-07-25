@@ -1,4 +1,4 @@
-# TCM Security Academy Notes - by syselement
+# TCM Security Academy Notes
 
 ![academy.tcm-sec.com - © TCM Security](.gitbook/assets/tcmsecuritycovermid.png)
 
