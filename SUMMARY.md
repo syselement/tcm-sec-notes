@@ -2,7 +2,7 @@
 
 * [TCM Security Academy Notes](README.md)
 
-## Linux 101
+## Courses
 
 - [TCM - Linux 101](linux-101/README.md)
   - [1. Introduction](linux-101/1-linux-distributions/README.md)
