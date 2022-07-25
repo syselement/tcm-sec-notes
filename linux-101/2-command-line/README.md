@@ -9,4 +9,3 @@
 ### Sections
 
 1. [Intro to Command Line](intro-to-commandline.md)
-1. 
