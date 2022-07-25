@@ -1,6 +1,6 @@
 # 🌐 References
 
-* [TCM Linux101-Resources](https://github.com/beskridge/Linux101-Resources)
+* [TCM Linux101-Resources](https://github.com/beskridge/Linux101-Resources) - by Brent Eskridge 
 
 ## Introduction
 
