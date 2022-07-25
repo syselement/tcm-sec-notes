@@ -4,7 +4,7 @@
 
 ## Linux 101
 
-- [TCM - Linux 101](README.md)
+- [TCM - Linux 101](linux-101/README.md)
 - [1. Introduction](linux-101/1-linux-distributions/README.md)
   * [Linux Distributions](linux-101/1-linux-distributions/linux-distributions.md)
   * [Installing Linux](linux-101/1-linux-distributions/installing-linux.md)
