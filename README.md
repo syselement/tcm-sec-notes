@@ -6,7 +6,3 @@
 
 * [Linux 101](linux-101/README.md) by Brent Eskridge
 
-## PNPT - Practical Network Penetration Tester
-
-- TBA
-
