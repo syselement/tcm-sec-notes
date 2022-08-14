@@ -1,6 +1,6 @@
 # Installing Linux
 
-## Download and install VirtualBox
+## Download and Install VirtualBox
 
 VirtualBox is a virtualization open source software that runs on Linux, Windows and Mac OS.
 
@@ -13,7 +13,7 @@ VirtualBox is a virtualization open source software that runs on Linux, Windows 
 - Install VirtualBox with default settings.
 - Install VirtualBox Extension Pack.
 
-## Download Linux image
+## Download Linux Image
 
 For this tutorial Ubuntu Desktop Linux will be used.
 
