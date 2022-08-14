@@ -34,3 +34,6 @@
 - **[Arch Linux](https://archlinux.org/)** - a general purpose, lightweight and flexible distribution.
 
 > 📌 Check ready-to-use Linux guest operating systems from [**OSBoxes**](https://www.osboxes.org/)
+
+------
+
