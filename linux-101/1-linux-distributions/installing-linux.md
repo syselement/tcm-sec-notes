@@ -56,11 +56,11 @@ If you want to use another distro check the [Popular Linux Distributions](linux-
   - **`Enable PAE/NX`** in the Processor menu
   - check Acceleration menu to have **`Default Paravirtualization`** and **`Enable Nested Paging`** checked
 
-  ![](.gitbook/assets/image-20220814174901665.png)
+![](.gitbook/assets/image-20220814174901665.png)
 
-  ![](.gitbook/assets/image-20220814174955219.png)
+![](.gitbook/assets/image-20220814174955219.png)
 
-  ![](.gitbook/assets/image-20220814175137011.png)
+![](.gitbook/assets/image-20220814175137011.png)
 
 - Navigate to the ***Display*** tab and increase the **`Video Memory`** to **`128 MB`**
 
@@ -111,7 +111,7 @@ If you want to use another distro check the [Popular Linux Distributions](linux-
 
 ## Install VirtualBox Guest Additions
 
-Guest Additions software unlocks some advanced features of VirtualBox to better integrate the VM and the host machine, as well as improved video support using VMSVGA.
+Guest Additions software unlocks some advanced features of VirtualBox to better integrate the VM and the host machine, as well as improved video support using VMSVGA graphics controller.
 
 - Complete the VM boot and login to Ubuntu desktop
 - On the VirtualBox menu select ***Devices - Insert Guest Additions CD image...***
@@ -151,7 +151,7 @@ Keep the Ubuntu O.S. updated using one of the next methods.
 sudo apt update && sudo apt upgrade -y
 ```
 
-> 📌 Check the official documentation of the distro for installs of other Linux distributions.
+> 📌 Check the official documentation of the distro for the installation of other Linux distributions.
 
 ------
 
