@@ -17,7 +17,7 @@ description: Linux 101 by Brent Eskridge - a practical hands-on course
 
 1. [Introduction - Linux Distributions and Installation](1-linux-distributions/README.md)
 2. [Command Line basics](2-command-line/README.md)
-3. Files and the Filesystem
+3. [Files and the Filesystem](3-filesystem/README.md)
 4. Users and Groups
 5. Installing Software
 6. Shell basics

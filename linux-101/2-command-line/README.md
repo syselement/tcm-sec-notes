@@ -9,3 +9,6 @@
 ### Sections
 
 1. [Intro to Command Line](intro-to-commandline.md)
+1. [Getting help on the Command Line](getting-help.md)
+1. [Command Line Arguments and Options](arguments-options.md)
+1. [Reading Text Files](read-textfiles.md)
