@@ -10,8 +10,8 @@ ls
 # Single quotes are displayed to make sure "file name.txt" is one entry
 
 cat file name.txt
-cat: file: No such file or directory
-cat: name.txt: No such file or directory
+	cat: file: No such file or directory
+	cat: name.txt: No such file or directory
 # Bash shell uses spaces between commands arguments
 ```
 

@@ -10,7 +10,6 @@
 
 ```bash
 ln --help
-
 	Usage: ln [OPTION]... [-T] TARGET LINK_NAME
 	  or:  ln [OPTION]... TARGET
 	  or:  ln [OPTION]... TARGET... DIRECTORY

@@ -25,7 +25,6 @@
 
 ```bash
 cat /etc/fstab
-
 	# /etc/fstab: static file system information.
 	#
 	# Use 'blkid' to print the universally unique identifier for a
@@ -48,7 +47,6 @@ cat /etc/fstab
 
 ```bash
 mount
-
 	sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
 	proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
 	udev on /dev type devtmpfs (rw,nosuid,relatime,size=1975416k,nr_inodes=493854,mode=755,inode64)
