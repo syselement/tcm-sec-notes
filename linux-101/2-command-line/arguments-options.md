@@ -5,7 +5,7 @@
   - one character options can be merged
   - multi-character formats cannot be combined
 
-## ls command example
+# ls command example
 
 ```bash
 ls --help
