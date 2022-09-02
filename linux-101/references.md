@@ -33,6 +33,9 @@
 - [tail](https://linuxize.com/post/linux-tail-command/)
 - [diff](https://linuxize.com/post/diff-command-in-linux/)
 - [Soft Link And Hard Link](https://ostechnix.com/explaining-soft-link-and-hard-link-in-linux-with-examples/)
+- [tar](https://linuxize.com/post/how-to-create-and-extract-archives-using-the-tar-command-in-linux/)
+- [gzip](https://linuxize.com/post/gzip-command-in-linux/)
+- 
 
 ## Users and Groups
 
