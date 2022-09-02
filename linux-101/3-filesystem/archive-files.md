@@ -38,6 +38,7 @@ unzip -l /tmp/backup-notes.zip
 
 - **`tar`** - creates an archive file from multiple files and directories, without compression by default
   - supports a vast range of compression algorithms
+  - **`.tar`** and **`.gz`** files are more commonly used in Linux than zip files.
 
 
 ```bash
