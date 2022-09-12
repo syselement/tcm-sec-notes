@@ -4,6 +4,7 @@
 
 - Using groups and users
 - Manage user credentials and permissions
+- Learn symbolic and octal change permissions mode
 
 ### Sections
 
