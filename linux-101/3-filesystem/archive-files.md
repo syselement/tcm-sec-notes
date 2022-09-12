@@ -1,6 +1,6 @@
 # Archiving and Searching Files
 
-## Commands
+## Archiving Commands
 
 ### zip
 
@@ -102,4 +102,63 @@ gzip -dk archive.tar.gz
 gunzip archive.tar.gz
 
 ```
+
+## Searching Commands
+
+### find
+
+- **`find`** - search for files in a directory hierarchy
+  - a starting point for the search is necessary
+
+```bash
+find . -name 'file*.txt'
+# . = current directory and subdirectories starting point
+    ./file1.txt
+    ./file2.txt
+    ./dir1/file1.txt
+    ./dir3/file3.txt
+    ./file3.txt
+    ./dir2/file2.txt
+
+find . -iname 'file*.txt'
+# -iname for case insensitive search
+
+
+```
+
+### locate
+
+- **`locate`** - find files by name, using a database
+  - it can be faster than `find` command
+
+```bash
+locate file*.txt
+    /home/user/Documents/file1.txt
+    /home/user/Documents/file2.txt
+    /home/user/Documents/file3.txt
+    /home/user/Documents/dir1/file1.txt
+    /home/user/Documents/dir2/file2.txt
+    /home/user/Documents/dir3/file3.txt
+```
+
+### which
+
+- **`which`** - locate a command
+  - it displays the full path of the command with its associated name
+
+```bash
+which ls
+	/usr/bin/ls
+```
+
+### whereis
+
+- **`whereis`** - locate the binary, source code and manual page for a command
+
+```bash
+whereis ls
+	ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz
+```
+
+------
 

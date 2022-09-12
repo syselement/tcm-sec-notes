@@ -19,6 +19,7 @@
 - [ls](https://linuxize.com/post/how-to-list-files-in-linux-using-the-ls-command/)
 - [less](https://linuxize.com/post/less-command-in-linux/)
 - [cat](https://linuxize.com/post/linux-cat-command/)
+- [Bash Aliases](https://linuxize.com/post/how-to-create-bash-aliases/)
 
 ## Files and the Filesystem
 
@@ -35,11 +36,22 @@
 - [Soft Link And Hard Link](https://ostechnix.com/explaining-soft-link-and-hard-link-in-linux-with-examples/)
 - [tar](https://linuxize.com/post/how-to-create-and-extract-archives-using-the-tar-command-in-linux/)
 - [gzip](https://linuxize.com/post/gzip-command-in-linux/)
-- 
+- [find](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
+- [which](https://linuxize.com/post/linux-which-command/)
+- [locate](https://linuxize.com/post/locate-command-in-linux/)
 
 ## Users and Groups
 
-- 
+- [UID](https://linuxhandbook.com/uid-linux/)
+- [who](https://linuxize.com/post/who-command-in-linux/)
+- [/etc/passwd](https://linuxize.com/post/etc-passwd-file/)
+- [/etc/shadow](https://linuxize.com/post/etc-shadow-file/)
+- [/etc/group](https://linuxize.com/post/how-to-list-groups-in-linux/)
+- [Linux File Permissions](https://linuxize.com/post/understanding-linux-file-permissions/)
+- [chmod](https://linuxize.com/post/chmod-command-in-linux/)
+  - [chmod Calculator](https://nettools.club/chmod_calc)
+
+- [chown](https://linuxize.com/post/linux-chown-command/)
 
 ## Installing Software
 

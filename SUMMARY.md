@@ -21,6 +21,7 @@
     - [Paths, Filenames and Text Files](linux-101/3-filesystem/path-filenames.md)
     - [Filesystem Links](linux-101/3-filesystem/fs-links.md)
     - [Archiving and Searching Files](linux-101/3-filesystem/archive-files.md)
+    - [Users and Groups](linux-101/4-users-groups/README.md)
   - [🔬 Training - Labs](linux-101/training-labs/README.md)
     - [Lab#1](linux-101/training-labs/lab-1.md)
     - [Lab#2](linux-101/training-labs/lab-2.md)
