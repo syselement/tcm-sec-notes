@@ -1,4 +1,4 @@
-# Compressing and Archiving Files
+# Archiving and Searching Files
 
 ## Commands
 
