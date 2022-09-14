@@ -122,8 +122,6 @@ find . -name 'file*.txt'
 
 find . -iname 'file*.txt'
 # -iname for case insensitive search
-
-
 ```
 
 ### locate
