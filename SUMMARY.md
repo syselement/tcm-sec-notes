@@ -25,10 +25,6 @@
     - [Working with Users and Groups](linux-101/4-users-groups/users-groups.md)
     - [File and Directory Permissions](linux-101/4-users-groups/permissions.md)
     - [Changing Users and Passwords](linux-101/4-users-groups/users-credentials.md)
-  - [🔬 Training - Labs](linux-101/training-labs/README.md)
-    - [Lab#1](linux-101/training-labs/lab-1.md)
-    - [Lab#2](linux-101/training-labs/lab-2.md)
-    - [Lab#3](linux-101/training-labs/lab-3.md)
   - [📜 Glossary](linux-101/glossary.md)
   - [🌐 References](linux-101/references.md)
 
