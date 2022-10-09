@@ -7,7 +7,7 @@
   - **Bash** is one of the many implementations of the Shell Command Language
 - Different built-in commands. Some commands are built into the shell itself (`cd`).
 
-### Bash
+### [Bash](https://www.gnu.org/software/bash/manual/bash.html)
 
 - Bourne-Again Shell - default on most systems
 - Used for scripting and interactive purposes
@@ -29,9 +29,7 @@
 
 - Friendly interactive shell
 
-> 📌 [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
->
-> Get some hands on practice with shells:
+> 📌Get some hands on practice with shells:
 >
 > [Bash scripting cheatsheet](https://devhints.io/bash)
 >
