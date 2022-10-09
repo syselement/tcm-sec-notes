@@ -71,6 +71,7 @@
 - [Bash](https://www.gnu.org/software/bash/manual/bash.html)
 - [zsh](https://www.zsh.org/)
   - [Oh My Zsh](https://ohmyz.sh/)
+- [Learn Shell](https://www.learnshell.org/)
 
 
 ## Utilities and File editors

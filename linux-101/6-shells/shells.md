@@ -12,24 +12,38 @@
 - Bourne-Again Shell - default on most systems
 - Used for scripting and interactive purposes
 
-> 📌 [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
-
 ### Ksh (Kornshell)
 
-- Generally use to automate a wide variety of o.s. and sysadmin tasks
+- Generally used to automate a wide variety of o.s. and sysadmin tasks
 
-### Zsh
+### [Zsh](https://www.zsh.org/)
 
 - Interactive shell
 - Incorporates many bash, tcsh, ksh features
 
-### Csh/Tcsh
+### Csh/[Tcsh](https://www.tcsh.org/)
 
 - ideal for learners of the C programming language
 
-### Fish
+### [Fish](https://fishshell.com/)
 
 - Friendly interactive shell
+
+> 📌 [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
+>
+> Get some hands on practice with shells:
+>
+> [Bash scripting cheatsheet](https://devhints.io/bash)
+>
+> [Learn Shell](https://www.learnshell.org/)
+>
+> Online Terminals:
+>
+> [JSLinux](https://bellard.org/jslinux/)
+>
+> [Copy.sh](https://copy.sh/v86/)
+>
+> [Webminal](https://www.webminal.org/) (free signup, practice)
 
 ------
 
