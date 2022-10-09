@@ -19,8 +19,8 @@ description: Linux 101 by Brent Eskridge - a practical hands-on course
 2. [Command Line basics](2-command-line/README.md)
 3. [Files and the Filesystem](3-filesystem/README.md)
 4. [Users and Groups](4-users-groups/README.md)
-5. Installing Software
-6. Shell basics
+5. [Installing Software](5-installing-sw/README.md)
+6. [Shell basics](6-shells/README.md)
 7. Utilities and File editors
 8. Process Management
 9. Regular Expressions

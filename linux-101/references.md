@@ -50,16 +50,28 @@
 - [Linux File Permissions](https://linuxize.com/post/understanding-linux-file-permissions/)
 - [chmod](https://linuxize.com/post/chmod-command-in-linux/)
   - [chmod Calculator](https://nettools.club/chmod_calc)
-
 - [chown](https://linuxize.com/post/linux-chown-command/)
+- [sudo](https://linuxize.com/post/sudo-command-in-linux/)
+- [passwd](https://linuxize.com/post/how-to-change-user-password-in-ubuntu/)
+  - [root password](https://linuxize.com/post/how-to-change-root-password-in-ubuntu/)
+
 
 ## Installing Software
 
-- 
+- [Deb Packages install](https://linuxize.com/post/how-to-install-deb-packages-on-ubuntu/)
+- [apt](https://linuxize.com/post/how-to-use-apt-command/)
+- [Rpm Packages install](https://linuxize.com/post/rpm-command-in-linux/#)
+- [yum](https://linuxize.com/post/how-to-install-updates-on-centos/)
+- [gcc](https://linuxize.com/post/how-to-install-gcc-on-ubuntu-20-04/)
+- [checkinstall](https://help.ubuntu.com/community/CheckInstall)
 
 ## Shell basics
 
-- 
+- [Common Shells](https://www.tecmint.com/different-types-of-linux-shells/)
+- [Bash](https://www.gnu.org/software/bash/manual/bash.html)
+- [zsh](https://www.zsh.org/)
+  - [Oh My Zsh](https://ohmyz.sh/)
+
 
 ## Utilities and File editors
 

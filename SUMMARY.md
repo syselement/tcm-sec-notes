@@ -8,11 +8,13 @@
   - [1. Introduction](linux-101/1-linux-distributions/README.md)
     - [Linux Distributions](linux-101/1-linux-distributions/linux-distributions.md)
     - [Installing Linux](linux-101/1-linux-distributions/installing-linux.md)
+    
   - [2. Command Line](linux-101/2-command-line/README.md) 
     - [Intro to Command Line](linux-101/2-command-line/intro-to-commandline.md)
     - [Getting help on the Command Line](linux-101/2-command-line/getting-help.md)
     - [Command Line Arguments and Options](linux-101/2-command-line/arguments-options.md)
     - [Reading Text Files](linux-101/2-command-line/read-textfiles.md)
+    
   - [3. File System](linux-101/3-filesystem/README.md) 
     - [Filesystem Hierarchy Standard](linux-101/3-filesystem/fs-hierarchy.md)
     - [Devices, Partitions and Mounting](linux-101/3-filesystem/devices.md)
@@ -21,11 +23,28 @@
     - [Paths, Filenames and Text Files](linux-101/3-filesystem/path-filenames.md)
     - [Filesystem Links](linux-101/3-filesystem/fs-links.md)
     - [Archiving and Searching Files](linux-101/3-filesystem/archive-files.md)
+    
   - [4. Users and Groups](linux-101/4-users-groups/README.md)
     - [Working with Users and Groups](linux-101/4-users-groups/users-groups.md)
     - [File and Directory Permissions](linux-101/4-users-groups/permissions.md)
     - [Changing Users and Passwords](linux-101/4-users-groups/users-credentials.md)
-  - [📜 Glossary](linux-101/glossary.md)
+    
+  - [5. Installing Software](linux-101/5-installing-sw/README.md)
+    
+    - [Package Management](linux-101/5-installing-sw/package-management.md)
+    
+  - [6. Shells](linux-101/6-shells/README.md)
+  
+    - [Common Command Line Shells](linux-101/6-shells/shells.md)
+  
+    - Environment Variables & Startup Files
+  
+    - Input/Output Redirection
+  
+    - Command History & Substitution
+  
+      
+  
   - [🌐 References](linux-101/references.md)
 
 
