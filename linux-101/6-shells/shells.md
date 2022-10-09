@@ -21,7 +21,7 @@
 - Interactive shell
 - Incorporates many bash, tcsh, ksh features
 
-### Csh/[Tcsh](https://www.tcsh.org/)
+### Csh/Tcsh
 
 - ideal for learners of the C programming language
 
