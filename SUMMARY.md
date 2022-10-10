@@ -37,11 +37,11 @@
   
     - [Common Command Line Shells](linux-101/6-shells/shells.md)
   
-    - Environment Variables & Startup Files
+    - [Environment Variables & Startup Files](linux-101/6-shells/env-vars-files.md)
   
-    - Input/Output Redirection
+    - [Input/Output Redirection](linux-101/6-shells/io-redir.md)
   
-    - Command History & Substitution
+    - [Command History & Substitution](linux-101/6-shells/history-sub.md)
   
       
   

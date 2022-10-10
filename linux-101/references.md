@@ -72,6 +72,10 @@
 - [zsh](https://www.zsh.org/)
   - [Oh My Zsh](https://ohmyz.sh/)
 - [Learn Shell](https://www.learnshell.org/)
+- [Environment Variables](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/)
+- [Bash Startup Files](https://www.gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html)
+- [Bash Write to File](https://linuxize.com/post/bash-write-to-file/)
+- 
 
 
 ## Utilities and File editors
