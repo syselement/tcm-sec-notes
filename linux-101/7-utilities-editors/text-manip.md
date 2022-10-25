@@ -1,8 +1,6 @@
 # Searching and Processing Text
 
-## Commands
-
-### grep
+## grep
 
 - **`grep`** - print lines that match patterns
 
@@ -40,7 +38,7 @@ grep error -B 2 -A 3 /var/log/*.log
 
 ![](.gitbook/assets/image-20221025193506230.png)
 
-### sort 
+## sort 
 
 - **`sort`** - display sorted lines of text files
 
@@ -67,7 +65,7 @@ sort -nr random-numbers.txt
     1
 ```
 
-### uniq
+## uniq
 
 - **`uniq`** - report or omit repeated lines, filtering adjacent matching lines from the input
 
@@ -90,7 +88,7 @@ sort -n random-numbers.txt | uniq
     91
 ```
 
-### wc
+## wc
 
 - **`wc`** - print number of lines, words and bytes in a file
 
@@ -117,9 +115,7 @@ grep -v e random-words.txt | sort | uniq | wc -l
 
 # Manipulating Text
 
-## Commands
-
-### sed
+## sed
 
 - **`sed`** - stream editor for filtering and transforming text
   - A stream editor is used to perform basic text transformations on an input stream.
@@ -190,7 +186,7 @@ sed -e 's/$/\n/g' -e 's/:/\n/g' /etc/passwd
 
 ![](.gitbook/assets/image-20221025223944428.png)
 
-### awk
+## awk
 
 - **`awk`** - pattern scanning and text processing language
   - awk breaks each line of input into separate fields or columns using specific delimiters.
@@ -242,7 +238,7 @@ awk -F ':' '/root/ {print NR,$1}' /etc/passwd
 
 ![](.gitbook/assets/image-20221025231808258.png)
 
-### tr
+## tr
 
 - **`tr`** - translate, squeeze, delete characters from the standard input
 
