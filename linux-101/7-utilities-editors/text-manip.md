@@ -113,8 +113,6 @@ grep root /etc/passwd | wc -l
 grep -v e random-words.txt | sort | uniq | wc -l
 ```
 
-# Manipulating Text
-
 ## sed
 
 - **`sed`** - stream editor for filtering and transforming text
