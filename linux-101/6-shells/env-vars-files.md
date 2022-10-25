@@ -29,7 +29,7 @@ printenv | grep PATH
 
 There are two types of environment variables: **global** and **local**.
 
-## Global
+### Global
 
 - **Global** variables can be accessed by anything executed in that shell = `Environment Variables`
 
@@ -45,7 +45,7 @@ echo $COUNT_GLOBAL
 unset COUNT_GLOBAL
 ```
 
-## Local
+### Local
 
 - **Local** variables are valid only for the current shell (and not for sub-shells) = `Shell Variables`
 
