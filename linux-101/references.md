@@ -75,12 +75,28 @@
 - [Environment Variables](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/)
 - [Bash Startup Files](https://www.gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html)
 - [Bash Write to File](https://linuxize.com/post/bash-write-to-file/)
-- 
+- [History](https://linuxize.com/post/history-command-in-linux/)
 
 
 ## Utilities and File editors
 
+- [grep](https://linuxize.com/post/how-to-use-grep-command-to-search-files-in-linux/)
+  - [Regex in Grep](https://linuxize.com/post/regular-expressions-in-grep/)
+
+- [sort](https://www.geeksforgeeks.org/sort-command-linuxunix-examples/)
+
+- [wc](https://linuxize.com/post/linux-wc-command/)
+
+- [sed](https://linuxize.com/post/how-to-use-sed-to-find-and-replace-string-in-files/)
+  - [sed Manual - gnu.org](https://www.gnu.org/software/sed/manual/sed.html)
+
+- [awk](https://linuxize.com/post/awk-command/)
+  - [awk Manual - gnu.org](https://www.gnu.org/software/gawk/manual/gawk.html)
+
+- [tr](https://linuxize.com/post/linux-tr-command/)
+
 - 
+
 
 ## Process Management
 

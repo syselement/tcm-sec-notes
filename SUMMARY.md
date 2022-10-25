@@ -30,20 +30,22 @@
     - [Changing Users and Passwords](linux-101/4-users-groups/users-credentials.md)
     
   - [5. Installing Software](linux-101/5-installing-sw/README.md)
-    
     - [Package Management](linux-101/5-installing-sw/package-management.md)
     
   - [6. Shells](linux-101/6-shells/README.md)
-  
     - [Common Command Line Shells](linux-101/6-shells/shells.md)
-  
     - [Environment Variables & Startup Files](linux-101/6-shells/env-vars-files.md)
-  
     - [Input/Output Redirection](linux-101/6-shells/io-redir.md)
-  
     - [Command History & Substitution](linux-101/6-shells/history-sub.md)
   
-      
+  - [7. Utilities and File Editors](linux-101/7-utilities-editors/README.md)
+    - [Searching and Manipulating text](linux-101/7-utilities-editors/text-manip.md)
+    - [Networking at the Command Line](linux-101/7-utilities-editors/net-cmd.md)
+    - [File Transfer](linux-101/7-utilities-editors/files-transfer.md)
+    - [Text Editors and Converters](linux-101/7-utilities-editors/text-edit.md)
+
+  
+  
   
   - [🌐 References](linux-101/references.md)
 
