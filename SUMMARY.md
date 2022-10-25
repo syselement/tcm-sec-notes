@@ -39,7 +39,7 @@
     - [Command History & Substitution](linux-101/6-shells/history-sub.md)
   
   - [7. Utilities and File Editors](linux-101/7-utilities-editors/README.md)
-    - [Searching and Manipulating text](linux-101/7-utilities-editors/text-manip.md)
+    - [Searching and Processing Text](linux-101/7-utilities-editors/text-manip.md)
     - [Networking at the Command Line](linux-101/7-utilities-editors/net-cmd.md)
     - [File Transfer](linux-101/7-utilities-editors/files-transfer.md)
     - [Text Editors and Converters](linux-101/7-utilities-editors/text-edit.md)
