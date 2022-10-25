@@ -2,7 +2,7 @@
 
 # Environment Variables & Startup Files
 
-# Environment Variables
+## Environment Variables
 
 - The shell stores information in the environment variables.
 - Each shell has its own values for these variables.
@@ -61,7 +61,7 @@ bash
 echo $COUNT_LOCAL
 ```
 
-# Startup files
+## Startup files
 
 - When starting a new bash shell, the shell is configured using startup files.
 - Interactive non-login shell - the type of shell opened by the Terminal

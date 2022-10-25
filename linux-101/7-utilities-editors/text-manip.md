@@ -1,5 +1,7 @@
 # Searching and Processing Text
 
+## Commands
+
 ### grep
 
 - **`grep`** - print lines that match patterns
@@ -114,6 +116,8 @@ grep -v e random-words.txt | sort | uniq | wc -l
 ```
 
 # Manipulating Text
+
+## Commands
 
 ### sed
 

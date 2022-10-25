@@ -1,6 +1,6 @@
 # Command History & Substitution
 
-# Command History
+## Command History
 
 - To show previously executed commands use the `history` command
 
@@ -42,7 +42,7 @@ cat ~/.bashrc
     HISTFILESIZE=2000
 ```
 
-# Command Substitution
+## Command Substitution
 
 - Redirecting doesn't always work.
 - With **command substitution** a command can be replaced with its output before the entire command is executed by the shell.
