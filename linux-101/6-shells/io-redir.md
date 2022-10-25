@@ -1,4 +1,4 @@
-# Input-Output Redirection
+# Input/Output Redirection
 
 > 📌 [Bash Redirection](https://linuxize.com/post/bash-redirect-stderr-stdout/)
 

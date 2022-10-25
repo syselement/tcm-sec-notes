@@ -4,7 +4,6 @@
 
 ## Commands
 
-
 ### **ls -la** 
 
 - Long list current folder files and permissions

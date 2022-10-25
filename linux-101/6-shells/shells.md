@@ -1,4 +1,4 @@
-# Common Shells
+# Common Command Line Shells
 
 - There are a few available command line shells available in Linux.
 - Not all shells are installed by default.

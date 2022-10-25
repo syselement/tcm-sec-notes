@@ -1,4 +1,4 @@
-# Working with users and Groups
+# Working with Users and Groups
 
 - Based on a user's ID and the groups it is a part of, Linux manages access to resources.
 

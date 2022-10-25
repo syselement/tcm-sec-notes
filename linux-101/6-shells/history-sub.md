@@ -1,3 +1,5 @@
+# Command History & Substitution
+
 # Command History
 
 - To show previously executed commands use the `history` command

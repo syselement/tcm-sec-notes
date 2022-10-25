@@ -1,3 +1,7 @@
+
+
+# Environment Variables & Startup Files
+
 # Environment Variables
 
 - The shell stores information in the environment variables.
