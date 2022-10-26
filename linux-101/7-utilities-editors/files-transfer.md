@@ -40,7 +40,7 @@ rsync -azvh file2.txt user@192.168.1.50:/tmp/
     file2.txt
     sent 119 bytes  received 35 bytes  44.00 bytes/sec
     total size is 7  speedup is 0.05
-# a = archive mode - recursive copying into dirrectories and preserve files user permissions and ownership
+# a = archive mode - recursive copying into directories and preserve files user permissions and ownership
 # v = verbose mode
 # z = compress data during transfer (beneficial for large files)
 # h = human readable format output

@@ -97,8 +97,16 @@
 - [rsync](https://linuxize.com/post/how-to-use-rsync-for-local-and-remote-data-transfer-and-synchronization/)
   - [rsync over SSH](https://linuxize.com/post/how-to-transfer-files-with-rsync-over-ssh/)
 
-- 
+- [file](https://linuxize.com/post/linux-file-command/)
 
+- [nano editor](https://www.nano-editor.org/docs.php)
+  - [nano usage](https://linuxize.com/post/how-to-use-nano-text-editor/)
+
+  - [nano keyboard shortcuts](https://cheatography.com/bipinthite/cheat-sheets/nano-editor/)
+
+- [vim](https://linuxize.com/post/how-to-save-file-in-vim-quit-editor/)
+  - [vim help files](https://vimhelp.org/)
+  - [vim cheat sheet](https://cheatography.com/typo209/cheat-sheets/comprehensive-vim-cheat-sheet/)
 
 ## Process Management
 
