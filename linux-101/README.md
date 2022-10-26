@@ -22,7 +22,7 @@ description: Linux 101 by Brent Eskridge - a practical hands-on course
 5. [Installing Software](5-installing-sw/README.md)
 6. [Shell basics](6-shells/README.md)
 7. [Utilities and File Editors](7-utilities-editors/README.md)
-8. Process Management
+8. [Process Management](8-process-manag/README.md)
 9. Regular Expressions
 10. Bash Scripting
 

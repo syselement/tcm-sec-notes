@@ -43,7 +43,11 @@
     - [Networking at the Command Line](linux-101/7-utilities-editors/net-cmd.md)
     - [File Transfer](linux-101/7-utilities-editors/files-transfer.md)
     - [Text Editors and Converters](linux-101/7-utilities-editors/text-edit.md)
-
+  - [8. Process Management](linux-101/8-process-manag/README.md)
+    - [Process Information](linux-101/8-process-manag/process-info.md)
+    - [Foreground and Background Processes](linux-101/8-process-manag/process-fg-bg.md)
+    - [Managing Processes](linux-101/8-process-manag/process-manage.md)
+    - [Scheduling Processes](linux-101/8-process-manag/process-sched.md)
   
   
   
