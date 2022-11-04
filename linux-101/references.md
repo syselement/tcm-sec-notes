@@ -110,6 +110,14 @@
 
 ## Process Management
 
+- [ps](https://linuxize.com/post/ps-command-in-linux/)
+  - [pstree](https://linuxize.com/post/pstree-command-in-linux/)
+
+- [top](https://www.geeksforgeeks.org/top-command-in-linux-with-examples/)
+  - [htop](https://www.geeksforgeeks.org/htop-command-in-linux-with-examples/)
+
+- [jobs-fg-bg Background processes](https://linuxize.com/post/how-to-run-linux-commands-in-background/)
+
 - 
 
 ## Regular Expressions
