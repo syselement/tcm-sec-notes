@@ -1,6 +1,6 @@
 # Managing Processes
 
-- A Linux process can be in one of a few states.
+- A Linux process can be in one of a few states:
   - **running** = the CPU is executing a process
     - **`CTRL+Z`** to stop the process from running
     - Linux sends a STOP signal to the process and the process enters the stopped state

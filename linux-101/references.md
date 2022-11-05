@@ -127,7 +127,6 @@
   - [List cron jobs](https://linuxize.com/post/how-to-list-cron-jobs-in-linux/)
 - [Linux Run Levels](https://likegeeks.com/linux-runlevels/)
   - [Ubuntu Bootup](https://help.ubuntu.com/community/UbuntuBootupHowto)
-  - [/etc/init.d - Suse Linux Boot concept](/etc/init.d - Suse Linux Boot concept)
 
 
 ## Regular Expressions
