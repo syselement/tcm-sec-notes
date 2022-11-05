@@ -17,6 +17,14 @@ who
 # Output:
 	user     :0           2022-09-02 19:26 (:0)
 
+who -a
+	system boot  2022-11-03 21:44
+	run-level 5  2022-11-03 21:44
+user     + tty2         2022-11-03 21:45  old         1574 (tty2)
+	pts/1        2022-11-05 10:44              6168 id=ts/1  term=0 exit=130
+	pts/2        2022-11-05 10:30              6064 id=ts/2  term=0 exit=0
+	pts/3        2022-11-05 10:30              6065 id=ts/3  term=0 exit=1
+
 w
 # Output info and processes about the logged on users:
 	19:56:27 up  9:19,  1 user,  load average: 0,03, 0,01, 0,00

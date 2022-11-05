@@ -27,6 +27,8 @@
 - [FHS - Wikipedia](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 - [df](https://linuxize.com/post/how-to-check-disk-space-in-linux-using-the-df-command/)
 - [du](https://linuxize.com/post/du-command-in-linux/)
+  - [Size of a directory](https://linuxize.com/post/how-get-size-of-file-directory-linux/)
+
 - [Absolute vs Relative Path](https://linuxhandbook.com/absolute-vs-relative-path/)
 - [cp](https://linuxize.com/post/cp-command-in-linux/)
 - [rm](https://linuxize.com/post/rm-command-in-linux/)
@@ -112,17 +114,27 @@
 
 - [ps](https://linuxize.com/post/ps-command-in-linux/)
   - [pstree](https://linuxize.com/post/pstree-command-in-linux/)
-
 - [top](https://www.geeksforgeeks.org/top-command-in-linux-with-examples/)
   - [htop](https://www.geeksforgeeks.org/htop-command-in-linux-with-examples/)
-
 - [jobs-fg-bg Background processes](https://linuxize.com/post/how-to-run-linux-commands-in-background/)
+- [Zombie Process](https://totozhang.github.io/2016-01-16-linux-zombieprocess/)
+- [Kill a Process](https://linuxize.com/post/how-to-kill-a-process-in-linux/)
+  - [kill](https://linuxize.com/post/kill-command-in-linux/)
+  - [pkill](https://linuxize.com/post/pkill-command-in-linux/)
+- [sleep](https://linuxize.com/post/how-to-use-linux-sleep-command-to-pause-a-bash-script/)
+- [crontab.guru](https://crontab.guru/)
+  - [crontab](https://linuxize.com/post/scheduling-cron-jobs-with-crontab/)
+  - [List cron jobs](https://linuxize.com/post/how-to-list-cron-jobs-in-linux/)
+- [Linux Run Levels](https://likegeeks.com/linux-runlevels/)
+  - [Ubuntu Bootup](https://help.ubuntu.com/community/UbuntuBootupHowto)
+  - [/etc/init.d - Suse Linux Boot concept](/etc/init.d - Suse Linux Boot concept)
 
-- 
 
 ## Regular Expressions
 
-- 
+- [grep Regular Expressions](https://linuxize.com/post/regular-expressions-in-grep/)
+  - [grep regex examples](https://www.cyberciti.biz/faq/grep-regular-expressions/)
+
 
 ## Bash Scripting
 
