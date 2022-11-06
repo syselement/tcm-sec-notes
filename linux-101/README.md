@@ -24,7 +24,7 @@ description: Linux 101 by Brent Eskridge - a practical hands-on course
 7. [Utilities and File Editors](7-utilities-editors/README.md)
 8. [Process Management](8-process-manag/README.md)
 9. [Regular Expressions](9-regex/README.md)
-10. Bash Scripting
+10. [Bash Scripting](10-scripting/README.md)
 
 ### Useful links and resources
 
