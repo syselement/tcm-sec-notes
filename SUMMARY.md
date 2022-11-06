@@ -48,7 +48,8 @@
     - [Foreground and Background Processes](linux-101/8-process-manag/process-fg-bg.md)
     - [Managing Processes](linux-101/8-process-manag/process-manage.md)
     - [Scheduling Processes](linux-101/8-process-manag/process-sched.md)
-  
+  - [9. Regular Expressions](linux-101/9-regex/README.md)
+    - [Regular Expressions, Searching, Replacing, Building](linux-101/9-regex/regex-use.md)
   
   
   - [🌐 References](linux-101/references.md)
