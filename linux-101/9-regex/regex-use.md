@@ -78,7 +78,7 @@ grep -E "^4[2-9]|[5-9][1-9]|[1-9][1-9]{3,}$" numbers.txt
     95
 ```
 
-![](.gitbook/assets/image-20221106133627116.png)
+![](.gitbook/assets/image-20221106135932189.png)
 
 ### [Dollar $ Search](https://regexr.com/66ogm)
 
@@ -104,13 +104,13 @@ grep -E "^4[2-9]|[5-9][1-9]|[1-9][1-9]{3,}$" numbers.txt
 ## Tips on Building RegEx
 
 - Regular expressions are very powerful but are not appropriate for every problem.
-- Regular expressions are greedy (**they'll match as much as they can**)
+- Regular expressions are greedy (**they'll match as much as they can**).
   - Add and **`?`** after **`*`** or **`+`** too make the match lazy (match the minimum possible)
-- **Don't write an entire regex all at once**
+- **Don't write an entire regex all at once.**
   - Build a piece - test it - repeat
   - Use multiple, simpler, smaller expressions
-- Test with **valid** and **invalid** data - ensure the regex matches only what you want it to match
-- Add comments using **`x`** modifier
+- Test with **valid** and **invalid** data - ensure the regex matches only what you want it to match.
+- Add comments using **`x`** modifier.
 
 ------
 
