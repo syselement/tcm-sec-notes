@@ -7,5 +7,5 @@
 
 ### Sections
 
-1. [Bash Scripting Basics, Control Structures,Loops](bash-script.md)
+1. [Bash Scripting Basics, Control Structures, Loops](bash-script.md)
 
