@@ -1,6 +1,8 @@
 # 🌐 References
 
-* [TCM Linux101-Resources](https://github.com/beskridge/Linux101-Resources) - by Brent Eskridge 
+* [TCM Linux101-Resources](https://github.com/beskridge/Linux101-Resources) - by Brent Eskridge
+  * [Supplementary exercises](https://github.com/beskridge/Linux101-Resources/blob/main/exercises.md)
+
 
 ## Introduction
 
@@ -140,4 +142,8 @@
 
 ## Bash Scripting
 
-- 
+- [Bash Shell Scripting - Wikibooks](https://en.wikibooks.org/wiki/Bash_Shell_Scripting)
+- [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix))
+
+------
+
