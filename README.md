@@ -4,5 +4,4 @@
 
 ## TCM Academy Courses - Notes
 
-* ### :white_check_mark: [Linux 101](linux-101/README.md) by Brent Eskridge
-
+* #### :white\_check\_mark: [Linux 101](linux-101/) by Brent Eskridge
