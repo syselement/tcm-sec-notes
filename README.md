@@ -4,5 +4,5 @@
 
 ## TCM Academy Courses - Notes
 
-- [x] ### [Linux 101](linux-101/) by Brent Eskridge
+- [x] [Linux 101](linux-101/) by Brent Eskridge
 
