@@ -12,9 +12,7 @@
 
 ## Lab Set Up
 
-- [PimpmyADLab](https://github.com/Dewalt-arch/pimpmyadlab)
-- [Building a Windows AD lab](https://ad-lab.gitbook.io/building-a-windows-ad-lab/)
-- [GrouppVM](https://github.com/vulfilip/grouppvm)
+- 
 
 ## The Ethical Hacker Methodology
 
@@ -42,7 +40,9 @@
 
 ## Active Directory
 
-
+- [PimpmyADLab](https://github.com/Dewalt-arch/pimpmyadlab)
+- [Building a Windows AD lab](https://ad-lab.gitbook.io/building-a-windows-ad-lab/)
+- [GrouppVM](https://github.com/vulfilip/grouppvm)
 
 ## Post Exploitation
 
