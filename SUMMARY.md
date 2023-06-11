@@ -46,7 +46,7 @@
     - [Regular Expressions, Searching, Replacing, Building](linux-101/9-regex/regex-use.md)
   - [10. Bash Scripting](linux-101/10-scripting/README.md)
     - [Bash Scripting Basics, Control Structures, Loops](linux-101/10-scripting/bash-script.md)
-  - [🌐 References](linux-101/references.md)
+  - [🌐 References](linux-101/linux101-references.md)
 
 
 ***

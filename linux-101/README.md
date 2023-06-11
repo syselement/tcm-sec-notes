@@ -31,5 +31,5 @@ description: Linux 101 by Brent Eskridge - a practical hands-on course
 * Where to find the Linux 101 course? - [TCM Academy Courses](https://academy.tcm-sec.com/courses)
 * Brent's GitHub repository - [TCM Linux101-Resources](https://github.com/beskridge/Linux101-Resources)
 * TCM discord channel - [TCM Security Discord](https://discord.gg/tcm)
-* [My references](references.md) 
+* [My references](linux101-references.md) 
 
