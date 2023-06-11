@@ -4,11 +4,11 @@
 * [TCM Course Resources - Github](https://github.com/TCM-Course-Resources)
   * [Practical-Ethical-Hacking-Resources](https://github.com/TCM-Course-Resources/Practical-Ethical-Hacking-Resources)
 * [PNPT Certification](https://certifications.tcm-sec.com/pnpt/)
-* [Course - Discord](https://discord.gg/tcm)
+* [Course and FAQs - Discord](https://discord.gg/tcm)
 
 ## Introduction
 
-
+- [Why You Shouldn't Be an Ethical Hacker](https://www.youtube.com/watch?v=rpm_V_88wds)
 
 ## Lab Set Up
 
