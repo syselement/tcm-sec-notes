@@ -18,6 +18,7 @@
 - [GitBook](https://www.gitbook.com/)
 - [Obsidian](https://obsidian.md/)
 - [FlameShot - Screenshot](https://flameshot.org/)
+- [ShareX](https://getsharex.com/)
 - [GreenShot - Screenshot](https://getgreenshot.org/downloads/)
 
 ### Networking
