@@ -6,12 +6,12 @@ description: Linux 101 by Brent Eskridge - a practical hands-on course
 
 ![Linux 101 - academy.tcm-sec.com - © TCM Security](.gitbook/assets/linux101.png)
 
-### [Linux101](https://academy.tcm-sec.com/p/linux-101) Course Goals and Objectives
+## [Linux101](https://academy.tcm-sec.com/p/linux-101) Course Goals and Objectives
 
 * Linux foundation and starting point for an average user without previous experience
 * Practical focus on Linux command line and its usage
 
-### Course duration & Topics
+## Course duration & Topics
 
 ~	5:50 hours
 
@@ -26,7 +26,7 @@ description: Linux 101 by Brent Eskridge - a practical hands-on course
 9. [Regular Expressions](9-regex/README.md)
 10. [Bash Scripting](10-scripting/README.md)
 
-### Useful links and resources
+## Useful links and resources
 
 * Where to find the [Linux101 Course](https://academy.tcm-sec.com/p/linux-101)? - [TCM Academy Courses](https://academy.tcm-sec.com/courses)
 * Brent's GitHub repository - [TCM Linux101-Resources](https://github.com/beskridge/Linux101-Resources)
