@@ -1,4 +1,4 @@
-# Lab Set Up, Linux & Python
+# 2. Lab Set Up, Linux & Python
 
 ## Lab Set Up
 

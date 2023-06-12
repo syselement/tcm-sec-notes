@@ -1,4 +1,4 @@
-# The Ethical Hacker Methodology
+# 3. The Ethical Hacker Methodology
 
 ## Sections
 

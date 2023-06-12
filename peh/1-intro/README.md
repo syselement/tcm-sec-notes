@@ -1,4 +1,4 @@
-# Introduction & Networking
+# 1. Introduction & Networking
 
 ## Intro
 
