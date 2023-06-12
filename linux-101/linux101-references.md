@@ -1,5 +1,6 @@
 # 🌐 References
 
+* [Linux101 Course](https://academy.tcm-sec.com/p/linux-101)
 * [TCM Linux101-Resources](https://github.com/beskridge/Linux101-Resources) - by Brent Eskridge
   * [Supplementary exercises](https://github.com/beskridge/Linux101-Resources/blob/main/exercises.md)
 

@@ -6,12 +6,13 @@ description: Practical Ethical Hacking - The Complete Course by Heath Adams
 
 ![Practical Ethical Hacking - academy.tcm-sec.com - © TCM Security](.gitbook/assets/peh.png)
 
-## Course Goals and Objectives
+## [PEH](https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course) Course Goals and Objectives
 
 * Learn the practical ethical hacking
 * Internal and external network penetration testing
 * Wireless Pentesting
 * Web App Pentesting
+* Study for the **PNPT** Certification
 
 ## Course duration & Topics
 

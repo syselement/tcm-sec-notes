@@ -6,7 +6,7 @@ description: Linux 101 by Brent Eskridge - a practical hands-on course
 
 ![Linux 101 - academy.tcm-sec.com - © TCM Security](.gitbook/assets/linux101.png)
 
-### Course Goals and Objectives
+### [Linux101](https://academy.tcm-sec.com/p/linux-101) Course Goals and Objectives
 
 * Linux foundation and starting point for an average user without previous experience
 * Practical focus on Linux command line and its usage
@@ -28,7 +28,7 @@ description: Linux 101 by Brent Eskridge - a practical hands-on course
 
 ### Useful links and resources
 
-* Where to find the Linux 101 course? - [TCM Academy Courses](https://academy.tcm-sec.com/courses)
+* Where to find the [Linux101 Course](https://academy.tcm-sec.com/p/linux-101)? - [TCM Academy Courses](https://academy.tcm-sec.com/courses)
 * Brent's GitHub repository - [TCM Linux101-Resources](https://github.com/beskridge/Linux101-Resources)
 * TCM discord channel - [TCM Security Discord](https://discord.gg/tcm)
 * [My references](linux101-references.md) 
