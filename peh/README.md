@@ -4,14 +4,16 @@ description: Practical Ethical Hacking - The Complete Course by Heath Adams
 
 # TCM - Practical Ethical Hacking
 
-![Practical Ethical Hacking - academy.tcm-sec.com - © TCM Security](.gitbook/assets/peh.png)Course Goals and Objectives
+![Practical Ethical Hacking - academy.tcm-sec.com - © TCM Security](.gitbook/assets/peh.png)
+
+## Course Goals and Objectives
 
 * Learn the practical ethical hacking
 * Internal and external network penetration testing
 * Wireless Pentesting
 * Web App Pentesting
 
-### Course duration & Topics
+## Course duration & Topics
 
 ~	25 hours
 
@@ -27,7 +29,7 @@ description: Practical Ethical Hacking - The Complete Course by Heath Adams
 
 Instructor: [Heath Adams - The Cyber Mentor](https://www.thecybermentor.com/)
 
-### Useful links and resources
+## Useful links and resources
 
 * Where to find the [Practical Ethical Hacking - The Complete Course](https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course) course? - [TCM Academy Courses](https://academy.tcm-sec.com/courses)
 * TCM discord channel - [TCM Security Discord](https://discord.gg/tcm)
