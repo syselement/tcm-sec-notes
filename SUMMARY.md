@@ -57,8 +57,8 @@
   - [7. Web Application](peh/7-webapp/README.md)
   - [8. Wireless Attacks](peh/8-wireless/README.md)
   - [9. Legal Documentation & Report Writing](peh/9-report/README.md)
-
-
+  - [🌐 References](peh/peh-references.md)
+  
 
 ***
 
