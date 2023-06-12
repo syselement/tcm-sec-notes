@@ -35,7 +35,7 @@ Instructor: [Heath Adams - The Cyber Mentor](https://www.thecybermentor.com/)
 * TCM discord channel - [TCM Security Discord](https://discord.gg/tcm)
 * **Practical Network Penetration Tester** Certification - [PNPT](https://certifications.tcm-sec.com/pnpt/)
 * 🔬 For the **training** part I will use my home lab environment
-* [My references](peh-referenc.md)
+* [My references](peh-references.md)
 
 > ### ❗ Disclaimer
 >
