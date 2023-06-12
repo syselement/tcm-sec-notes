@@ -5,5 +5,5 @@
 ## TCM Academy Courses - Notes
 
 - [x] [Linux 101](linux-101/README.md) by Brent Eskridge
-- [ ] [Practical Ethical Hacking - The Complete Course](peh/READM) by [Heath Adams](https://www.thecybermentor.com/)
+- [ ] [Practical Ethical Hacking - The Complete Course](peh/README.md) by [Heath Adams](https://www.thecybermentor.com/)
 
