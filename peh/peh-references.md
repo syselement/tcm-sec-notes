@@ -37,7 +37,13 @@
 
 ## Lab Set Up
 
-- 
+- [VMware Workstation Player](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html)
+- [VirtualBox + VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads)
+- [Kali Linux](https://www.kali.org/)
+- [ParrotOS](https://www.parrotsec.org/)
+- [Kali VM Installation - VMware - syselement](https://blog.syselement.com/home/operating-systems/linux/distros/kali-vm)
+- [TCM Linux-101 - syselement](https://blog.syselement.com/tcm/courses/linux-101)
+- [chmod Calculator](https://nettools.club/chmod_calc)
 
 ## The Ethical Hacker Methodology
 
