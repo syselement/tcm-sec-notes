@@ -54,7 +54,7 @@ ifconfig
 ipconfig /all
 ```
 
-▶️ **Layer 3**
+➡️ **Layer 3**
 
 **IP** (Internet Protocol) addresses - identify/locate devices on a network, on the layer 3 OSI model.
 
@@ -75,7 +75,7 @@ ipconfig /all
     2^{128} = 3.4×10^{38}
     $$
 
-▶️ **Layer 2**
+➡️ **Layer 2**
 
 **MAC** (Media Access Control) access is a unique identifier/hardware address given to NICs (network interface controllers). Used at the layer 2 OSI model (data link).
 
@@ -84,7 +84,7 @@ ipconfig /all
   - First 3 pairs = NIC manufacturer
   - local network
 
-▶️ **Layer 4**
+➡️ **Layer 4**
 
 **TCP** (Transmission Control Protocol)
 
@@ -130,7 +130,7 @@ ipconfig /all
 >
 > 🔗 [SMB University - Cisco Networking Fundamentals](https://www.cisco.com/c/dam/global/fi_fi/assets/docs/SMB_University_120307_Networking_Fundamentals.pdf)
 
-▶️ **OSI** (Open Systems Interconnection) model is a conceptual framework that offers a 7 layers structured method for communication system functions and network protocols.
+➡️ **OSI** (Open Systems Interconnection) model is a conceptual framework that offers a 7 layers structured method for communication system functions and network protocols.
 
 ![OSI Model - guru99.com](.gitbook/assets/LayersofOSI1.png)
 
@@ -190,9 +190,8 @@ Subnetting consists of dividing a network into multiple subnetworks/subnets.
     2^{8} = 256-2=254
     $$
     
-
   - Subnet Mask = `255.255.255.0`
-
+  
 - Network ID - First Address `192.168.1.0`
 
 - Broadcast - Last Address `192.168.1.255`
