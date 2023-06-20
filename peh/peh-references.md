@@ -44,6 +44,14 @@
 - [Kali VM Installation - VMware - syselement](https://blog.syselement.com/home/operating-systems/linux/distros/kali-vm)
 - [TCM Linux-101 - syselement](https://blog.syselement.com/tcm/courses/linux-101)
 - [chmod Calculator](https://nettools.club/chmod_calc)
+- [explainshell.com](https://explainshell.com/)
+- [What is a ping sweep (ICMP sweep)?](https://www.techtarget.com/searchnetworking/definition/ping-sweep-ICMP-sweep)
+
+### Python
+
+- [Python Documentation](https://docs.python.org/3/)
+- [LearnPython.org](https://www.learnpython.org/)
+- 
 
 ## The Ethical Hacker Methodology
 

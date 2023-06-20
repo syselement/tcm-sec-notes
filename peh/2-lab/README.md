@@ -401,16 +401,18 @@ sudo apt install -y apt-transport-https curl duf flameshot htop neofetch net-too
 ```bash
 # Clone a Github repository in the "/opt" dir
 cd /opt
+sudo rm -rf pimpmykali/
 sudo git clone https://github.com/Dewalt-arch/pimpmykali
-sudo ./pimpmykali/pimpmykali.sh
-# hit N
+
+sudo /opt/pimpmykali/pimpmykali.sh
+# For a new kali vm, run menu option N
 # hit N for NO root login
 reboot
 ```
 
 ![](.gitbook/assets/2023-06-13_16-45-36_65.png)
 
-**Other Tools Install**
+### Other Tools Install
 
 ```bash
 # Sublime
@@ -422,10 +424,75 @@ sudo apt update && sudo apt install -y sublime-text
 wget https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg && sudo mv pub.gpg /usr/share/keyrings/vscodium-archive-keyring.asc
 sudo sh -c 'echo "deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.asc ] https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs vscodium main" > /etc/apt/sources.list.d/vscodium.list'
 sudo apt update && sudo apt install -y codium codium-insiders
+
+# AutoRecon + Scanning Tools
+sudo apt update
+sudo apt install -y python3 python3-pip seclists curl dnsrecon enum4linux feroxbuster gobuster impacket-scripts nbtscan nikto nmap onesixtyone oscanner redis-tools smbclient smbmap snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf
+sudo apt install -y python3-venv
+python3 -m pip install --user pipx
+python3 -m pipx ensurepath
+source ~/.zshrc
+pipx install git+https://github.com/Tib3rius/AutoRecon.git
 ```
 
-➡️ **Bash Scripting**
+### Bash Scripting & Piping
 
+➡️ **Ping Sweep Script**
 
+- Make a **`bash`** script that gathers data from a `ping` command during a **ping sweep** network scanning.
 
-## Python
+**`grep`** - print lines that match patterns
+
+```bash
+ping 192.168.31.135 -c 1 > ip.txt
+
+cat ip.txt | grep "64 bytes"
+# Prints only the line matching the grep string
+```
+
+```bash
+cat ip.txt | grep "64 bytes" | cut -d " " -f 4 | tr -d ":" 
+```
+
+![](.gitbook/assets/2023-06-20_13-53-15_93.png)
+
+**Script:** *Sweep every IP address in a specific subnet network* and export only the IPs that respond back.
+
+> 🔗 [Github - ipsweep repositories](https://github.com/search?q=ipsweep&type=repositories)
+
+```bash
+nano ipsweep.sh
+```
+
+```bash
+#!/bin/bash
+
+if [ "$1" == "" ]
+	then
+		echo "ERROR: Insert an IP address!"
+		echo "Syntax is: ./ipsweep.sh 192.168.1"
+	else
+		# For every IP in the subnet Ping and print the IP
+		# & = multiple loop instances at once
+		for ip in `seq 1 254`; do	
+		ping -c 1 $1.$ip | grep "64 bytes" | cut -d " " -f 4 | tr -d ":" &
+	done
+fi
+```
+
+```bash
+chmod +x ipsweep.sh
+./ipsweep.sh 192.168.31
+./ipsweep.sh 192.168.31 > ips.txt
+```
+
+**One liner `nmap` scan of ips.txt**
+
+```bash
+for ip in $(cat ips.txt); do nmap $ip; done
+```
+
+![](.gitbook/assets/2023-06-20_15-43-49_94.png)
+
+## [Python](https://docs.python.org/3/)
+
