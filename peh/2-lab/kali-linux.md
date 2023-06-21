@@ -10,7 +10,7 @@
 
 - 📌 Use `TAB` for autocompletion
 
-### ➡️ **File System Commands**
+### ➡️ **File System**
 
 **`sudo`** - run commands and tasks as a superuser or another user, with elevated privileges.
 
