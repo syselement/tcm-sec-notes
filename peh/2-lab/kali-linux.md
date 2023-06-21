@@ -10,7 +10,7 @@
 
 - 📌 Use `TAB` for autocompletion
 
-### ➡️ **File System**
+### ➡️ File System
 
 **`sudo`** - run commands and tasks as a superuser or another user, with elevated privileges.
 
@@ -161,7 +161,7 @@ nano test2.txt
 mousepad test3.txt
 ```
 
-### ➡️ **Users &  Permission**
+### ➡️ Users &  Permissions
 
 ![ls -la](.gitbook/assets/2023-06-13_15-31-52_57.png)
 
@@ -258,7 +258,7 @@ sudo -l
 sudo -ll
 ```
 
-### ➡️ **Network**
+### ➡️ Network
 
 ![Network](.gitbook/assets/2023-06-13_16-13-44_61.png)
 
@@ -319,7 +319,7 @@ netstat -tulpn
 ss -tnl
 ```
 
-### ➡️ **Services**
+### ➡️ Services
 
 **`service`** - manipulate services
 
