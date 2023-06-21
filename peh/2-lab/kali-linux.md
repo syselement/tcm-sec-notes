@@ -1,5 +1,7 @@
 # Intro to Kali Linux
 
+![](.gitbook/assets/kali.svg) [Kali Linux](https://www.kali.org/)
+
 ## Commands
 
 > 🔗 [explainshell.com](https://explainshell.com/)
