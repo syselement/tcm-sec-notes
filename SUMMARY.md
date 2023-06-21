@@ -50,6 +50,9 @@
 - [TCM - Practical Ethical Hacking](peh/README.md)
   - [1. Introduction & Networking](peh/1-intro/README.md)
   - [2. Lab Set Up, Linux & Python](peh/2-lab/README.md)
+    - [Intro to Kali Linux](peh/2-lab/kali-linux.md)
+    - [Intro to Python](peh/2-lab/python.md)
+  
   - [3. The Ethical Hacker Methodology](peh/3-eth-hack/README.md)
   - [4. Exploit Development (Buffer Overflow)](peh/4-exploit-dev/README.md)
   - [5. Active Directory](peh/5-active-directory/README.md)
