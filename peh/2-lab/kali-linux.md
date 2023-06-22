@@ -373,6 +373,8 @@ sudo apt install -y apt-transport-https curl duf flameshot htop neofetch net-too
 
 **`git`** - work with Git repository and version control
 
+> 🔗 [pimpmykali](https://github.com/Dewalt-arch/pimpmykali)
+
 ```bash
 # Clone a Github repository in the "/opt" dir
 cd /opt
