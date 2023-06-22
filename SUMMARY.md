@@ -46,7 +46,7 @@
     - [Regular Expressions, Searching, Replacing, Building](linux-101/9-regex/regex-use.md)
   - [10. Bash Scripting](linux-101/10-scripting/README.md)
     - [Bash Scripting Basics, Control Structures, Loops](linux-101/10-scripting/bash-script.md)
-  - [🌐 References](linux-101/linux101-references.md)
+  - [🌐 Linux101 References](linux-101/linux101-references.md)
 - [TCM - Practical Ethical Hacking](peh/README.md)
   - [1. Introduction & Networking](peh/1-intro/README.md)
   - [2. Lab Set Up, Linux & Python](peh/2-lab/README.md)
@@ -60,7 +60,7 @@
   - [7. Web Application](peh/7-webapp/README.md)
   - [8. Wireless Attacks](peh/8-wireless/README.md)
   - [9. Legal Documentation & Report Writing](peh/9-report/README.md)
-  - [🌐 References](peh/peh-references.md)
+  - [🌐 PEH References](peh/peh-references.md)
   
 
 ***
