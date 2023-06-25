@@ -187,7 +187,7 @@ Subnetting consists of dividing a network into multiple subnetworks/subnets.
 
   - Total hosts
     $$
-    2^{8} = 256-2=254
+    (2^{8} = 256)-2=254
     $$
     
   - Subnet Mask = `255.255.255.0`
