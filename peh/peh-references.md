@@ -53,7 +53,10 @@
 
 - [Python Documentation](https://docs.python.org/3/)
 - [LearnPython.org](https://www.learnpython.org/)
-- 
+- [Python Tutorial - W3Schools](https://www.w3schools.com/python/default.asp)
+- [Python Cheatsheet](https://www.pythoncheatsheet.org/)
+  - [Automate the Boring Stuff with Python - Book](https://automatetheboringstuff.com/)
+
 
 ## The Ethical Hacker Methodology
 
