@@ -475,3 +475,208 @@ print("Subtuple:",subtuple)
 ```
 
 ![](.gitbook/assets/2023-07-01_20-38-59_131.png)
+
+## [Looping](https://www.w3schools.com/python/python_for_loops.asp)
+
+```bash
+nano loops.py
+```
+
+➡️ **Looping** allows to repeat a block of code multiple times, iterating over a sequence and performing repetitive tasks.
+
+- [`for` loop](https://www.w3schools.com/python/python_for_loops.asp): *iterate over a sequence and execute a set of statements for each item in a list, tuple, string, set, dictionary*
+- [`while` loop](https://www.w3schools.com/python/python_while_loops.asp): *execute a set of statements as long as a condition is true*
+
+```python
+#!/bin/python3
+
+# Looping
+
+# "for" loops - start to finish of an iterate
+print("FOR Loop:")
+
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:	# iterate over each item in "fruits" list
+    print(fruit)
+	
+# "while" loops - execute as long as true, until false
+print("\nWHILE Loop:")
+
+count = 0
+while count < 10:	# as long as true, code will be executed
+    print(count)
+    count += 1
+
+# "break" statement - stop the loop prematurely
+print("\nBrake:")
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    break
+  print(x)
+
+# "continue" statement - skip current iteration and move to the next one
+print("\nContinue:")
+fruits = ["apple", "banana", "peach"]
+for y in fruits:
+	if y == "banana":
+		continue
+	print(y)
+```
+
+![](.gitbook/assets/2023-07-03_10-55-13_142.png)
+
+## [Advanced Strings](https://www.w3schools.com/python/python_strings_methods.asp)
+
+```bash
+nano strings.py
+```
+
+```python
+#!/bin/python3
+
+# Advanced Strings
+
+my_name = "sysElement"	# this string is immutable
+print(my_name[0])	# first letter
+print(my_name[-1])	# last letter
+
+sentence = "The quieter you become, the more you can hear."
+print("Sentence:\n",sentence)
+print(sentence[:3])		# Print everything before the index 3
+print("Sentence split:\n",sentence.split())	# Delimiter - default is a "space"
+
+sentence_split = sentence.split()
+sentence_join = ' '.join(sentence_split)
+print("Sentence join:\n",sentence_join)
+
+# Character escaping with \
+quote = 'The master said: "The quieter you become, the more you can hear."'
+print(quote)
+quote = "The master said: \"The quieter you become, the more you can hear.\""
+print(quote)
+
+# Strip
+too_much_space = "             master       "
+print(too_much_space.strip(),"\n")	# Default delimiter is "space"
+
+# Case insensitive
+print("A" in "Apple")	# TRUE
+print("a" in "Apple")	# FALSE
+
+letter = "A"
+word = "Apple"
+print(letter.lower() in word.lower())	# TRUE
+
+# String Formatting
+
+name = 'Alice'
+age = 30
+print("My name is %s and I'm %d years old." % (name, age))
+# Output: My name is Alice and I'm 30 years old.
+
+movie = "Minions"
+print("My favorite movie is {}.".format(movie))	# String format method
+print("My favorite movie is %s." % movie)	# % formatting
+print(f"My favorite movie is {movie}.")		# string literal
+```
+
+![](.gitbook/assets/2023-07-03_10-54-56_141.png)
+
+## [Dictionaries](https://www.w3schools.com/python/python_dictionaries.asp)
+
+```bash
+nano dict.py
+```
+
+➡️ **Dictionaries** are used to store, retrieve and manipulate data based on `key:value` pair values.
+
+- `dictionary = {"item1":value, "item2":value, "item3":value}`
+
+```python
+#!/bin/python3
+
+# Dictionaries - key/value pairs {}
+
+# Creation and access
+# The values can be of any data type
+employees = {"Finance": ["Bob", "Linda", "Tina"], "IT": ["Gene", "Alex", "Louise"], "HR": ["Jimmy", "John"]}
+print(employees)
+
+# Modification
+employees['Legal'] = ["Mr.Tex"]		# Add new key:value pair
+print(employees)
+
+employees.update({"Sales": ["Andie", "Ollie"]})		# Add new key:value pair
+print(employees)
+
+del employees["HR"]		# Delete a key:value pair
+print(employees,"\n")
+
+
+cocktails = {
+    "Mojito": 6,
+    "Long Island": 9,
+    "Lemon Drop": 8
+} # drink is key, price is value
+print("Cocktails Dictionary:\n",cocktails)
+print("Mojito price is:",cocktails["Mojito"],"\n")
+
+# Update a value
+cocktails['Long Island'] = 10
+print(cocktails)
+
+print("Long Island price is:",cocktails.get("Long Island"),"\n")
+
+# Iteration
+print("Cocktails Dictionary Lenght is:",len(cocktails))
+
+print("\nCocktails Dictionary contains:")
+for key in cocktails:
+	print(key, cocktails[key])
+```
+
+![](.gitbook/assets/2023-07-03_11-25-49_144.png)
+
+## [Modules](https://www.w3schools.com/python/python_modules.asp)
+
+```bash
+nano modules.py
+```
+
+➡️ **Modules** are like code libraries, containing a set of functions to include in the application.
+
+- reside in external Python files/libraries
+- `import <module>` 
+
+```python
+#!/bin/python3
+
+# Modules Importing
+
+#import math			# Import module
+#result = math.sqrt(25)
+#print(result)
+
+from math import sqrt	# Import specific functions or variables
+result = sqrt(25)		# Use function without prefixing module name
+print(result)
+
+import math as m 		# Import module as an alias
+result = m.sqrt(25)
+print(result)
+
+from math import *		# Import all functions and variables
+result = sqrt(25)		# Use functions without prefixing module name
+print(result)
+
+
+import sys 				# System functions and parameters
+from datetime import datetime as dt 	# Import with alias 
+print(sys.version)
+print(dt.now())
+```
+
+![](.gitbook/assets/2023-07-03_11-35-32_145.png)
+
+## Sockets
