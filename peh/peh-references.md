@@ -56,6 +56,7 @@
 - [Python Tutorial - W3Schools](https://www.w3schools.com/python/default.asp)
 - [Python Cheatsheet](https://www.pythoncheatsheet.org/)
   - [Automate the Boring Stuff with Python - Book](https://automatetheboringstuff.com/)
+- [Socket Programming in Python (Guide) - RealPython](https://realpython.com/python-sockets/)
 
 
 ## The Ethical Hacker Methodology

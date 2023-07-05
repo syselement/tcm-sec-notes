@@ -679,4 +679,86 @@ print(dt.now())
 
 ![](.gitbook/assets/2023-07-03_11-35-32_145.png)
 
-## Sockets
+## [Sockets](https://docs.python.org/3/library/socket.html)
+
+```bash
+nano s.py
+```
+
+➡️ **Sockets** are used to send messages across a network, enabling programs to establish connections, send and receive data over various network protocols.
+
+Primary `socket` module methods and functions are:
+
+- `socket()`
+- `.bind()`
+- `.listen()`
+- `.accept()`
+- `.connect()`
+- `.connect_ex()`
+- `.send()`
+- `.recv()`
+- `.close()`
+
+
+```python
+#!/bin/python3
+import socket
+
+### e.g. 1 - TCP SERVER
+# Create a TCP socket
+tcp_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+# AF_INET is for IPv4 - Address family
+# SOCK_STREAM is for the TCP port - Socket type
+
+# Create a UDP socket
+udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+# SOCK_DGRAM is for UDP port
+
+# Bind the socket to a specific address and port
+server_address = ('localhost', 1234)	# localhost = 127.0.0.1
+tcp_socket.bind(server_address)
+
+# Listen for incoming connections
+tcp_socket.listen(5)	# 5 is the "backlog" parameter
+# "backlog" = number of unaccepted connections that the system will allow before refusing new connections
+
+while True:
+    # Accept a client connection
+    client_socket, client_address = tcp_socket.accept()		# Return value is a pair (conn, address)
+
+    # Receive and send data
+    data = client_socket.recv(1024)		# Read data sent by client - 1024 = max buffer size
+
+    client_socket.send(b"Received: " + data)	# Return the number of bytes sent
+
+    # Close the client socket
+    client_socket.close()
+```
+
+![TCP Server](.gitbook/assets/2023-07-04_17-08-01_151.png)
+
+```bash
+nano s2.py
+```
+
+```python
+#!/bin/python3
+import socket
+
+### e.g. 2 - Connect to a port
+HOST = '127.0.0.1'	# localhost loopback address
+PORT = 5555
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect((HOST,PORT))
+```
+
+- Listen to the `5555` port with `nc` and launch the `s2.py` Python script.
+  - the socket will connect to the listening port
+
+```bash
+nc -nvlp 5555
+```
+
+![](.gitbook/assets/2023-07-04_17-14-16_152.png)
+
