@@ -2,7 +2,8 @@
 
 ## Kali Linux
 
-
+- Install a Kali Linux virtual machine using VirtualBox or VMware
+  - e.g. here [Kali VM Installation - VMware - syselement](https://blog.syselement.com/home/operating-systems/linux/distros/kali-vm)
 
 
 

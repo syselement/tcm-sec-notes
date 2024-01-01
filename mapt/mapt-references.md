@@ -17,9 +17,7 @@
 
 ### Mobile App Pentesting
 
-
-
-
+- [OWASP MASTG](https://mas.owasp.org/MASTG/)
 
 ## Lab Set Up
 
@@ -29,9 +27,12 @@
   - [Kali VM Installation - VMware - syselement](https://blog.syselement.com/home/operating-systems/linux/distros/kali-vm)
   - [pimpmykali](https://github.com/Dewalt-arch/pimpmykali)
 
+---
+
 ## Android
 
-
+- [Android Application Security](https://source.android.com/docs/security/overview/app-security)
+- [Android Platform Overview - MASTG](https://mas.owasp.org/MASTG/Android/0x05a-Platform-Overview/)
 
 ### Android Static Analysis
 
@@ -41,12 +42,13 @@
 
 
 
-
+---
 
 ## iOS
 
 - [iOS Custom Firmware Guide](https://ios.cfw.guide/)
 - [AppleDB - Software & Devices](https://appledb.dev/)
+- [iOS Platform Overview - MASTG](https://mas.owasp.org/MASTG/iOS/0x06a-Platform-Overview/)
 
 ### iOS Static Analysis
 
