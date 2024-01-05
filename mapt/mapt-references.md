@@ -49,7 +49,12 @@
 
 ### Android Static Analysis
 
-
+- [InjuredAndroid](https://github.com/B3nac/InjuredAndroid)
+- [AndroidManifest.xml](https://developer.android.com/guide/topics/manifest/manifest-intro)
+  - [Permissions](https://developer.android.com/reference/android/Manifest.permission)
+- [apktool](https://apktool.org/)
+- [jadx-gui](https://github.com/skylot/jadx)
+- [Mobile-Security-Framework-MobSF](https://github.com/MobSF/Mobile-Security-Framework-MobSF)
 
 ### Android Dynamic Analysis
 

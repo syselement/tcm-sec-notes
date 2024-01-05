@@ -57,6 +57,14 @@ cd /opt/genymobile/genymotion
 ./genymotion
 ```
 
+```bash
+# zipalign error fix
+sudo rm /usr/bin/zipalign
+sudo ln -s /home/syselement/Android/Sdk/build-tools/*/zipalign  /usr/bin/zipalign
+```
+
+
+
 ### Additional Personal Setup
 
 ```bash
@@ -73,6 +81,27 @@ local packages=(
     )
 sudo apt update && sudo apt install -y -o Debug::pkgProblemResolver=yes "${packages[@]}"
 ```
+
+- Use [`scrcpy`](https://github.com/Genymobile/scrcpy) (*screen copy*) to mirror Android devices connected via USB or LAN.
+
+```bash
+# Scrcopy
+cd /opt
+sudo apt install -y ffmpeg libsdl2-2.0-0 adb wget \
+	gcc git pkg-config meson ninja-build libsdl2-dev \
+	libavcodec-dev libavdevice-dev libavformat-dev libavutil-dev \
+	libswresample-dev libusb-1.0-0 libusb-1.0-0-dev
+sudo git clone https://github.com/Genymobile/scrcpy
+cd scrcpy
+sudo ./install_release.sh
+
+## Usage
+# scrcpy
+# scrcpy --no-audio
+# scrcpy --no-audio --record=file.mkv
+```
+
+
 
 ---
 
@@ -129,8 +158,6 @@ Use the Android Studio Device Manager to create 2 new Android Virtual Devices (*
 >
 > 🔗 Follow my [Android Rooting Guide](https://blog.syselement.com/home/pentesting-everything/mobile/labs/android-rooting) if necessary (root on a physical Google Pixel).
 
-
-
 ---
 
 ## ADB
@@ -149,6 +176,20 @@ adb kill-server	# Linux
 
 # Connect to the emulator via LAN
 adb -H <host_machine_IP> -P 5037 shell
+```
+
+---
+
+## MobSF
+
+```bash
+sudo mkdir -p ~/docker/mobsf
+
+chown 9901:9901 ~/docker/mobsf
+
+docker run -it --rm --name mobsf -p 8000:8000 -v ~/docker/mobsf:/home/mobsf/.MobSF opensecurity/mobile-security-framework-mobsf:latest
+
+# Set the above command as "mobsf" bash/zsh alias
 ```
 
 
