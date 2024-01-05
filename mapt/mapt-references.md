@@ -33,6 +33,19 @@
 
 - [Android Application Security](https://source.android.com/docs/security/overview/app-security)
 - [Android Platform Overview - MASTG](https://mas.owasp.org/MASTG/Android/0x05a-Platform-Overview/)
+- [Chmod Calculator](https://chmod-calculator.com/)
+- [Android API Levels](https://apilevels.com/)
+- [Kotlin](https://developer.android.com/kotlin)
+  - [Kotlin - JetBrains](https://kotlinlang.org/)
+
+- [Android Build Process](https://developer.android.com/build)
+  - [Deep dive into Android build process - Abhishek Kumar](https://me-abhishek92.medium.com/deep-dive-into-android-build-process-4282f2af6465)
+  - [Application Signing](https://developer.android.com/studio/publish/app-signing)
+
+- [apktool](https://apktool.org/)
+- [jadx](https://github.com/skylot/jadx)
+- [Android Studio](https://developer.android.com/studio)
+- [Genymotion](https://www.genymotion.com/)
 
 ### Android Static Analysis
 

@@ -3,9 +3,16 @@
 ## Kali Linux
 
 - Install a Kali Linux virtual machine using VirtualBox or VMware
-  - e.g. here [Kali VM Installation - VMware - syselement](https://blog.syselement.com/home/operating-systems/linux/distros/kali-vm)
+  - `e.g.` here [Kali VM Installation - VMware - syselement](https://blog.syselement.com/home/operating-systems/linux/distros/kali-vm)
 
-
+> 🔗 **TOOLS**
+>
+> - [pimpmykali](https://github.com/Dewalt-arch/pimpmykali)
+> - [adb](https://developer.android.com/tools/adb)
+> - [apktool](https://apktool.org/)
+> - [jadx](https://github.com/skylot/jadx)
+> - [Android Studio](https://developer.android.com/studio)
+> - [Genymotion](https://www.genymotion.com/)
 
 ### MAPT Course Setup
 
@@ -53,7 +60,7 @@ cd /opt/genymobile/genymotion
 ### Additional Personal Setup
 
 ```bash
-# my script
+# my script with additional tools
 
 local packages=(
         # Add software here
@@ -65,6 +72,83 @@ local packages=(
         sshpass terminator tree ugrep virt-manager vlc wget wkhtmltopdf zaproxy zipalign
     )
 sudo apt update && sudo apt install -y -o Debug::pkgProblemResolver=yes "${packages[@]}"
+```
+
+---
+
+## [Android Studio](https://developer.android.com/studio)
+
+> Android Studio is recommended for a Windows host machine, while Genymotion is a suitable alternative within the Kali VM due to Android Studio's instability.
+
+- Uncheck `Launch in .. tool window` in the Emulator Settings.
+
+![](.gitbook/assets/2024-01-05_16-38-30_289.png)
+
+![Android Studio Tools](.gitbook/assets/2024-01-05_15-35-46_285.png)
+
+Use the Android Studio Device Manager to create 2 new Android Virtual Devices (**AVD**)
+
+- one with the `Q` Release (**Android 10.0**/API Level 29) Google Play image
+- one with the `x86 Marshmallow` Release (**Android 6.0**/API Level 23)
+
+![](.gitbook/assets/2024-01-05_15-38-29_286.png)
+
+![](.gitbook/assets/2024-01-05_15-45-03_287.png)
+
+![](.gitbook/assets/2024-01-05_15-46-13_288.png)
+
+**Other Emulating Tools**
+
+> 🔗 [Genymotion](https://www.genymotion.com/)
+>
+> 🔗 [Xamarin (.NET)](https://dotnet.microsoft.com/en-us/apps/xamarin)
+
+---
+
+## Physical Device Setup
+
+### Developer Options / USB Debugging
+
+- [Developer Options](https://developer.android.com/studio/debug/dev-options) enabled on your device. To do this:
+  - Go to **Settings** > **About phone**.
+  - Tap on the **Build number** several times to enable `Developer Options`.
+  - Enter **System** > **Developer options**.
+  - Set the following options:
+    - Enable `OEM Unlocking`
+    - Disable `Automatic system updates`
+    - Enable `USB debugging`
+    - Enable `Wireless debugging`
+    - Enable `Disable adb authorization timeout`
+    - Enable `Stay awake (while charging)` (if wanted)
+
+> 📌 I will use a physical Android Sony device for this course. To enable automatic USB connection to the Kali VM, I've added a line to the `kali.vmx` VM config file, obtaining the `vid` and `pid` values from the vmware.log file.
+>
+> ```bash
+> usb.autoConnect.device0 = "vid:0fce pid:31f4 autoclean:1"
+> ```
+>
+> 🔗 Follow my [Android Rooting Guide](https://blog.syselement.com/home/pentesting-everything/mobile/labs/android-rooting) if necessary (root on a physical Google Pixel).
+
+
+
+---
+
+## ADB
+
+Access `ADB` shell from a VM/Networked Device.
+
+- Android Device Emulator is running on the HOST machine
+
+```bash
+# Start adb on host machine
+adb -a nodaemon server
+
+# if port is already in use, kill the process first
+taskkill /f /t /im adb.exe # Windows
+adb kill-server	# Linux
+
+# Connect to the emulator via LAN
+adb -H <host_machine_IP> -P 5037 shell
 ```
 
 
