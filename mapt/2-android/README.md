@@ -1,5 +1,7 @@
 # 2. Android Security
 
+![](.gitbook/assets/Android-logo.png)
+
 ## Android Architecture
 
 **[Android](https://source.android.com/docs/) is based on the Linux O.S.**
