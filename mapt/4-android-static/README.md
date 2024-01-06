@@ -114,7 +114,7 @@ cat ~/apks/InjuredAndroid/res/values/strings.xml
 cat ~/apks/InjuredAndroid/AndroidManifest.xml
 ```
 
-
+ 
 
 
 
