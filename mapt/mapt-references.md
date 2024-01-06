@@ -54,6 +54,7 @@
   - [Permissions](https://developer.android.com/reference/android/Manifest.permission)
 - [apktool](https://apktool.org/)
 - [jadx-gui](https://github.com/skylot/jadx)
+- [CyberChef](https://gchq.github.io/CyberChef)
 - [Mobile-Security-Framework-MobSF](https://github.com/MobSF/Mobile-Security-Framework-MobSF)
 
 ### Android Dynamic Analysis
