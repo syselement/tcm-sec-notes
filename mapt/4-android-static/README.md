@@ -325,13 +325,11 @@ echo -n '[nine!_flag]' | base64
 
 
 
-
-
-
+---
 
 ## MobSF Automated Analysis
 
-> 🔗 [MobSF](https://github.com/MobSF/Mobile-Security-Framework-MobSF)
+> 🔗 [MobSF](https://github.com/MobSF/Mobile-Security-Framework-MobSF) - *a security research platform for mobile applications in Android, iOS and Windows Mobile*
 
 Run `MobSF` (with Docker) and import the `InjuredAndroid.apk` into it for Static Analysis.
 
@@ -339,7 +337,27 @@ Run `MobSF` (with Docker) and import the `InjuredAndroid.apk` into it for Static
 docker run -it --rm --name mobsf -p 8000:8000 -v ~/docker/mobsf:/home/mobsf/.MobSF opensecurity/mobile-security-framework-mobsf:latest
 ```
 
-![MobSF - InjuredAndroid.apk](.gitbook/assets/2024-01-06_13-32-52_309.png)
+![MobSF - InjuredAndroid.apk](.gitbook/assets/2024-01-06_14-53-44_321.png)
+
+![MobSF Application Security Scorecard - InjuredAndroid 1.0.9](.gitbook/assets/2024-01-06_14-37-31_311.png)
+
+![](.gitbook/assets/2024-01-06_14-38-13_312.png)
+
+![](.gitbook/assets/2024-01-06_14-38-34_313.png)
+
+![](.gitbook/assets/2024-01-06_14-39-52_314.png)
+
+![](.gitbook/assets/2024-01-06_14-47-50_318.png)
+
+![](.gitbook/assets/2024-01-06_14-49-11_319.png)
+
+![](.gitbook/assets/2024-01-06_14-40-58_315.png)
+
+![](.gitbook/assets/2024-01-06_14-50-11_320.png)
+
+![](.gitbook/assets/2024-01-06_14-41-44_316.png)
+
+![](.gitbook/assets/2024-01-06_14-42-41_317.png)
 
 
 
