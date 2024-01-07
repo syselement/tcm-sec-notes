@@ -66,7 +66,11 @@ cd /opt/genymobile/genymotion
 ```bash
 # zipalign error fix
 sudo rm /usr/bin/zipalign
-sudo ln -s /home/syselement/Android/Sdk/build-tools/*/zipalign  /usr/bin/zipalign
+sudo ln -s ~/Android/Sdk/build-tools/*/zipalign /usr/bin/zipalign
+# or manual download & install zipalign
+# sudo apt remove zipalign
+# sudo wget http://ftp.us.debian.org/debian/pool/main/a/android-platform-build/zipalign_8.1.0+r23-2_amd64.deb -O /tmp/zipalign.deb
+# sudo dpkg -i /tmp/zipalign.deb
 ```
 
 
@@ -79,10 +83,10 @@ sudo ln -s /home/syselement/Android/Sdk/build-tools/*/zipalign  /usr/bin/zipalig
 local packages=(
         # Add software here
         aapt adb android-sdk-platform-tools apksigner apktool apt-transport-https aptitude bettercap 
-        btop burpsuite cifs-utils curl dbeaver duf exa flameshot firefox-esr flatpak fonts-firacode
+        btop burpsuite cifs-utils coreutils curl dbeaver duf exa flameshot firefox-esr flatpak fonts-firacode
         fonts-noto-color-emoji htop ideviceinstaller imagemagick jadx kate
         keepassxc libimobiledevice-utils libimobiledevice6 libusbmuxd-tools locate lolcat net-tools
-        npm openssl python3 python3-pip python3-venv pipx qpdfview sqlite3 sqlitebrowser
+        npm openssl python3 python3-pip python3-venv pipx pidcat qpdfview sqlite3 sqlitebrowser
         sshpass terminator tree ugrep virt-manager vlc wget wkhtmltopdf zaproxy zipalign
     )
 sudo apt update && sudo apt install -y -o Debug::pkgProblemResolver=yes "${packages[@]}"

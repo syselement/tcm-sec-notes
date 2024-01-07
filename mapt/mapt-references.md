@@ -67,8 +67,11 @@
 - [mitmproxy](https://mitmproxy.org/)
 - [Apktool](https://apktool.org/docs/install#linux)
 - [Frida](https://frida.re/)
+  - [Frida CodeShare](https://codeshare.frida.re/)
+
 - [Objection](https://github.com/sensepost/objection)
   - [Patching Android Applications - Objection](https://github.com/sensepost/objection/wiki/Patching-Android-Applications)
+- [pidcat](https://github.com/JakeWharton/pidcat)
 
 
 ---

@@ -26,6 +26,8 @@ A pentester need to [bypass Certificate Pinning](https://mas.owasp.org/MASTG/tec
 5. Intercept HTTPS Traffic (failing with active SSL Pinning)
 6. Use Objection/Frida tools to bypass SSL Pinning and intercept HTTPS Traffic
 
+---
+
 ## MobSF Dynamic Analysis
 
 > 🔗 [MobSF Dynamic Analyzer](https://mobsf.github.io/docs/#/dynamic_analyzer)
@@ -78,6 +80,8 @@ docker run -it --rm --name mobsf -p 8000:8000 -v ~/docker/mobsf:/home/mobsf/.Mob
 
 ![Dynamic Analyzer Report](.gitbook/assets/2024-01-07_01-02-01_335.png)
 
+---
+
 ## BurpSuite
 
 > 🔗 [Configuring an Android device to work with Burp Suite](https://portswigger.net/burp/documentation/desktop/mobile/config-android-device)
@@ -125,9 +129,13 @@ sudo apt update && sudo apt install -y burpsuite
 
 ![](.gitbook/assets/2024-01-07_01-45-17_343.png)
 
+---
+
 ## Frida & Objection
 
 > 🔗 [Frida](https://frida.re/) - *Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers*
+>
+> - [Frida Gadget](https://frida.re/docs/gadget/)
 >
 > 🔗 [Objection](https://github.com/sensepost/objection) - *a runtime mobile exploration toolkit, powered by Frida*
 >
@@ -151,11 +159,175 @@ adb uninstall b3nac.injuredandroid
 adb install InjuredAndroid.objection.apk
 ```
 
+> In case of "Can't Decode Resources" error with Kotlin apps, use the command
+>
+> ```bash
+> objection patchapk --source InjuredAndroid.apk --use-aapt2
+> ```
+
 ![](.gitbook/assets/2024-01-07_03-12-28_345.png)
 
+### Frida Manual Patching
 
+>  🔗[Using Frida on Android without root (Android App Patching)](https://koz.io/using-frida-on-android-without-root/)
 
+*Frida’s Gadget is a shared library meant to be loaded by programs to be instrumented when the Injected mode of operation isn’t suitable. Gadget gets kickstarted as soon as the dynamic linker executes its constructor function.*
 
+> - With split apks, use [patch-apk tool](https://github.com/NickstaDB/patch-apk) - *An APK patcher, for use with objection, that supports Android app bundles/split APKs*
 
-------
+1. Decompile the `apk`
+
+```bash
+cd ~/apks
+apktool d -r InjuredAndroid.apk
+# -r does not decompile resources
+```
+
+![apktool d -r InjuredAndroid.apk](.gitbook/assets/2024-01-07_09-08-37_347.png)
+
+2. Download frida native libraries (`frida-gadget`) for the CPU architecture of the physical/emulator device - [Frida release page](https://github.com/frida/frida/releases/)
+
+```bash
+# Get CPU architecture
+adb shell getprop ro.product.cpu.abi
+	arm64-v8a
+adb shell cat /proc/cpuinfo
+```
+
+3. Add the `frida-gadget` into the APK’s /lib folder for the correct architecture - e.g. `InjuredAndroid/lib/arm64-v8a`
+
+```bash
+cd ~/apks/InjuredAndroid/lib/arm64-v8a # depends on the CPU architecture
+
+wget -qO - https://github.com/frida/frida/releases/download/16.1.10/frida-gadget-16.1.10-android-arm64.so.xz | xz -d -c > libfrida-gadget.so
+```
+
+4. Inject `frida-gadget` into the bytecode (SMALI code) of the app, in a known exported activity or otherwise accessible Activity (usually `MainActivity.smali`, or `OnboardingActivity.smali`)
+
+```bash
+nano ~/apks/InjuredAndroid/smali/b3nac/injuredandroid/MainActivity.smali
+
+# add the following lines in the ".method public constructor"
+```
+
+```bash
+const-string v0, "frida-gadget"
+invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+```
+
+![](.gitbook/assets/2024-01-07_09-25-53_348.png)
+
+5. Add the Internet permission to the manifest if not already there (necessary for Frida to open a socket).
+6. Repackage the application
+
+```bash
+apktool b -o InjuredAndroid_repackaged.apk InjuredAndroid/
+```
+
+![](.gitbook/assets/2024-01-07_09-33-12_349.png)
+
+7. Sign the `InjuredAndroid_repackaged.apk` and `zipalign` the app
+
+```bash
+# Create a Keystore
+keytool -genkey -v -keystore demo.keystore -alias demokeys -keyalg RSA -keysize 2048 -validity 10000
+
+# Sign the APK
+jarsigner -sigalg SHA1withRSA -digestalg SHA1 -keystore demo.keystore -storepass demopw InjuredAndroid_repackaged.apk demokeys
+
+# Check the signing status
+jarsigner -verify --verbose InjuredAndroid_repackaged.apk
+
+# zipalign the APK
+zipalign -v 4 InjuredAndroid_repackaged.apk InjuredAndroid_repackaged-final.apk
+```
+
+8. Install the signed and aligned app
+
+```bash
+adb uninstall b3nac.injuredandroid
+adb install InjuredAndroid_repackaged-final.apk
+```
+
+9. Open the app and test Objection
+
+```bash
+frida-ps -Uai
+objection -g b3nac.injuredandroid explore
+```
+
+### Objection Usage
+
+```bash
+objection -g b3nac.injuredandroid explore
+
+# Some objection commands
+android sslpinning disable
+android clipboard monitor
+memory dump all /tmp/dumped
+android keystore list
+android keystore watch
+android root disable
+android root simulate
+```
+
+### Frida Codeshare
+
+> 🔗 [Frida CodeShare](https://codeshare.frida.re/)
+
+Find various Frida scripts in the Frida CodeShare projects.
+
+- `e.g.` 
+  - [Universal Android SSL Pinning Bypass with Frida](https://codeshare.frida.re/@pcipolloni/universal-android-ssl-pinning-bypass-with-frida/)
+  - [Frida Antiroot](https://codeshare.frida.re/@dzonerzy/fridantiroot/)
+  - [iOS App Info](https://codeshare.frida.re/@dki/ios-app-info/)
+
+```bash
+# Run it with
+frida -U --codeshare pcipolloni/universal-android-ssl-pinning-bypass-with-frida -f b3nac.injuredandroid
+
+frida -U --codeshare dzonerzy/fridantiroot -f b3nac.injuredandroid
+
+frida -U --codeshare dki/ios-app-info -f b3nac.injuredandroid
+
+# Or copy the code into a .js file and use it with frida/objection
+frida -U -f b3nac.injuredandroid -l fridantiroot.js
+```
+
+```bash
+# Objection
+objection -g b3nac.injuredandroid explore --startup-script fridantiroot.js
+
+objection -g b3nac.injuredandroid explore -s "android root disable"
+```
+
+---
+
+## Additional Dynamic Analysis
+
+### **App file system**
+
+Always check the `/data/data/` directory of the analyzed app.
+
+![](.gitbook/assets/2024-01-07_10-16-09_350.png)
+
+### **Logcat - Pidcat**
+
+Look through the `logcat` logs.
+
+- Check system and application logs with `logcat` or [`pidcat`](https://github.com/JakeWharton/pidcat) for unintended data leakage
+
+```bash
+# Logcat
+adb logcat | grep "$(adb shell ps | grep <package-name> | awk '{print $2}')"
+
+adb logcat -d -b all -v long -e b3nac.injuredandroid
+
+# Pidcat
+sudo apt install pidcat
+
+pidcat b3nac.injuredandroid
+```
+
+---
 

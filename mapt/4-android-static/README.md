@@ -44,6 +44,8 @@ adb install InjuredAndroid.apk
 
 ![](.gitbook/assets/2024-01-05_20-20-52_292.png)
 
+---
+
 ## [AndroidManifest.xml](https://developer.android.com/guide/topics/manifest/manifest-intro)
 
 The `AndroidManifest.xml` file contains essential information about the app, declaring the components of the app like minSDKVersion, Permissions, Activities, Services, Content Providers, Intent Filters, Debugging Info, etc.
@@ -114,6 +116,8 @@ cat ~/apks/InjuredAndroid/res/values/strings.xml
 cat ~/apks/InjuredAndroid/AndroidManifest.xml
 ```
 
+---
+
 ##  Hardcoded Strings
 
 **Hardcoded strings** refer to strings or text values that are directly written into the source code of a program, typically without being stored in a separate configuration file or resource file.
@@ -144,6 +148,8 @@ Threat vector can be login bypass with hardcoded credentials, exposed URLs and A
 Use the `Text search` tool to search the source code. Search for useful info like API, URLs, ids, passwords, SQL, Firebase, HTTP/HTTPS, secrets, sensitive data, etc.
 
 ![](.gitbook/assets/2024-01-06_11-36-39_296.png)
+
+---
 
 ## Injured Android Flags
 
