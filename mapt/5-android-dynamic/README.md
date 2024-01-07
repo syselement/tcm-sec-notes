@@ -127,15 +127,31 @@ sudo apt update && sudo apt install -y burpsuite
 
 ## Frida & Objection
 
-> 🔗 [Frida](https://frida.re/)
+> 🔗 [Frida](https://frida.re/) - *Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers*
 >
-> 🔗 [Objection](https://github.com/sensepost/objection)
+> 🔗 [Objection](https://github.com/sensepost/objection) - *a runtime mobile exploration toolkit, powered by Frida*
+>
+> 🔗 [Apktool](https://apktool.org/docs/install#linux)
 
+- Install first `Frida`, then `Objection`. Check the [Android Lab](../3-android-lab/README.md#frida-&-objection) for instructions.
 
+[Patch the Android app with Objection](https://github.com/sensepost/objection/wiki/Patching-Android-Applications) by automating the patching process (using aapt, adb, jarsigner, apktool).
 
+- *This command will determine the target architecture of your device using `adb`, extract the source APK, insert the INTERNET permission if it does not already exist, patch and embed the `frida-gadget.so` and repackage and sign a new APK for you.*
 
+```bash
+unset _JAVA_OPTIONS # may be necessary
 
+objection patchapk --source InjuredAndroid.apk
 
+# if no device connected, specify the target architecture using the --architecture flag.
+
+# Uninstall the original app and install the patched one
+adb uninstall b3nac.injuredandroid
+adb install InjuredAndroid.objection.apk
+```
+
+![](.gitbook/assets/2024-01-07_03-12-28_345.png)
 
 
 

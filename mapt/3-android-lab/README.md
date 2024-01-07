@@ -27,7 +27,12 @@ sudo ./pimpmykali.sh
 
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
 
-sudo apt install adb apktool default-jdk jadx
+sudo apt install adb default-jdk jadx jarsigner
+
+# Apktool
+sudo wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.9.2.jar -O /usr/local/bin/apktool.jar
+sudo wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -O /usr/local/bin/apktool
+sudo chmod +x /usr/local/bin/apktool*
 
 # Android Studio #
 sudo dpkg --add-architecture i386
@@ -190,6 +195,35 @@ chown 9901:9901 ~/docker/mobsf
 docker run -it --rm --name mobsf -p 8000:8000 -v ~/docker/mobsf:/home/mobsf/.MobSF opensecurity/mobile-security-framework-mobsf:latest
 
 # Set the above command as "mobsf" bash/zsh alias
+```
+
+---
+
+## Frida & Objection
+
+```bash
+# Frida with pipx
+# Install pipx to manage frida-tools in its own VirtualEnv
+sudo apt update
+sudo apt install -y python3 python3-pip python3-venv pipx
+# sudo rm -rf ~/.local/pipx
+python3 -m pipx ensurepath
+pipx install frida-tools
+pipx upgrade frida-tools
+
+# Restart zsh terminal
+```
+
+```bash
+# Objection
+sudo apt update
+sudo apt install -y python3 python3-pip python3-venv pipx
+python3 -m pipx ensurepath
+pipx install objection
+pipx upgrade objection
+pip install typing-extensions --upgrade
+
+# Restart zsh terminal
 ```
 
 
