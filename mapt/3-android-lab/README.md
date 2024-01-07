@@ -30,6 +30,7 @@ sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
 sudo apt install adb default-jdk jadx jarsigner
 
 # Apktool
+# make sure to get the latest apktool_*.jar link for the following wget
 sudo wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.9.2.jar -O /usr/local/bin/apktool.jar
 sudo wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -O /usr/local/bin/apktool
 sudo chmod +x /usr/local/bin/apktool*

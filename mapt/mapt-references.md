@@ -65,8 +65,11 @@
 - [BurpSuite](https://portswigger.net/burp/communitydownload)
 - [Proxyman (macOS)](https://github.com/ProxymanApp/Proxyman)
 - [mitmproxy](https://mitmproxy.org/)
+- [Apktool](https://apktool.org/docs/install#linux)
 - [Frida](https://frida.re/)
 - [Objection](https://github.com/sensepost/objection)
+  - [Patching Android Applications - Objection](https://github.com/sensepost/objection/wiki/Patching-Android-Applications)
+
 
 ---
 
