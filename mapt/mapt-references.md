@@ -59,7 +59,14 @@
 
 ### Android Dynamic Analysis
 
- 
+- [Bypassing Certificate Pinning](https://mas.owasp.org/MASTG/techniques/android/MASTG-TECH-0012/)
+  - [SSL Bypassing - Neelam Soni](https://medium.com/@neelamsoni/ssl-bypassing-without-using-jailbroken-ios-device-and-burpsuit-447f4fd3c210)
+  - [SSL Pinning and Vulnerabilities Handling in Android - Sachin Rajput](https://medium.com/native-mobile-bits/ssl-pinning-and-vulnerabilities-handling-in-android-57e347feb39b)
+- [BurpSuite](https://portswigger.net/burp/communitydownload)
+- [Proxyman (macOS)](https://github.com/ProxymanApp/Proxyman)
+- [mitmproxy](https://mitmproxy.org/)
+- [Frida](https://frida.re/)
+- [Objection](https://github.com/sensepost/objection)
 
 ---
 

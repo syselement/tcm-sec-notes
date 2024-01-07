@@ -47,8 +47,8 @@ cd /opt/android-studio/bin
 ## Open a New project and go to Tools > Create Command-line Launcher & Create Desktop Entry
 
 # Genymotion #
-sudo apt install -y virtualbox adb
-sudo wget https://dl.genymotion.com/releases/genymotion-3.5.1/genymotion-3.5.1-linux_x64.bin -O /tmp/genymotion.bin
+sudo apt install -y adb virtualbox virtualbox-dkms virtualbox-ext-pack
+sudo wget https://dl.genymotion.com/releases/genymotion-3.6.0/genymotion-3.6.0-linux_x64.bin -O /tmp/genymotion.bin
 
 sudo chmod +x genymotion.bin
 sudo ./genymotion.bin
@@ -73,7 +73,7 @@ sudo ln -s /home/syselement/Android/Sdk/build-tools/*/zipalign  /usr/bin/zipalig
 local packages=(
         # Add software here
         aapt adb android-sdk-platform-tools apksigner apktool apt-transport-https aptitude bettercap 
-        btop cifs-utils curl dbeaver duf exa flameshot firefox-esr flatpak fonts-firacode
+        btop burpsuite cifs-utils curl dbeaver duf exa flameshot firefox-esr flatpak fonts-firacode
         fonts-noto-color-emoji htop ideviceinstaller imagemagick jadx kate
         keepassxc libimobiledevice-utils libimobiledevice6 libusbmuxd-tools locate lolcat net-tools
         npm openssl python3 python3-pip python3-venv pipx qpdfview sqlite3 sqlitebrowser
