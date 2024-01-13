@@ -19,7 +19,7 @@
 ```bash
 cd
 mkdir repo
-cd repo
+cd ~/repo
 git clone https://github.com/Dewalt-arch/pimpmykali
 cd pimpmykali
 sudo ./pimpmykali.sh
@@ -34,6 +34,10 @@ sudo apt install adb default-jdk jadx jarsigner
 sudo wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.9.2.jar -O /usr/local/bin/apktool.jar
 sudo wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -O /usr/local/bin/apktool
 sudo chmod +x /usr/local/bin/apktool*
+
+#Path-apk
+cd ~/repo
+git clone https://github.com/NickstaDB/patch-apk.git
 
 # Android Studio #
 sudo dpkg --add-architecture i386
@@ -231,7 +235,17 @@ pip install typing-extensions --upgrade
 # Restart zsh terminal
 ```
 
-
-
 ------
+
+## Tools Update
+
+```bash
+pipx upgrade frida-tools
+pipx upgrade objection
+pipx upgrade-all
+```
+
+- [Apktool](https://apktool.org/docs/install#linux)
+
+---
 

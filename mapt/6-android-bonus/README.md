@@ -35,8 +35,6 @@ mv base.apk temu.apk
 
 # or use apkpull tool by david-lee
 curl -sL bit.ly/apkpull | bash -s -- com.einnovation.temu -d .
-
-
 ```
 
 Open `base.apk` in `jadx-gui`
@@ -126,6 +124,36 @@ sqlitebrowser google_app_measurement_local.db
 ```
 
 Interaction with all the app's functions is important to further analyze the app during dynamic analysis.
+
+**Patching APK**
+
+> [patch-apk](https://github.com/NickstaDB/patch-apk) tool can also be used for identifying the package name, extracting APKs, patching with `objection`, consolidating split APKs, enabling CA certificates, uninstalling the original app, and installing the patched version.
+
+```bash
+# Usage
+cd ~/repo
+git clone https://github.com/NickstaDB/patch-apk.git
+cd ~/repo/patch-apk
+apktool empty-framework-dir --force
+
+python3 patch-apk.py com.einnovation.temu
+
+# In case of apktool error
+mv ~/.local/share/apktool/framework/1.apk ~/.local/share/apktool/framework/1.apk.bak
+# Get a proper framework apk from a device /system/framework
+adb pull /system/framework/framework-res.apk
+mv framework-res.apk ~/.local/share/apktool/framework/1.apk
+
+# Re-run patck-apk
+python3 patch-apk.py com.einnovation.temu
+```
+
+Reinstall the new patched app in the phone
+
+```bash
+adb uninstall com.einnovation.temu
+adb install com.einnovation.temu-patched
+```
 
 ---
 

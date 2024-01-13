@@ -68,9 +68,10 @@
 - [Apktool](https://apktool.org/docs/install#linux)
 - [Frida](https://frida.re/)
   - [Frida CodeShare](https://codeshare.frida.re/)
-
 - [Objection](https://github.com/sensepost/objection)
   - [Patching Android Applications - Objection](https://github.com/sensepost/objection/wiki/Patching-Android-Applications)
+  - [Patching an APK with Objection – CorSecure](https://corsecure.blog/2023/09/07/patching-an-apk-with-objection/)
+  - [patch-apk](https://github.com/NickstaDB/patch-apk)
 - [pidcat](https://github.com/JakeWharton/pidcat)
 
 
