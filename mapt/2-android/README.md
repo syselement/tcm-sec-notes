@@ -37,7 +37,7 @@ Apps can communicate with each other either through granted permissions or, more
 
 [**Android Architecture**](https://mas.owasp.org/MASTG/Android/0x05a-Platform-Overview/#android-architecture)
 
-![The Android software stack - https://developer.android.com/guide/platform](.gitbook/assets/image-20240105130524892.png)
+![The Android software stack - https://developer.android.com/guide/platform](.gitbook/assets/android-software-stack.png)
 
 ### Kernel
 

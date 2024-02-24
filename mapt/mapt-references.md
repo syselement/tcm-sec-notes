@@ -91,7 +91,13 @@
 
 - [iOS Custom Firmware Guide](https://ios.cfw.guide/)
 - [AppleDB - Software & Devices](https://appledb.dev/)
+- [Apple Platform Security](https://support.apple.com/guide/security/welcome/web)
 - [iOS Platform Overview - MASTG](https://mas.owasp.org/MASTG/iOS/0x06a-Platform-Overview/)
+- [Apple Developer Program](https://developer.apple.com/programs/)
+- [Xcode](https://developer.apple.com/documentation/xcode)
+- [IPATool](https://github.com/majd/ipatool)
+- [Corellium Virtual Hardware](https://www.corellium.com/)
+- [Appetize.io](https://appetize.io/)
 
 ### iOS Static Analysis
 
