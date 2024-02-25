@@ -2,14 +2,16 @@
 
 > ❗ A MacOS device is required for the lab setup and pentesting, while whenever feasible, both static and dynamic analyses in the course will be conducted using the [Kali VM](../3-android-lab/README.md).
 
-- Open Mac App Store and install [Xcode](https://developer.apple.com/documentation/xcode)
+Open Mac App Store and install [Xcode](https://developer.apple.com/documentation/xcode)
 
 ![](.gitbook/assets/2024-02-24_20-00-26_419.png)
 
-- With the Xcode project, source code can be analyzed
-  - Xcode Simulator can be used to run the app
-- Create an [Apple Developer](https://developer.apple.com/programs/) account and **configure it in Xcode Accounts to manage certificates for app signing**
-- Tools such as [AnyTrans](https://www.imobie.com/anytrans/) or [iMazing](https://imazing.com/) (suggested) can be used to pull apps from the App Store and export `.ipa` apps
+With the Xcode project, source code can be analyzed
+- Xcode Simulator can be used to run the app
+
+Create an [Apple Developer](https://developer.apple.com/programs/) account and **configure it in Xcode Accounts to manage certificates for app signing**
+
+Tools such as [AnyTrans](https://www.imobie.com/anytrans/) or [iMazing](https://imazing.com/) (suggested) can be used to pull apps from the App Store and export `.ipa` apps
 
 ![iMazing](.gitbook/assets/2024-02-24_20-12-01_420.png)
 
@@ -39,9 +41,9 @@ ipatool download --bundle-identifier <bundleIDFromSearchCommand>
 # .ipa is downloaded
 ```
 
-- Paid emulator tools
-  - [Corellium Virtual Hardware](https://www.corellium.com/)
-  - [Appetize.io](https://appetize.io/)
+Paid emulator tools
+- [Corellium Virtual Hardware](https://www.corellium.com/)
+- [Appetize.io](https://appetize.io/)
 
 ------
 

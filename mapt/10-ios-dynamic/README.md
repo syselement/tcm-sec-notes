@@ -21,6 +21,8 @@ Install and configure `Burpsuite` following the same steps [here](../5-android-d
 
 ![](.gitbook/assets/2024-02-25_02-08-07_429.png)
 
+---
+
 ## Proxyman for iOS
 
 > 🔗 [Proxyman for iOS](https://docs.proxyman.io/proxyman-ios/vpn-and-proxyman-certificate)
@@ -44,9 +46,15 @@ Install and configure `Burpsuite` following the same steps [here](../5-android-d
 
 - Install `Proxyman for MacOS` on a Mac device and follow the iOS Setup Guide to configure the proxy
 
+---
+
 ## SSL Pinning iOS
 
-- On a jailbroken device, `Objection` can be used to disable SSL Pinning
+>  🔗 [SSL Kill Switch 2](https://github.com/nabla-c0d3/ssl-kill-switch2/issues/98) - (Old) tool to disable SSL certificate validation - including certificate pinning - within iOS and macOS applications.
+>
+> 🔗 [Objection](https://github.com/sensepost/objection)
+
+- On a jailbroken device, `Objection` can be used to disable SSL Pinning and see HTTPS traffic using a proxy
 
 ```bash
 # MacOS
@@ -61,9 +69,24 @@ pipx ensurepath
 objection -g <AppName> explore -s "ios sslpinning disable"
 ```
 
+---
+
 ## Jailbreaking
 
-> ❗ Use Jailbreaking with caution!
+> ❗ Use Jailbreaking with caution! Jailbreaking is legal in the US but may have legal implications in other countries.
+>
+> 🔗 [iOS CFW Guide](https://ios.cfw.guide/)
+
+[**Jailbreaking**](https://support.apple.com/guide/iphone/unauthorized-modification-of-ios-iph9385bb26a/ios) is the process of unlocking an iOS device to customize its functionality beyond Apple's restrictions, enabling the installation of custom apps and tweaks for a personalized user experience.
+
+- iOS prioritizes security and reliability with built-in protections against malware, viruses, but jailbreaking can compromise these safeguards, leading to security risks, instability, and reduced battery life
+- Jailbreaking iOS is necessary to conduct full iOS penetration testing
+- [Types of jailbreak](https://ios.cfw.guide/types-of-jailbreak/)
+
+> 📌 Follow my [iOS Jailbreak Guide](https://blog.syselement.com/home/pentesting-everything/mobile/labs/ios-jailbreak) and make sure you always check for updated commands/guides before step into jailbreaking.
+>
+> - A good resource website is [iOS CFW Guide - Get Started](https://ios.cfw.guide/get-started/)
+> - Different devices will require different steps and tools to jailbreak an iOS!
 
 ------
 

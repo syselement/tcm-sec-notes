@@ -6,9 +6,9 @@
 >
 > - 🧪  `e.g.` - [1.1.1.1 - com.cloudflare.1dot1dot1dot1](https://hackerone.com/cloudflare) Cloudflare iOS is in scope
 
-- Unzip an `.ipa` file and check the various files inside it
-  - Inside the `Payload` folder check for `plist` files, `Framekworks` folder for app's source code, other `json` files on different folders
-  - Check for hardcoded strings in the files.
+Unzip the `.ipa` file and check the various files inside it
+- Inside the `Payload` folder check for `plist` files, `Framekworks` folder for app's source code, other `json` files on different folders
+- Check for hardcoded strings in the files.
 
 ![](.gitbook/assets/2024-02-25_00-38-23_421.png)
 
@@ -16,8 +16,8 @@
 
 ![Info.plist](.gitbook/assets/2024-02-25_00-48-49_423.png)
 
-- Run MobSF and import the `.ipa` file into it for local static analysis
-  - Check the sections, look for different files, strings and look through interesting information about the app
+Run MobSF and import the `.ipa` file into it for local static analysis
+- Check the sections, look for different files, strings and look through interesting information about the app
 
 ![MobSF - 1.1.1.1.ipa](.gitbook/assets/2024-02-25_01-25-16_424.png)
 

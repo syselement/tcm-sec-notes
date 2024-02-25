@@ -3,7 +3,6 @@
 * [Mobile Application Penetration Testing - TCM](https://academy.tcm-sec.com/p/mobile-application-penetration-testing)
 * [OWASP MASTG (Mobile Application Security Testing Guide)](https://mas.owasp.org/MASTG/)
 * [OWASP Mobile Top 10](https://owasp.org/www-project-mobile-top-10/)
-* [SecJuice Intro to Frida & Objection](https://www.secjuice.com/objection-frida-guide/)
 * [HackTricks - Android APK Checklist](https://book.hacktricks.xyz/mobile-pentesting/android-checklist)
 * [HackTricks - iOS Pentesting Checklist](https://book.hacktricks.xyz/mobile-pentesting/ios-pentesting-checklist)
 * [Course and FAQs - Discord](https://discord.gg/tcm)
@@ -83,8 +82,6 @@
 - [Ghost Framework](https://github.com/kp-forks/ghost-1)
   - [Protect Your Phone From Hackers Now! Watch How Hackers Remotely Access A Phone! - Loi Liang Yang](https://www.youtube.com/watch?v=0eAafqElwik)
 
-
-
 ---
 
 ## iOS
@@ -99,13 +96,13 @@
 - [Corellium Virtual Hardware](https://www.corellium.com/)
 - [Appetize.io](https://appetize.io/)
 
-### iOS Static Analysis
-
-
-
 ### iOS Dynamic Analysis
 
 - [Proxyman for iOS](https://docs.proxyman.io/proxyman-ios/vpn-and-proxyman-certificate)
 - [Atlantis for iOS](https://docs.proxyman.io/atlantis/atlantis-for-ios)
-- [iOS Pentesting Tools Part 3: Frida and Objection](https://www.allysonomalley.com/2018/12/20/ios-pentesting-tools-part-3-frida-and-objection/)
+- [SecJuice Intro to Frida & Objection](https://www.secjuice.com/objection-frida-guide/)
+  - [iOS Pentesting Tools Part 3: Frida and Objection](https://www.allysonomalley.com/2018/12/20/ios-pentesting-tools-part-3-frida-and-objection/)
+- [iOS CFW Guide](https://ios.cfw.guide/)
+
+---
 
