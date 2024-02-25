@@ -8,8 +8,8 @@
 
 - With the Xcode project, source code can be analyzed
   - Xcode Simulator can be used to run the app
-- Create an [Apple Developer](https://developer.apple.com/programs/) account and configure it in Xcode Accounts to manage certificates for app signing.
-- Tools such as [AnyTrans](https://www.imobie.com/anytrans/) or [iMazing](https://imazing.com/) (suggested) can be used to pull apps from the App Store and export `.ipa` apps.
+- Create an [Apple Developer](https://developer.apple.com/programs/) account and **configure it in Xcode Accounts to manage certificates for app signing**
+- Tools such as [AnyTrans](https://www.imobie.com/anytrans/) or [iMazing](https://imazing.com/) (suggested) can be used to pull apps from the App Store and export `.ipa` apps
 
 ![iMazing](.gitbook/assets/2024-02-24_20-12-01_420.png)
 

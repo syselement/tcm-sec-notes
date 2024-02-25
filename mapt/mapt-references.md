@@ -105,5 +105,7 @@
 
 ### iOS Dynamic Analysis
 
-
+- [Proxyman for iOS](https://docs.proxyman.io/proxyman-ios/vpn-and-proxyman-certificate)
+- [Atlantis for iOS](https://docs.proxyman.io/atlantis/atlantis-for-ios)
+- [iOS Pentesting Tools Part 3: Frida and Objection](https://www.allysonomalley.com/2018/12/20/ios-pentesting-tools-part-3-frida-and-objection/)
 
