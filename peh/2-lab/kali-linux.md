@@ -368,7 +368,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install cron-daemon-common
 
 # Install some useful tools
-sudo apt install -y apt-transport-https curl duf flameshot htop neofetch net-tools speedtest-cli telegram-desktop tor tree vlc wget
+sudo apt install -y apt-transport-https btop curl duf eza flameshot htop kali-wallpapers-all neofetch net-tools pipx speedtest-cli telegram-desktop terminator tor tree vlc wget
 ```
 
 **`git`** - work with Git repository and version control
@@ -393,14 +393,26 @@ reboot
 
 ```bash
 # Sublime
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt update && sudo apt install -y sublime-text
+sudo sh -c '
+    wget -qO- https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor -o /usr/share/keyrings/sublimehq-archive.gpg &&
+    echo "deb [arch="$(dpkg --print-architecture)" signed-by=/usr/share/keyrings/sublimehq-archive.gpg] https://download.sublimetext.com/ apt/stable/" | tee /etc/apt/sources.list.d/sublime-text.list &&
+    apt update &&
+    apt install -y sublime-text
+'
+
+# Brave
+sudo sh -c '
+    apt install -y curl &&
+    curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg &&
+    echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main" | tee /etc/apt/sources.list.d/brave-browser-release.list &&
+    apt update &&
+    apt install -y brave-browser
+'
 
 # VSCodium
 wget https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg && sudo mv pub.gpg /usr/share/keyrings/vscodium-archive-keyring.asc
 sudo sh -c 'echo "deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.asc ] https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs vscodium main" > /etc/apt/sources.list.d/vscodium.list'
-sudo apt update && sudo apt install -y codium codium-insiders
+sudo apt update && sudo apt install -y codium
 
 # AutoRecon + Scanning Tools
 sudo apt update
