@@ -8,7 +8,5 @@
 - [x] [Mobile Application Penetration Testing](mapt/README.md) by [Aaron Wilson](https://www.linkedin.com/in/wilson-security/overlay/about-this-profile/)
 - [ ] [Practical Ethical Hacking](peh/README.md) by [Heath Adams](https://www.thecybermentor.com/)
 
-
-
-
+---
 
