@@ -83,7 +83,7 @@ objection -g <AppName> explore -s "ios sslpinning disable"
 - Jailbreaking iOS is necessary to conduct full iOS penetration testing
 - [Types of jailbreak](https://ios.cfw.guide/types-of-jailbreak/)
 
-> 📌 Follow my [iOS Jailbreak Guide](https://blog.syselement.com/home/pentesting-everything/mobile/labs/ios-jailbreak) and make sure you always check for updated commands/guides before step into jailbreaking.
+> 📌 Follow my [iOS Jailbreak Guide](https://blog.syselement.com/home/cyber-everything/mobile/labs/ios-jailbreak) and make sure you always check for updated commands/guides before step into jailbreaking.
 >
 > - A good resource website is [iOS CFW Guide - Get Started](https://ios.cfw.guide/get-started/)
 > - Different devices will require different steps and tools to jailbreak an iOS!

@@ -48,3 +48,6 @@ Instructor: [Aaron Wilson](https://www.linkedin.com/in/wilson-security/overlay/a
 > ### ❗ Disclaimer
 >
 > * **Do not use the covered attacks and techniques on real Mobile Applications, IP addresses, hosts or networks without proper authorization!**
+
+---
+

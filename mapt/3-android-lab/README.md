@@ -170,7 +170,7 @@ Use the Android Studio Device Manager to create 2 new Android Virtual Devices (*
 > usb.autoConnect.device0 = "vid:0fce pid:31f4 autoclean:1"
 > ```
 >
-> 🔗 Follow my [Android Rooting Guide](https://blog.syselement.com/home/pentesting-everything/mobile/labs/android-rooting) if necessary (root on a physical Google Pixel).
+> 🔗 Follow my [Android Rooting Guide](https://blog.syselement.com/home/cyber-everything/mobile/labs/android-rooting) if necessary (root on a physical Google Pixel).
 
 ---
 
