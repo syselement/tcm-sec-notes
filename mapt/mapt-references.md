@@ -6,6 +6,7 @@
 * [HackTricks - Android APK Checklist](https://book.hacktricks.xyz/mobile-pentesting/android-checklist)
 * [HackTricks - iOS Pentesting Checklist](https://book.hacktricks.xyz/mobile-pentesting/ios-pentesting-checklist)
 * [Course and FAQs - Discord](https://discord.gg/tcm)
+* [awesome-mobile-security](https://github.com/vaib25vicky/awesome-mobile-security)
 
 ## Introduction
 
