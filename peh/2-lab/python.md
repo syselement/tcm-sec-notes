@@ -9,12 +9,15 @@
 > 🔗 [Python Cheatsheet](https://www.pythoncheatsheet.org/)
 >
 > 🔗 [Python Tutorial - W3Schools](https://www.w3schools.com/python/default.asp)
+>
+> 🔗 [VsCode Linux setup](https://code.visualstudio.com/docs/setup/linux#_debian-and-ubuntu-based-distributions)
 
 ```bash
 mkdir ~/tcm/peh/python
 nano first.py
-# or with Sublime installed
+# or with Sublime, VsCode installed
 subl first.py
+code first.py
 ```
 
 - Example of Python script
@@ -38,7 +41,13 @@ chmod +x first.py
 python3 first.py
 ```
 
+---
+
 ## [Strings](https://docs.python.org/3/tutorial/introduction.html#strings)
+
+```bash
+nano strings.py
+```
 
 ```python
 #!/bin/python3
@@ -78,6 +87,8 @@ print(my_string.upper())
 
 ![](.gitbook/assets/2023-06-28_00-17-23_123.png)
 
+---
+
 ## [Math](https://docs.python.org/3/library/math.html?highlight=math#module-math)
 
 ```bash
@@ -104,6 +115,8 @@ print(math.sin(math.pi/2)) # Calculate sine of pi/2 (in radians)
 ```
 
 ![](.gitbook/assets/2023-06-27_19-33-02_117.png)
+
+---
 
 ## [Variables](https://www.w3schools.com/python/python_variables.asp) & Methods
 
@@ -144,6 +157,8 @@ print('\n')
 ```
 
 ![](.gitbook/assets/2023-06-27_20-09-27_118.png)
+
+---
 
 ## [Functions](https://www.w3schools.com/python/python_functions.asp)
 
@@ -212,6 +227,8 @@ nl()
 ```
 
 ![](.gitbook/assets/2023-06-27_20-37-26_121.png)
+
+---
 
 ## [Booleans](https://www.w3schools.com/python/python_booleans.asp) & [Operators](https://www.w3schools.com/python/python_operators.asp)
 
@@ -284,6 +301,8 @@ print("",not (x == y))		# Output: True - negates the value of the operand
 
 ![](.gitbook/assets/2023-06-28_00-16-16_122.png)
 
+---
+
 ## [Conditional Statements](https://www.w3schools.com/python/python_conditions.asp)
 
 ```bash
@@ -349,6 +368,8 @@ else:
 ```
 
 ![](.gitbook/assets/2023-07-01_19-37-07_128.png)
+
+---
 
 ## [Lists](https://www.w3schools.com/python/python_lists.asp)
 
@@ -440,6 +461,8 @@ print(grades)
 
 ![](.gitbook/assets/2023-07-01_20-20-58_129.png)
 
+---
+
 ## [Tuples](https://www.w3schools.com/python/python_tuples.asp)
 
 ```bash
@@ -475,6 +498,8 @@ print("Subtuple:",subtuple)
 ```
 
 ![](.gitbook/assets/2023-07-01_20-38-59_131.png)
+
+---
 
 ## [Looping](https://www.w3schools.com/python/python_for_loops.asp)
 
@@ -525,6 +550,8 @@ for y in fruits:
 ```
 
 ![](.gitbook/assets/2023-07-03_10-55-13_142.png)
+
+---
 
 ## [Advanced Strings](https://www.w3schools.com/python/python_strings_methods.asp)
 
@@ -583,6 +610,8 @@ print(f"My favorite movie is {movie}.")		# string literal
 
 ![](.gitbook/assets/2023-07-03_10-54-56_141.png)
 
+---
+
 ## [Dictionaries](https://www.w3schools.com/python/python_dictionaries.asp)
 
 ```bash
@@ -638,6 +667,8 @@ for key in cocktails:
 
 ![](.gitbook/assets/2023-07-03_11-25-49_144.png)
 
+---
+
 ## [Modules](https://www.w3schools.com/python/python_modules.asp)
 
 ```bash
@@ -678,6 +709,8 @@ print(dt.now())
 ```
 
 ![](.gitbook/assets/2023-07-03_11-35-32_145.png)
+
+---
 
 ## [Sockets](https://docs.python.org/3/library/socket.html)
 
@@ -761,4 +794,115 @@ nc -nvlp 5555
 ```
 
 ![](.gitbook/assets/2023-07-04_17-14-16_152.png)
+
+---
+
+## e.g. Port scanner
+
+- Port scanning of an IP address
+
+> This port scanner is a proof-of-concept not optimized script
+
+```bash
+nano scanner.py
+```
+
+```bash
+#!/bin/python3
+
+import sys
+import socket
+from datetime import datetime
+
+# Define target
+if len(sys.argv) == 2:
+	target = socket.gethostbyname(sys.argv[1]) #Translate hostname to IPv4
+else:
+	print("Invalid amount of arguments.")
+	print("Syntax: python3 scanner.py <ip>")
+
+#Add a pretty banner
+print("-" * 50)
+print("Scanning target "+target)
+print("Time started: "+str(datetime.now()))
+print("-" * 50)
+
+try:
+	for port in range(50,85):
+		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+		socket.setdefaulttimeout(1)
+		result = s.connect_ex((target,port)) #returns an error indicator - if port is open it throws a 0, otherwise 1
+		if result == 0:
+			print("Port {} is open".format(port))
+		s.close()
+
+except KeyboardInterrupt:
+	print("\nExiting program.")
+	sys.exit()
+	
+except socket.gaierror:
+	print("Hostname could not be resolved.")
+	sys.exit()
+
+except socket.error:
+	print("Could not connect to server.")
+	sys.exit()
+```
+
+- Enhanced script
+
+```bash
+#!/bin/python3
+
+import sys
+import socket
+from datetime import datetime
+
+def print_banner(target):
+    # Prints a banner with the target information and current time.
+    print("-" * 50)
+    print(f"Scanning target {target}")
+    print(f"Time started: {datetime.now()}")
+    print("-" * 50)
+
+def validate_arguments(args):
+    # Validates the number of arguments and returns the target address.
+    if len(args) != 2:
+        print("Invalid number of arguments.")
+        print("Syntax: python3 scanner.py <ip>")
+        sys.exit(1)
+    return args[1]
+
+def scan_ports(target, start_port=50, end_port=85):
+    # Scans the ports in the given range on the target IP address.
+    try:
+        for port in range(start_port, end_port + 1):
+            with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+                socket.setdefaulttimeout(1)
+                result = s.connect_ex((target, port))  # Returns 0 if port is open, otherwise 1
+                if result == 0:
+                    print(f"Port {port} is open")
+    except KeyboardInterrupt:
+        # Handles user interrupt (Ctrl+C)
+        print("\nExiting program.")
+        sys.exit(0)
+    except socket.gaierror:
+        # Handles errors related to resolving the hostname
+        print("Hostname could not be resolved.")
+        sys.exit(1)
+    except socket.error:
+        # Handles general socket errors
+        print("Could not connect to server.")
+        sys.exit(1)
+
+def main():
+    # Main function to drive the script.
+    target = validate_arguments(sys.argv)
+    target_ip = socket.gethostbyname(target)  # Translate hostname to IPv4
+    print_banner(target_ip)
+    scan_ports(target_ip)
+
+if __name__ == "__main__":
+    main()
+```
 

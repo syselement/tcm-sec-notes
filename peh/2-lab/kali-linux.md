@@ -389,6 +389,8 @@ reboot
 
 ![](.gitbook/assets/2023-06-13_16-45-36_65.png)
 
+---
+
 ## Other Tools Install
 
 ```bash
@@ -425,6 +427,8 @@ python3 -m pipx ensurepath
 source ~/.zshrc
 pipx install git+https://github.com/Tib3rius/AutoRecon.git
 ```
+
+---
 
 ## Bash Scripting & Piping
 
