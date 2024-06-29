@@ -120,13 +120,13 @@ print(math.sin(math.pi/2)) # Calculate sine of pi/2 (in radians)
 
 ## [Variables](https://www.w3schools.com/python/python_variables.asp) & Methods
 
-```bash
-nano vars.py
-```
-
 ➡️ A **variable** is a dynamic container for storing data values.
 
 ➡️ A **method** (or **function**) is a block of code which runs when called and performs specific operations. It can have return values, perform actions, accept parameters, etc.
+
+```bash
+nano vars.py
+```
 
 ```python
 #!/bin/python3
@@ -162,10 +162,6 @@ print('\n')
 
 ## [Functions](https://www.w3schools.com/python/python_functions.asp)
 
-```bash
-nano func.py
-```
-
 ➡️ A **function** is a reusable block of code that performs a specific task.
 
 - defined with the `def` keyword
@@ -173,6 +169,10 @@ nano func.py
 - accepts parameters
 
 ❗ **[Indentation](https://www.w3schools.com/python/gloss_python_indentation.asp) is very important in Python**, since it's used to indicate a **block of code**.
+
+```bash
+nano func.py
+```
 
 ```python
 #!/bin/python3
@@ -232,13 +232,13 @@ nl()
 
 ## [Booleans](https://www.w3schools.com/python/python_booleans.asp) & [Operators](https://www.w3schools.com/python/python_operators.asp)
 
-```bash
-nano oper.py
-```
-
 ➡️ **Boolean expressions** are expressions that evaluate to either `True` or `False`, used in conditional statements and logical operations.
 
 ➡️ **Relational operators** are used to compare values and create boolean expressions.
+
+```bash
+nano oper.py
+```
 
 ```python
 #!/bin/python3
@@ -303,13 +303,13 @@ print("",not (x == y))		# Output: True - negates the value of the operand
 
 ---
 
-## [Conditional Statements](https://www.w3schools.com/python/python_conditions.asp)
+## [Conditional statements](https://www.w3schools.com/python/python_conditions.asp)
+
+➡️ **Conditional statements** allow the execution of different actions based on certain conditions. Logical math conditions can be used in **`if statements`** and **`loops`**.
 
 ```bash
 nano conditions.py
 ```
-
-➡️ **Conditional statements** allow the execution of different actions based on certain conditions. Logical math conditions can be used in **`if statements`** and **`loops`**.
 
 ```bash
 #!/bin/python3
@@ -373,14 +373,14 @@ else:
 
 ## [Lists](https://www.w3schools.com/python/python_lists.asp)
 
-```bash
-nano lists.py
-```
-
 ➡️ **Lists** are used to store multiple *items* in a single variable.
 
 - `list = ["item1", "item2", "item3"]`
 - **items** are ordered, changeable and indexed (first item index starts at `[0]`)
+
+```bash
+nano lists.py
+```
 
 ```python
 #!/bin/python3
@@ -465,14 +465,14 @@ print(grades)
 
 ## [Tuples](https://www.w3schools.com/python/python_tuples.asp)
 
-```bash
-nano tuples.py
-```
-
 ➡️ **Tuples** are used to store multiple *items* in a single variable, similar to a list but immutable (cannot be modified once created).
 
 - `tuple = ("item1", "item2", "item3")`
 - items are ordered, indexed and unchangeable
+
+```bash
+nano tuples.py
+```
 
 ```python
 #!/bin/python3
@@ -503,14 +503,14 @@ print("Subtuple:",subtuple)
 
 ## [Looping](https://www.w3schools.com/python/python_for_loops.asp)
 
-```bash
-nano loops.py
-```
-
 ➡️ **Looping** allows to repeat a block of code multiple times, iterating over a sequence and performing repetitive tasks.
 
 - [`for` loop](https://www.w3schools.com/python/python_for_loops.asp): *iterate over a sequence and execute a set of statements for each item in a list, tuple, string, set, dictionary*
 - [`while` loop](https://www.w3schools.com/python/python_while_loops.asp): *execute a set of statements as long as a condition is true*
+
+```bash
+nano loops.py
+```
 
 ```python
 #!/bin/python3
@@ -553,7 +553,7 @@ for y in fruits:
 
 ---
 
-## [Advanced Strings](https://www.w3schools.com/python/python_strings_methods.asp)
+## [Advanced strings](https://www.w3schools.com/python/python_strings_methods.asp)
 
 ```bash
 nano strings.py
@@ -614,13 +614,13 @@ print(f"My favorite movie is {movie}.")		# string literal
 
 ## [Dictionaries](https://www.w3schools.com/python/python_dictionaries.asp)
 
-```bash
-nano dict.py
-```
-
 ➡️ **Dictionaries** are used to store, retrieve and manipulate data based on `key:value` pair values.
 
 - `dictionary = {"item1":value, "item2":value, "item3":value}`
+
+```bash
+nano dict.py
+```
 
 ```python
 #!/bin/python3
@@ -671,14 +671,14 @@ for key in cocktails:
 
 ## [Modules](https://www.w3schools.com/python/python_modules.asp)
 
-```bash
-nano modules.py
-```
-
 ➡️ **Modules** are like code libraries, containing a set of functions to include in the application.
 
 - reside in external Python files/libraries
 - `import <module>` 
+
+```bash
+nano modules.py
+```
 
 ```python
 #!/bin/python3
@@ -714,10 +714,6 @@ print(dt.now())
 
 ## [Sockets](https://docs.python.org/3/library/socket.html)
 
-```bash
-nano s.py
-```
-
 ➡️ **Sockets** are used to send messages across a network, enabling programs to establish connections, send and receive data over various network protocols.
 
 Primary `socket` module methods and functions are:
@@ -731,6 +727,10 @@ Primary `socket` module methods and functions are:
 - `.send()`
 - `.recv()`
 - `.close()`
+
+```bash
+nano s.py
+```
 
 
 ```python
@@ -801,13 +801,13 @@ nc -nvlp 5555
 
 - Port scanning of an IP address
 
-> This port scanner is a proof-of-concept not optimized script
+> This port scanner is a proof-of-concept not optimized script, that checks for open ports on a specified target IP within a given range.
 
 ```bash
 nano scanner.py
 ```
 
-```bash
+```python
 #!/bin/python3
 
 import sys
@@ -849,9 +849,9 @@ except socket.error:
 	sys.exit()
 ```
 
-- Enhanced script
+- (ChatGPT) Enhanced script
 
-```bash
+```python
 #!/bin/python3
 
 import sys
@@ -905,4 +905,187 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
+- Try to scan an internal LAN IP
+
+```bash
+python3 scanner.py 192.168.31.2
+
+# Response
+--------------------------------------------------
+Scanning target: 192.168.31.2
+Time started: 2024-06-29 15:19:30.407598
+--------------------------------------------------
+Port 53 is open
+```
+
+![](.gitbook/assets/2024-06-29_15-22-24_524.png)
+
+---
+
+## [User input](https://docs.python.org/3/library/functions.html#input)
+
+➡️ `input()` function is used to take input from the user via the console and return it as a string (by default). Proper validation and error handling is necessary for specific data types and invalid inputs.
+
+```bash
+nano input.py
+```
+
+```python
+#!/bin/python3
+
+# Input
+name = input("Enter your name: ")   # Prompt
+print("Hello, " + name + "!")   # Print using the entered name
+
+age = input("Enter your age: ")
+age = int(age)  # Convert the input string to an integer
+print("You will be " + str(age+1) + " next year.")
+
+# Calculator
+x = float(input("Give me a number: "))
+o = input("Give me an operator: ")
+y = float(input("Give me yet another number: "))
+
+if o == "+":
+	print(x + y)
+elif o == "-":
+	print(x - y)
+elif o == "/":
+	print(x / y)
+elif o == "*":
+	print(x * y)
+elif o == "**" or 0 == "^":
+	print(x ** y)
+else:
+	print("Unknown operator.")
+```
+
+![](.gitbook/assets/2024-06-29_15-49-25_525.png)
+
+---
+
+## [Read & Write files](https://docs.python.org/3/tutorial/inputoutput.html#tut-files)
+
+➡️ To **read** from a file, open it in read mode using `open("filename", "r")`. Then, use `read()`, `readline()`, or `readlines()` to access its contents.
+
+➡️ To **write** to a file, open it in write mode using `open("filename", "w")`. Then, use the `write()` method to add content to the file.
+
+➡️ To append content to an existing file, open it in append mode using `open("filename", "a")`. Then, use the `write()` method to add content.
+
+```bash
+nano readwrite.py
+```
+
+```python
+#!/bin/python3
+
+# READ
+# Open the file in read mode
+months = open('months.txt', "r")
+
+# Read the entire content
+content = months.read()
+print(content)
+
+# Read a single line
+line = months.readline()
+print(line)
+
+# Read all lines
+lines = months.readlines()
+print(lines)
+
+# Close the file
+months.close()
+
+# Alternative way to properly close the file even if exception occurs
+with open('months.txt', "r") as months:
+    content = months.read()
+    print(content)
+
+
+# WRITE
+# Open the file in write mode
+days = open("days.txt", "w")
+
+# Write content to the file
+days.write("Hello, World!\n")
+days.write("This is a new line.")
+
+# Close the file
+days.close()
+
+
+# APPEND
+# Open the file in append mode
+days = open("days.txt", "a")
+
+# Append content to the file
+days.write("\nMonday")
+
+# Close the file
+days.close()
+```
+
+![read](.gitbook/assets/2024-06-29_16-20-39_526.png)
+
+![write & append](.gitbook/assets/2024-06-29_16-27-44_528.png)
+
+---
+
+## [Classes & Objects](https://docs.python.org/3/tutorial/classes.html)
+
+➡️ A **class** is a blueprint for creating objects, defining their attributes and methods. It serves as a template for creating instances with similar characteristics and behaviors.
+
+➡️ An object is an instance of a class, created using the class as a blueprint. Each object has its own attributes and can use the class's methods. You create objects by calling the class like a function.
+
+```bash
+nano Employees.py
+```
+
+```python
+class Employees:
+    # This method initializes the attributes of the class
+    def __init__(self, name, department, role, salary, years_employed):
+        self.name = name
+        self.department = department
+        self.role = role
+        self.salary = salary
+        self.years_employed = years_employed
+
+    # This method checks if the employee is eligible for retirement
+    def eligible_for_retirement(self):
+        if self.years_employed >= 20:
+            return True
+        else:
+            return False
+```
+
+```bash
+nano ouremployees.py
+```
+
+```python
+#!/bin/python3
+
+from Employees import Employees  # Import the Employees class from the Employees module
+
+# Create two instances of the Employees class
+e1 = Employees("Bob", "Sales", "Director of Sales", 100000, 20)
+e2 = Employees("Linda", "Executive", "CIO", 150000, 10)
+
+# Print the name of the first employee
+print(e1.name)
+
+# Print the role of the second employee
+print(e2.role)
+
+# Check if the first employee is eligible for retirement and print the result
+print(e1.eligible_for_retirement())
+```
+
+![](.gitbook/assets/2024-06-29_17-45-17_530.png)
+
+---
 
