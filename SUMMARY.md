@@ -47,7 +47,6 @@
   - [10. Bash Scripting](linux-101/10-scripting/README.md)
     - [Bash Scripting Basics, Control Structures, Loops](linux-101/10-scripting/bash-script.md)
   - [🌐 Linux101 References](linux-101/linux101-references.md)
-
 - [TCM - Mobile Application Penetration Testing](mapt/README.md)
   - [1. Introduction & Mobile Pentesting](mapt/1-intro/README.md)
   - [2. Android Security](mapt/2-android/README.md)
@@ -61,19 +60,17 @@
   - [10. iOS Dynamic Analysis](mapt/10-ios-dynamic/README.md)
   - [11. iOS Bug Bounty](mapt/11-ios-bonus/README.md)
   - [🌐 MAPT References](mapt/mapt-references.md)
-  
 - [TCM - Practical Ethical Hacking](peh/README.md)
   - [1. Introduction & Networking](peh/1-intro/README.md)
   - [2. Lab Set Up, Linux & Python](peh/2-lab/README.md)
     - [Intro to Kali Linux](peh/2-lab/kali-linux.md)
     - [Intro to Python](peh/2-lab/python.md)
   - [3. The Ethical Hacker Methodology](peh/3-eth-hack/README.md)
-  - [4. Exploit Development (Buffer Overflow)](peh/4-exploit-dev/README.md)
-  - [5. Active Directory](peh/5-active-directory/README.md)
-  - [6. Post Exploitation](peh/6-post-exploitation/README.md)
-  - [7. Web Application](peh/7-webapp/README.md)
-  - [8. Wireless Attacks](peh/8-wireless/README.md)
-  - [9. Legal Documentation & Report Writing](peh/9-report/README.md)
+  - [4. Active Directory](peh/4-active-directory/README.md)
+  - [5. Post Exploitation](peh/5-post-exploitation/README.md)
+  - [6. Web Application](peh/6-webapp/README.md)
+  - [7. Wireless Attacks](peh/7-wireless/README.md)
+  - [8. Legal Documentation & Report Writing](peh/8-report/README.md)
   - [🌐 PEH References](peh/peh-references.md)
 
 

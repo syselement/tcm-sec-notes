@@ -21,12 +21,11 @@ description: Practical Ethical Hacking - The Complete Course by Heath Adams
 1. [Introduction & Networking](1-intro/README.md)
 2. [Lab Set Up, Linux & Python](2-lab/README.md)
 3. [The Ethical Hacker Methodology](3-eth-hack/README.md)
-4. [Exploit Development (Buffer Overflow)](4-exploit-dev/README.md)
-5. [Active Directory](5-active-directory/README.md)
-6. [Post Exploitation](6-post-exploitation/README.md)
-7. [Web Application](7-webapp/README.md)
-8. [Wireless Attacks](8-wireless/README.md)
-9. [Legal Documentation & Report Writing](9-report/README.md)
+5. [Active Directory](4-active-directory/README.md)
+6. [Post Exploitation](5-post-exploitation/README.md)
+7. [Web Application](6-webapp/README.md)
+8. [Wireless Attacks](7-wireless/README.md)
+9. [Legal Documentation & Report Writing](8-report/README.md)
 
 Instructor: [Heath Adams - The Cyber Mentor](https://www.thecybermentor.com/)
 
