@@ -61,11 +61,25 @@
 
 ## The Ethical Hacker Methodology
 
-
+- [Phases of Ethical Hacking - InfosecTrain](https://www.infosectrain.com/blog/phases-of-ethical-hacking/)
+- [Bugcrowd](https://bugcrowd.com/engagements)
 
 ### Information Gathering
 
-
+- [Hunter.io](https://hunter.io/domain-search)
+- [Phonebook.cz](https://phonebook.cz/)
+- [Clearbit Connect](https://clearbit.com/resources/tools/connect)
+- [EmailHippo Email address verifiy](https://tools.emailhippo.com/)
+- [Email-checker](https://email-checker.net/)
+- [breach-parse](https://github.com/hmaverickadams/breach-parse)
+- [DeHashed.com](https://dehashed.com/)
+- [Hashes.com](https://hashes.com/en/decrypt/hash)
+- [Sublist3r](https://github.com/aboul3la/Sublist3r)
+- [crt.sh](https://crt.sh/)
+- [amass](https://github.com/owasp-amass/amass)
+- [httprobe](https://github.com/tomnomnom/httprobe)
+- [BuiltWith.com](https://builtwith.com/)
+- 
 
 ### Scanning & Enumeration
 
