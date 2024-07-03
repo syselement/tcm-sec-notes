@@ -130,3 +130,51 @@ amass enum -d syselement.com
 ## Website technologies
 
 ➡️ [BuiltWith.com](https://builtwith.com/) - find out what websites are built with
+
+![BuiltWith.com](.gitbook/assets/2024-07-03_19-54-58_561.png)
+
+➡️ [Wappalyzer.com](https://www.wappalyzer.com/) - via browser extension
+
+- by visiting the webpage, interact with the browser extension to check the website technologies
+
+![](.gitbook/assets/2024-07-03_20-14-16_570.png)
+
+➡️ [WhatWeb](https://github.com/urbanadventurer/WhatWeb/)
+
+```bash
+whatweb https://blog.syselement.com/
+```
+
+![](.gitbook/assets/2024-07-03_20-17-06_571.png)
+
+---
+
+## Using Burpsuite
+
+➡️ [Burp Suite](https://portswigger.net/burp/communitydownload)
+
+![](.gitbook/assets/2024-07-03_20-25-14_572.png)
+
+---
+
+## Google Fu
+
+➡️ [Google.com](https://www.google.com/)
+
+- [Google Search Syntax](https://www.google.com/search?client=firefox-b-e&q=google+search+syntax)
+- [Google Search Operators: The Complete List (44 Advanced Operators)](https://ahrefs.com/blog/google-advanced-search-operators/)
+
+```bash
+site:tesla.com filetype:pdf
+```
+
+---
+
+## Social Media
+
+- [Linkedin](https://www.linkedin.com/), [Twiter (X)](https://x.com/) or other public websites can be used for some social media OSINT (Open-Source Intelligence).
+
+---
+
+
+

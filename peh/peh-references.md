@@ -79,7 +79,12 @@
 - [amass](https://github.com/owasp-amass/amass)
 - [httprobe](https://github.com/tomnomnom/httprobe)
 - [BuiltWith.com](https://builtwith.com/)
-- 
+- [Wappalyzer.com](https://www.wappalyzer.com/)
+- [WhatWeb](https://github.com/urbanadventurer/WhatWeb/)
+- [Burp Suite](https://portswigger.net/burp/communitydownload)
+- [Google Search Syntax](https://www.google.com/search?client=firefox-b-e&q=google+search+syntax)
+- [Google Search Operators: The Complete List (44 Advanced Operators)](https://ahrefs.com/blog/google-advanced-search-operators/)
+- [Open-Source Intelligence Fundamentals - TCM Security](https://academy.tcm-sec.com/p/osint-fundamentals)
 
 ### Scanning & Enumeration
 
