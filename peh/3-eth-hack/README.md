@@ -18,10 +18,10 @@ The five stages are:
 
 ## Sections
 
-1. Information Gathering
-1. Scanning & Enumeration
-1. Vulnerability Scanning with Nessus
-1. Exploitation Basics
+1. [Information Gathering](recon.md)
+1. [Scanning & Enumeration](enum.md)
+1. [Vulnerability Scanning with Nessus](va.md)
+1. [Exploitation Basics](exploit.md)
 
 ------
 
