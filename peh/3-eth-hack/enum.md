@@ -129,12 +129,14 @@ HOP RTT     ADDRESS
 1   0.37 ms 192.168.31.130
 ```
 
-Open ports:
+Look at the open ports and get all the details down by taking notes:
 
-- `22`
-- `80`
-- `111`
-- `139`
-- `443`
-- `32768`
+- `22` - ssh - OpenSSH 2.9p2 (protocol 1.99)
+- `80` - http - Apache httpd 1.3.20
+- `111` - rpcbind
+- `139` - netbios-ssn Samba smbd
+- `443` - ssl/https - Apache/1.3.20 (Unix) (Red-Hat/Linux)
+- OS details: `Linux 2.4.9` - 2.4.18 (likely embedded)
+
+### Enumerating HTTP and HTTPS
 
