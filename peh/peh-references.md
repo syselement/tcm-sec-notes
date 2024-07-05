@@ -71,6 +71,7 @@
 - [Clearbit Connect](https://clearbit.com/resources/tools/connect)
 - [EmailHippo Email address verifiy](https://tools.emailhippo.com/)
 - [Email-checker](https://email-checker.net/)
+- [HaveIBeenPwned](https://haveibeenpwned.com/)
 - [breach-parse](https://github.com/hmaverickadams/breach-parse)
 - [DeHashed.com](https://dehashed.com/)
 - [Hashes.com](https://hashes.com/en/decrypt/hash)
