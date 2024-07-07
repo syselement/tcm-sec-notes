@@ -90,7 +90,8 @@
 
 - [PEH Course VMs - TCM Security](https://drive.google.com/drive/folders/1z923e0icfJADbhgS0Qfaxuez-GJTWvjt)
 - [VulnHub](https://www.vulnhub.com/)
-- 
+- [nmap](https://nmap.org/)
+- [nikto](https://github.com/sullo/nikto)
 
 ### Vulnerability Scanning with Nessus
 
