@@ -23,7 +23,7 @@
 - fingerprinting
   - `nmap`, `wappalyzer`, `netcat`, etc
 - data breaches
-  - HaveIBeenPwned, Breach-Parse, WeLeakInfo
+  - [HaveIBeenPwned](https://haveibeenpwned.com/), Breach-Parse, WeLeakInfo
 
 
 
@@ -61,6 +61,8 @@
 ---
 
 ## Breached credentials
+
+➡️ [HaveIBeenPwned](https://haveibeenpwned.com/) - Check if your email address is in a data breach
 
 ➡️ [breach-parse](https://github.com/hmaverickadams/breach-parse) - A tool for parsing breached passwords
 
