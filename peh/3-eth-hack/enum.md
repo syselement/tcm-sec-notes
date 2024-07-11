@@ -1,6 +1,6 @@
 # Scanning & Enumeration
 
-## VMWare Lab
+## VMWare lab
 
 > - 🔗 Free [VMWare Workstation Pro](https://blogs.vmware.com/workstation/2024/05/vmware-workstation-pro-now-available-free-for-personal-use.html)
 > - 🔗 [VirtualBox](https://www.virtualbox.org/)
@@ -20,7 +20,7 @@
 
 ---
 
-## Nmap Scanning
+## Nmap scanning
 
 From the **Kali VM**, find its network and user `netdiscover` to find the **Kioptrix VM** IP
 
@@ -59,8 +59,8 @@ nmap --help
 ```
 
 ```bash
-# Scan everything and all ports
-sudo nmap -T4 -p- -A 192.168.31.130
+# Scan everything and all ports, Output to all file types
+sudo nmap -T4 -p- -A 192.168.31.130 -oA kioptrix
 
 # Stealth scanning everything and all ports
 sudo nmap -sS -T4 -p- -A 192.168.31.130
@@ -138,11 +138,19 @@ Look at the open ports and get all the details down by taking notes:
 - `443` - ssl/https - Apache/1.3.20 (Unix) (Red-Hat/Linux)
 - OS details: `Linux 2.4.9` - 2.4.18 (likely embedded)
 
-### Enumerating HTTP and HTTPS
+---
+
+## Enumerating HTTP and HTTPS
+
+> PORTS - `80`, `443`
+>
+> - Usually WebServers
 
 - Navigate to the webpage at [http://192.168.31.130/](http://192.168.31.130/) and [https://192.168.31.130/](https://192.168.31.130/) (the IP will change based on the Kioptrix VM IP)
 
 ![](.gitbook/assets/2024-07-07_14-34-14_581-1720355665903-3.png)
+
+- Check webpage source code - [view-source:http://192.168.31.130/](view-source:http://192.168.31.130/) - and search for exposed data
 
 **Architecture enumeration**
 
@@ -213,4 +221,173 @@ nikto -h http://192.168.31.130
 ---------------------------------------------------------------------------
 + 1 host(s) tested
 ```
+
+### dirbuster
+
+➡️ [dirbuster](https://www.kali.org/tools/dirbuster/) (GUI) - multi threaded java application designed to brute force directories and files names on web/application servers
+
+- Look for any sort of interesting directory
+- Check the [HTTP response codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+- Dig and navigate to sub-pages and find disclosed information
+
+![](.gitbook/assets/2024-07-11_08-02-01_590.png)
+
+![](.gitbook/assets/2024-07-11_08-06-15_591.png)
+
+### burpsuite
+
+➡️ [Burp Suite](https://portswigger.net/burp/communitydownload)
+
+- Use BurpSuite to find disclosed information when navigating the found webpages
+  - server header disclosed version information
+
+![](.gitbook/assets/2024-07-11_08-09-04_592.png)
+
+![](.gitbook/assets/2024-07-11_08-11-16_593.png)
+
+- [http://192.168.31.130/usage/](http://192.168.31.130/usage/)
+  - Webalizer Version 2.01
+
+---
+
+## Enumerating SMB
+
+- [How to Enumerate SMB with Enum4linux & Smbclient - Null Byte](https://null-byte.wonderhowto.com/how-to/enumerate-smb-with-enum4linux-smbclient-0198049/)
+
+> PORT - `139`
+>
+> - Usually file servers
+>
+> Kioptrix nmap:
+>
+> - _smb2-time: Protocol negotiation failed (SMB2)
+
+➡️ [Metasploit](https://docs.metasploit.com/)
+
+```bash
+msfconsole
+search smb scanner
+
+use auxiliary/scanner/smb/smb_version
+info
+options
+
+# RHOSTS = Target
+set RHOSTS 192.168.31.130
+run
+
+    [*] 192.168.31.130:139 - SMB Detected (versions:) (preferred dialect:) (signatures:optional)
+    [*] 192.168.31.130:139 - Host could not be identified: Unix (Samba 2.2.1a)
+    [*] 192.168.31.130: - Scanned 1 of 1 hosts (100% complete)
+    [*] Auxiliary module execution completed
+```
+
+➡️ [smbclient](https://www.samba.org/samba/docs/current/man-html/smbclient.1.html)
+
+> Quick fix for some errors
+>
+> ```bash
+> sudo nano /etc/samba/smb.conf
+> 
+> # Add the following under [global]:
+> 
+> client min protocol = CORE
+> client max protocol = SMB3
+> ```
+>
+> 
+
+```bash
+smbclient -L \\\\192.168.31.130\\
+
+# Shares
+    IPC$ IPC IPC Service (Samba Server)
+    ADMIN$ IPC IPC Service (Samba Server)
+```
+
+![](.gitbook/assets/2024-07-11_08-35-23_594.png)
+
+```bash
+smbclient \\\\192.168.31.130\\ADMIN$
+# needs password
+
+smbclient \\\\192.168.31.130\\IPC$
+# Anonymous login successful
+```
+
+---
+
+## Enumerating SSH
+
+> PORT - `22`
+>
+> - OpenSSH 2.9p2
+
+- Attempt to connect to SSH via the port
+- A login attempt on SSH is exploitation
+
+```bash
+ssh 192.168.31.130 
+```
+
+- If a banner is exposed, server version can be exposed
+
+---
+
+## Research potential vulnerabilities
+
+📝 Always take good and concise **assessment notes** about the identified/exposed data and versions
+
+- make them clean, screenshots with border, sections, etc
+
+> `80`/`443` - `192.168.31.130` - <SCAN-TIME>
+>
+> - Default webpage - Apache, PHP
+> - Information Disclosure - 404 page
+> - Information Disclosure - server headers disclose version information
+>
+> `80`/tcp open http Apache httpd 1.3.20 ((Unix) (Red-Hat/Linux) mod_ssl/2.8.4 OpenSSL/0.9.6b)
+>
+> - mod_ssl/2.8.4 - mod_ssl 2.8.7 and lower are vulnerable to a remote buffer overflow which may allow a remote shell. [https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0082](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0082)
+> - Webalizer Version 2.01 - [http://192.168.31.130/usage/](http://192.168.31.130/usage/)
+>
+> `139`/tcp open netbios-ssn Samba smbd (workgroup: MYGROUP)
+>
+> - Unix (Samba 2.2.1a)
+>
+> `22`/tcp open ssh
+>
+> - OpenSSH 2.9p2
+
+Search Google for vulnerabilities on the services versions, e.g. `<service> <version> exploit`
+
+- 80/443 - Potentially vulnerable to
+  - [Apache mod_ssl < 2.8.7 OpenSSL - 'OpenFuckV2.c' Remote Buffer Overflow (1)](https://www.exploit-db.com/exploits/764)
+  - [OpenLuck](https://github.com/heltonWernik/OpenLuck) (this exploit works)
+  - Apache httpd 1.3.20 - [CVEdetails](https://www.cvedetails.com/vulnerability-list/vendor_id-45/product_id-66/version_id-369927/Apache-Http-Server-1.3.20.html)
+- 137 - Potentially vulnerable to
+  - [Samba trans2open Overflow (Linux x86) - Rapid7](https://www.rapid7.com/db/modules/exploit/linux/samba/trans2open/)
+  - [https://www.exploit-db.com/exploits/7](https://www.exploit-db.com/exploits/7)
+  - [https://www.exploit-db.com/exploits/10](https://www.exploit-db.com/exploits/10)
+
+
+
+➡️ [searchsploit](https://www.exploit-db.com/searchsploit) - command line search tool for Exploit-DB that also allows you to take a copy of [Exploit Database](https://www.exploit-db.com) with you
+
+```bash
+# Without network access
+
+searchsploit Samba 2.2.1a
+
+    Samba 2.2.0 < 2.2.8 (OSX) - trans2open Overflow (Metasploit) | osx/remote/9924.rb
+    Samba < 2.2.8 (Linux/BSD) - Remote Code Execution | multiple/remote/10.c
+    Samba < 3.0.20 - Remote Heap Overflow | linux/remote/7701.txt
+    Samba < 3.6.2 (x86) - Denial of Service (PoC) | linux_x86/dos/36741.py
+
+searchsploit mod ssl 2
+```
+
+![](.gitbook/assets/2024-07-11_09-10-36_595.png)
+
+---
 

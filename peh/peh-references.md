@@ -93,6 +93,16 @@
 - [VulnHub](https://www.vulnhub.com/)
 - [nmap](https://nmap.org/)
 - [nikto](https://github.com/sullo/nikto)
+- [dirbuster](https://www.kali.org/tools/dirbuster/)
+- [HTTP response codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+- [Metasploit](https://docs.metasploit.com/)
+  - [Vulnerability & Exploit Database - Rapid7](https://www.rapid7.com/db/modules/)
+
+- [How to Enumerate SMB with Enum4linux & Smbclient - Null Byte](https://null-byte.wonderhowto.com/how-to/enumerate-smb-with-enum4linux-smbclient-0198049/)
+- [smbclient](https://www.samba.org/samba/docs/current/man-html/smbclient.1.html)
+- [exploit-db](https://www.exploit-db.com)
+  - [searchsploit](https://www.exploit-db.com/searchsploit)
+
 
 ### Vulnerability Scanning with Nessus
 
