@@ -106,11 +106,13 @@
 
 ### Vulnerability Scanning with Nessus
 
-
+- [Nessus](https://www.tenable.com/products/nessus/nessus-essentials)
+- [Nessus Essentials - syselement](https://blog.syselement.com/home/operating-systems/linux/tools/nessus)
 
 ### Exploitation Basics
 
-
+- [Hacking with Netcat part 2: Bind and reverse shells](https://www.hackingtutorials.org/networking/hacking-netcat-part-2-bind-reverse-shells/)
+- [netcat](https://netcat.sourceforge.net/)
 
 ## Buffer Overflows
 
