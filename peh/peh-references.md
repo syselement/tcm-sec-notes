@@ -38,6 +38,7 @@
 ## Lab Set Up
 
 - [VMware Workstation Player](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html)
+- [VMWare Workstation Pro (Free)](https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware%20Workstation%20Pro)
 - [VirtualBox + VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads)
 - [Kali Linux](https://www.kali.org/)
   - [Kali VM Installation - VMware - syselement](https://blog.syselement.com/home/operating-systems/linux/distros/kali-vm)
@@ -113,10 +114,13 @@
 
 - [Hacking with Netcat part 2: Bind and reverse shells](https://www.hackingtutorials.org/networking/hacking-netcat-part-2-bind-reverse-shells/)
 - [netcat](https://netcat.sourceforge.net/)
+- [Metasploit Unleashed - OffSec](https://www.offsec.com/metasploit-unleashed/)
+  - [Apache mod_ssl < 2.8.7 OpenSSL - Remote Buffer Overflow](https://nvd.nist.gov/vuln/detail/CVE-2002-0082)
 
-## Buffer Overflows
-
-
+- [Top 13 Vulnerable Web Applications and Websites for Ethical Hacking Practice | by ByteBusterX | Medium](https://bytebusterx.medium.com/top-13-vulnerable-web-applications-and-websites-for-ethical-hacking-practice-1850c6163e89)
+- [Damn Vulnerable Web Application (DVWA)](https://github.com/digininja/DVWA)
+- [Credential stuffing](https://owasp.org/www-community/attacks/Credential_stuffing)
+- [Password spraying](https://owasp.org/www-community/attacks/Password_Spraying_Attack)
 
 ## Active Directory
 

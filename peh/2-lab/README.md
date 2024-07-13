@@ -6,6 +6,8 @@
 >
 > 🔗 [VMware Workstation Player](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html)
 >
+> 🔗 [VMWare Workstation Pro (Free)](https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware%20Workstation%20Pro)
+>
 > 🔗 [VirtualBox + VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads)
 >
 > **O.S.**
