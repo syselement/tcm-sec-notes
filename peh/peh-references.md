@@ -91,6 +91,8 @@
 ### Scanning & Enumeration
 
 - [PEH Course VMs - TCM Security](https://drive.google.com/drive/folders/1z923e0icfJADbhgS0Qfaxuez-GJTWvjt)
+  - [PEH Course Capstone VMs (updated) - TCM Security](https://drive.google.com/drive/folders/1xJy4ozXaahXvjbgTeJVWyY-eUGIKgCj1)
+
 - [VulnHub](https://www.vulnhub.com/)
 - [nmap](https://nmap.org/)
 - [nikto](https://github.com/sullo/nikto)
@@ -121,6 +123,7 @@
 - [Damn Vulnerable Web Application (DVWA)](https://github.com/digininja/DVWA)
 - [Credential stuffing](https://owasp.org/www-community/attacks/Credential_stuffing)
 - [Password spraying](https://owasp.org/www-community/attacks/Password_Spraying_Attack)
+- [CVE-2017-0144 - MS17-010](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0144)
 
 ## Active Directory
 
