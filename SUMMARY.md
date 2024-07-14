@@ -70,6 +70,7 @@
     - [Scanning & Enumeration](peh/3-eth-hack/enum.md)
     - [Vulnerability Scanning with Nessus](peh/3-eth-hack/va.md)
     - [Exploitation Basics](peh/3-eth-hack/exploit.md)
+    - [Capstone Practical Labs](peh/3-eth-hack/capstone.md)
   - [4. Active Directory](peh/4-active-directory/README.md)
   - [5. Post Exploitation](peh/5-post-exploitation/README.md)
   - [6. Web Application](peh/6-webapp/README.md)

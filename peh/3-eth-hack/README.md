@@ -22,6 +22,7 @@ The five stages are:
 1. [Scanning & Enumeration](enum.md)
 1. [Vulnerability Scanning with Nessus](va.md)
 1. [Exploitation Basics](exploit.md)
+1. [Capstone Practical Labs](capstone.md)
 
 ------
 
