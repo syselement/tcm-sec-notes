@@ -2,7 +2,7 @@
 
 ![Phases of Ethical Hacking - InfosecTrain](.gitbook/assets/Phases-of-Ethical-Hacking.png)
 
-**Ethical hacking**, or **penetration testing**, identifies and addresses vulnerabilities in computer systems and networks through a structured process.
+➡️ **Ethical hacking**, or **penetration testing**, identifies and addresses vulnerabilities in computer systems and networks through a structured process.
 
 The five stages are:
 
@@ -15,6 +15,8 @@ The five stages are:
 > Ethical hacking must always be **authorized**, legal and conducted with strict adherence to **ethical guidelines**, **confidentiality** and necessary **permissions** from system owners.
 >
 > ❗ **Use these techniques responsibly, ethically and with proper authorization for security testing!**
+
+---
 
 ## Sections
 

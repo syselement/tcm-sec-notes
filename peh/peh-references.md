@@ -147,6 +147,8 @@
 
 ## Active Directory
 
+- [Active Directory Domain Services](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)
+- [Introduction to Active Directory - HTB Academy](https://academy.hackthebox.com/module/details/74)
 - [PimpmyADLab](https://github.com/Dewalt-arch/pimpmyadlab)
 - [Building a Windows AD lab](https://ad-lab.gitbook.io/building-a-windows-ad-lab/)
 - [GrouppVM](https://github.com/vulfilip/grouppvm)

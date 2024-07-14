@@ -27,7 +27,9 @@
 > ❗ **Use it responsibly, ethically and with proper authorization for security testing!**
 >
 
-### Sections
+---
+
+## Sections
 
 1. [Intro to Kali Linux](kali-linux.md)
 2. [Intro to Python](python.md)
