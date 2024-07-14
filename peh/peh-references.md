@@ -95,8 +95,11 @@
 
 - [VulnHub](https://www.vulnhub.com/)
 - [nmap](https://nmap.org/)
-- [nikto](https://github.com/sullo/nikto)
-- [dirbuster](https://www.kali.org/tools/dirbuster/)
+  - [nikto](https://github.com/sullo/nikto)
+  - [dirbuster](https://www.kali.org/tools/dirbuster/)
+  - [dirb](https://www.kali.org/tools/dirb/)
+  - [ffuf](https://github.com/ffuf/ffuf)
+
 - [HTTP response codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 - [Metasploit](https://docs.metasploit.com/)
   - [Vulnerability & Exploit Database - Rapid7](https://www.rapid7.com/db/modules/)
@@ -124,6 +127,23 @@
 - [Credential stuffing](https://owasp.org/www-community/attacks/Credential_stuffing)
 - [Password spraying](https://owasp.org/www-community/attacks/Password_Spraying_Attack)
 - [CVE-2017-0144 - MS17-010](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0144)
+- [CrackStation - Online Password Hash Cracking](https://crackstation.net/)
+  - [hashcat](https://crackstation.net/)
+
+- [GitHub - pentestmonkey/php-reverse-shell](https://github.com/pentestmonkey/php-reverse-shell)
+- [LinPEAS](https://github.com/peass-ng/PEASS-ng/tree/master/linPEAS)
+- [WinPEAS](https://github.com/peass-ng/PEASS-ng/tree/master/winPEAS)
+- [pspy](https://github.com/DominicBreuker/pspy)
+- [Reverse Shell Cheat Sheet | pentestmonkey](https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
+- [fcrackzip](https://www.kali.org/tools/fcrackzip/)
+- [GTFO Bins](https://gtfobins.github.io/)
+- [Pure Groovy/Java Reverse Shell](https://gist.github.com/frohoff/fed1ffaab9b9beeb1c76)
+- [Unquoted Service Paths | Red Team Notes](https://www.ired.team/offensive-security/privilege-escalation/unquoted-service-paths)
+- [dnsrecon](https://github.com/darkoperator/dnsrecon)
+- [Spawning a TTY Shell | SecWiki](https://wiki.zacheller.dev/pentest/privilege-escalation/spawning-a-tty-shell)
+- [Linux Privilege Escalation - SUDO and SUID | HackTricks](https://book.hacktricks.xyz/linux-hardening/privilege-escalation#sudo-and-suid)
+- [Linux Privilege Escalation | TCM Security](https://academy.tcm-sec.com/p/linux-privilege-escalation)
+- [Windows Privilege Escalation for Beginners | TCM Security](https://academy.tcm-sec.com/p/windows-privilege-escalation-for-beginners)
 
 ## Active Directory
 
