@@ -76,7 +76,7 @@ setspn -T MARVEL.local -Q */*
 
 `SPIDERMAN` - Logoff and login locally to `.\peterparker`
 
-- **Map Network Drive **- `\\HYDRA-DC\hackme` , reconnect at sign-in, using different credentials
+- **Map Network Drive** - `\\HYDRA-DC\hackme` , reconnect at sign-in, using different credentials
 
 ---
 
