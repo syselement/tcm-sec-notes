@@ -26,12 +26,14 @@
   - Active Directory Certificate Services
 - Domain - `MARVEL.local`
 - **Active Directory Users and Computers**
-  - Copy the `Administrator` user and create a second domain admin - `tstark`
-  - Copy the `Administrator` user and create a service account - `SQLService`:`MYpassword123#`
+  - Copy the `Administrator` user and create a second domain admin
+    - `tstark`:`yourpassword`
+  - Copy the `Administrator` user and create a service account
+    - `SQLService`:`MYpassword123#`
   - Create new users
     - `fcastle`:`Password1`
     - `pparker`:`Password1`
-
+  
 - **File and Storage Services**
   - Create a new SMB Share Quick - `hackme`
 
@@ -74,7 +76,7 @@ setspn -T MARVEL.local -Q */*
 
 
 
-`SPIDERMAN` - Logoff and login locally to `.\peterparker`
+`SPIDERMAN` - Logoff and login locally to `.\peterparker`:`Password1`
 
 - **Map Network Drive** - `\\HYDRA-DC\hackme` , reconnect at sign-in, using different credentials
 
