@@ -262,6 +262,8 @@ nikto -h http://192.168.31.130
 >
 > - _smb2-time: Protocol negotiation failed (SMB2)
 
+### Metasploit
+
 ➡️ [Metasploit](https://docs.metasploit.com/)
 
 ```bash
@@ -281,6 +283,8 @@ run
     [*] 192.168.31.130: - Scanned 1 of 1 hosts (100% complete)
     [*] Auxiliary module execution completed
 ```
+
+### smbclient
 
 ➡️ [smbclient](https://www.samba.org/samba/docs/current/man-html/smbclient.1.html)
 
@@ -370,7 +374,7 @@ Search Google for vulnerabilities on the services versions, e.g. `<service> <ver
   - [https://www.exploit-db.com/exploits/7](https://www.exploit-db.com/exploits/7)
   - [https://www.exploit-db.com/exploits/10](https://www.exploit-db.com/exploits/10)
 
-
+### searchsploit
 
 ➡️ [searchsploit](https://www.exploit-db.com/searchsploit) - command line search tool for Exploit-DB that also allows you to take a copy of [Exploit Database](https://www.exploit-db.com) with you
 

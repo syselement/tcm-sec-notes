@@ -7,10 +7,10 @@
 >   - 60 GB Disk space
 >   - 16 GB RAM
 
-- Proceed with installing a Windows Server 2022 VM and two Windows 10 VMs.
+- Proceed with installing a Windows Server 2022 VM and two Windows 10 VMs inside VMware
   - For each of them install the VMware tools
 
-
+---
 
 ## Windows Server 2022
 
@@ -50,7 +50,7 @@ setspn -T MARVEL.local -Q */*
 
 ![](.gitbook/assets/2024-07-15_23-41-00_638.png)
 
-
+---
 
 ## Windows 10
 
@@ -66,7 +66,7 @@ setspn -T MARVEL.local -Q */*
   - `Edit local users and groups`
     - Reset password and enable local `Administrator`:`Password1!`
 
-    - Add the domain user to the Administrators group
+    - Add the domain users to the Administrators group
       - `fcastle` for `THEPUNISHER` VM 
       - `fcastle` and `pparker` for `SPIDERMAN` VM
 
