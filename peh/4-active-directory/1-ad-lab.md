@@ -27,7 +27,7 @@
 - Domain - `MARVEL.local`
 - **Active Directory Users and Computers**
   - Copy the `Administrator` user and create a second domain admin
-    - `tstark`:`yourpassword`
+    - `tstark`:`<yourpassword>`
   - Copy the `Administrator` user and create a service account
     - `SQLService`:`MYpassword123#`
   - Create new users
@@ -69,7 +69,7 @@ setspn -T MARVEL.local -Q */*
     - Reset password and enable local `Administrator`:`Password1!`
 
     - Add the domain users to the Administrators group
-      - `fcastle` for `THEPUNISHER` VM 
+      - `fcastle` for `THEPUNISHER` VM
       - `fcastle` and `pparker` for `SPIDERMAN` VM
 
 - Go to Network and turn on `Network discovery and file sharing`

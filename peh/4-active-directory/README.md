@@ -4,7 +4,7 @@
 
 🪟 **Active Directory** (**AD**) is a directory service developed by Microsoft for Windows domain networks. It provides directory services for managing Windows-based computers on a network. AD stores information about objects such as users, groups, computers, and other resources, and provides authentication and authorization services.
 
-![Active Directory - academy.hackthebox.com](.gitbook/assets/1NdU4kfgwv6vgWRmsCZ1BXA.png)
+![Active Directory - academy.hackthebox.com](.gitbook/assets/ad-org.png)
 
 ---
 
