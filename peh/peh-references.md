@@ -152,6 +152,7 @@
 - [PimpmyADLab](https://github.com/Dewalt-arch/pimpmyadlab)
 - [Building a Windows AD lab](https://ad-lab.gitbook.io/building-a-windows-ad-lab/)
 - [GrouppVM](https://github.com/vulfilip/grouppvm)
+- [LLMNR Poisoning and How to Prevent It - TCM Security](https://tcm-sec.com/llmnr-poisoning-and-how-to-prevent-it/)
 
 ## Post Exploitation
 
