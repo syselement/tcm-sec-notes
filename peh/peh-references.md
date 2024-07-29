@@ -152,7 +152,11 @@
 - [PimpmyADLab](https://github.com/Dewalt-arch/pimpmyadlab)
 - [Building a Windows AD lab](https://ad-lab.gitbook.io/building-a-windows-ad-lab/)
 - [GrouppVM](https://github.com/vulfilip/grouppvm)
+- [How To Setup Red Team And Blue Team Lab 2024 - Part 2 - InfoSec Pat](https://www.youtube.com/watch?v=uGvb8zE219Y)
 - [LLMNR Poisoning and How to Prevent It - TCM Security](https://tcm-sec.com/llmnr-poisoning-and-how-to-prevent-it/)
+  - [LLMNR | Pentest Everything - viperone.gitbook.io](https://viperone.gitbook.io/pentest-everything/everything/everything-active-directory/adversary-in-the-middle/llmnr)
+
+- [SMB Relay Attacks and How to Prevent Them - TCM Security](https://tcm-sec.com/smb-relay-attacks-and-how-to-prevent-them/)
 
 ## Post Exploitation
 

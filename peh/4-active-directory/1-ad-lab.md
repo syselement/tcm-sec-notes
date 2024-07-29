@@ -82,3 +82,21 @@ setspn -T MARVEL.local -Q */*
 
 ---
 
+| VM                       | IP            |
+| ------------------------ | ------------- |
+| hydra-dc.MARVEL.local    | 192.168.31.90 |
+| spiderman.MARVEL.local   | 192.168.31.92 |
+| thepunisher.MARVEL.local | 192.168.31.93 |
+
+
+
+- Set `/etc/hosts` in the Kali VM
+
+```bash
+192.168.31.90  hydra-dc.MARVEL.local
+192.168.31.92  spiderman.MARVEL.local
+192.168.31.93  thepunisher.MARVEL.local
+```
+
+---
+
