@@ -167,6 +167,13 @@
   - [PRET](https://github.com/RUB-NDS/PRET)
   - [Printer Security Testing Cheat Sheet - Hacking Printers](https://www.hacking-printers.net/wiki/index.php/Printer_Security_Testing_Cheat_Sheet)
   - [Praeda](https://github.com/percx/Praeda)
+- [ldapdomaindump](https://github.com/dirkjanm/ldapdomaindump)
+- [BloodHound](https://github.com/SpecterOps/BloodHound)
+  - [PlumHound](https://github.com/PlumHound/PlumHound)
+
+- [PingCastle](https://www.pingcastle.com/)
+- [Forest Druid](https://www.semperis.com/forest-druid/resources/)
+- [Purple Knight](https://www.semperis.com/purple-knight/resources/)
 
 
 
