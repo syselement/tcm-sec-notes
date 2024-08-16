@@ -174,6 +174,10 @@
 - [PingCastle](https://www.pingcastle.com/)
 - [Forest Druid](https://www.semperis.com/forest-druid/resources/)
 - [Purple Knight](https://www.semperis.com/purple-knight/resources/)
+- [crackmapexec](https://github.com/byt3bl33d3r/CrackMapExec)
+  - [CrackMapExec Cheat Sheet 2024 (Commands & Examples) - Stationx](https://www.stationx.net/crackmapexec-cheat-sheet/)
+- [netexec](https://github.com/Pennyw0rth/NetExec)
+- [secretsdump.py](https://github.com/fortra/impacket/blob/master/examples/secretsdump.py)
 
 
 

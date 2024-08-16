@@ -158,13 +158,13 @@ firefox index.html
 
 ➡️ [Forest Druid](https://www.semperis.com/forest-druid/resources/) - free attack path discovery tool, natively compatible with Active Directory, that helps cybersecurity defensive teams quickly prioritize high-risk misconfigurations that could represent opportunities for attackers to gain privileged domain access
 
-![Forest Druid](.gitbook/assets/2024-08-15_19-00-45_689.png)
+![Forest Druid - Semperis.com](.gitbook/assets/2024-08-15_19-00-45_689.png)
 
 ### Purple Knight
 
 ➡️ [Purple Knight](https://www.semperis.com/purple-knight/resources/) - standalone utility that queries the Active Directory and Entra ID environment and performs a set of tests against many aspects of Active Directory’s security posture, including AD delegation, account security, AD infrastructure security, Group Policy security, and Kerberos security
 
-![Purple Knight](.gitbook/assets/2024-08-15_19-01-39_690.png)
+![Purple Knight - Semperis.com](.gitbook/assets/2024-08-15_19-01-39_690.png)
 
 ---
 
