@@ -178,6 +178,14 @@
   - [CrackMapExec Cheat Sheet 2024 (Commands & Examples) - Stationx](https://www.stationx.net/crackmapexec-cheat-sheet/)
 - [netexec](https://github.com/Pennyw0rth/NetExec)
 - [secretsdump.py](https://github.com/fortra/impacket/blob/master/examples/secretsdump.py)
+- [Kerberoasting  - CrowdStrike](https://www.crowdstrike.com/cybersecurity-101/kerberoasting/)
+  - [Kerberoast | HackTricks](https://book.hacktricks.xyz/windows-hardening/active-directory-methodology/kerberoast)
+  - [Kerberoasting | Red Team Notes](https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse/t1208-kerberoasting)
+  - [GetUserSPNs.py](https://github.com/fortra/impacket/blob/master/examples/GetUserSPNs.py)
+
+- [Token Impersonation | Pentest Everything](https://viperone.gitbook.io/pentest-everything/everything/everything-active-directory/access-token-manipultion/token-impersonation)
+  - [Fun with Incognito - Metasploit Unleashed](https://www.offsec.com/metasploit-unleashed/fun-incognito/)
+
 
 
 
