@@ -117,8 +117,8 @@
 1. [Active Directory Lab](1-ad-lab.md)
 1. [AD - Initial Attack Vectors](2-ad-init-vectors.md)
 1. [AD - Post-Compromise Enumeration](3-ad-enum.md)
-1. AD - Post-Compromise Attacks
-1. AD - Additional Attacks
+1. [AD - Post-Compromise Attacks](4-ad-attacks.md)
+1. [AD - Additional Attacks](5-ad-adv-attacks.md)
 1. [AD - Case Studies](6-ad-casestudies.md)
 
 ---
