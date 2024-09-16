@@ -138,6 +138,7 @@
   - [grep regex examples](https://www.cyberciti.biz/faq/grep-regular-expressions/)
 - [Online RegExr tool](https://regexr.com/)
 - [Regex101 tool](https://regex101.com/)
+- [Cyrilex tool](https://extendsclass.com/regex-tester.html)
 - [EmailRegex Examples](https://emailregex.com/)
 
 
