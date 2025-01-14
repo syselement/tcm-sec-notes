@@ -120,7 +120,7 @@ hashcat -m 1000 ntlm.txt /usr/share/wordlists/rockyou.txt
 
 ## Kerberoasting
 
-**Kerberoasting** is a post-exploitation attack technique that attempts to obtain a password hash of an Active Directory account that has a **SPN** (Service Principal Name), focusing on the acquisition of **TGS** (Ticket Granting Server) tickets issued by the KDC (Key Distribution Center).
+**Kerberoasting** is a post-exploitation attack technique that attempts to obtain a password hash of an Active Directory account that has a **SPN** (Service Principal Name), focusing on the acquisition of **TGS** (Ticket Granting Server) tickets issued by the **KDC** (Key Distribution Center).
 
 ### GetUserSPNs.py
 
@@ -165,7 +165,7 @@ Tokens are temporary keys that provide access to a system or network without nee
 - **Delegate** - created for logging into machine or Remote Desktop
 - **Impersonate** - non-interactive
 
-Turn on `THEPUNISHER` (`192.168.31.93`) and `HYDRA-DC` (`192.168.31.90`) VMs, and login to `THEPUNISHER`.
+📌 Turn on `THEPUNISHER` (`192.168.31.93`) and `HYDRA-DC` (`192.168.31.90`) VMs, and login to `THEPUNISHER`.
 
 ```bash
 msfconsole
