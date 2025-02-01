@@ -368,7 +368,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install cron-daemon-common
 
 # Install some useful tools
-sudo apt install -y apt-transport-https btop curl duf eza flameshot htop kali-wallpapers-all neofetch net-tools pipx speedtest-cli telegram-desktop terminator tor tree vlc wget
+sudo apt install -y apt-transport-https btop curl duf eza fastfetch flameshot htop kali-wallpapers-all net-tools pipx speedtest-cli telegram-desktop terminator tor tree vlc wget
 ```
 
 **`git`** - work with Git repository and version control
