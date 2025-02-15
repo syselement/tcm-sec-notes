@@ -52,6 +52,12 @@ setspn -T MARVEL.local -Q */*
 
 ![](.gitbook/assets/2024-07-15_23-41-00_638.png)
 
+- Open `Powershell` as admin and set timezone
+
+```bash
+Set-TimeZone "W. Europe Standard Time"
+```
+
 ---
 
 ## Windows 10

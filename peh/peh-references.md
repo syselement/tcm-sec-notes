@@ -194,6 +194,12 @@
 
 - [mimikatz](https://github.com/gentilkiwi/mimikatz)
 
+- [Kerberos Golden Ticket Attack Explained - StationX](https://www.stationx.net/golden-ticket-attack/)
+  - [Golden Ticket Attack Explained | Semperis Identity Attack Catalog](https://www.semperis.com/blog/golden-ticket-attack-explained/)
+  - [Golden Ticket Attack Explained - MITRE ATT&CK T1558.001](https://www.picussecurity.com/resource/blog/golden-ticket-attack-mitre-t1558.001)
+  - [rycon.hu - mimikatz's Golden Ticket](https://rycon.hu/papers/goldenticket.html)
+
+
 
 
 
