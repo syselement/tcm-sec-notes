@@ -22,6 +22,13 @@
 - ... more ...
 
 ```bash
+# (Re)-Install
+sudo apt autoremove --purge responder -y && sudo apt autoclean
+sudo rm -rf /usr/share/responder/
+sudo apt install responder -y
+```
+
+```bash
 sudo responder -I eth0 -dPv
 ```
 

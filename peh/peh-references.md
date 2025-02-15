@@ -186,6 +186,13 @@
 
 - [Token Impersonation | Pentest Everything](https://viperone.gitbook.io/pentest-everything/everything/everything-active-directory/access-token-manipultion/token-impersonation)
   - [Fun with Incognito - Metasploit Unleashed](https://www.offsec.com/metasploit-unleashed/fun-incognito/)
+- [Forced Authentication | Red Team Notes](https://www.ired.team/offensive-security/initial-access/t1187-forced-authentication)
+- [Finding Passwords in SYSVOL & Exploiting Group Policy Preferences – Active Directory Security](https://adsecurity.org/?p=2288)
+  - [MS14-025: Vulnerability in Group Policy Preferences could allow elevation of privilege: May 13, 2014 - Microsoft Support](https://support.microsoft.com/en-us/topic/ms14-025-vulnerability-in-group-policy-preferences-could-allow-elevation-of-privilege-may-13-2014-60734e15-af79-26ca-ea53-8cd617073c30)
+  - [Exploiting-GPP-AKA-MS14_025-vulnerability](https://github.com/incredibleindishell/Windows-AD-environment-related/blob/master/Exploiting-GPP-AKA-MS14_025-vulnerability/README.md)
+  - [GPP attacks | Internal Pentest](https://xedex.gitbook.io/internalpentest/internal-pentest/active-directory/post-compromise-attacks/gpp-attacks)
+
+- [mimikatz](https://github.com/gentilkiwi/mimikatz)
 
 
 
