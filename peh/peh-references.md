@@ -157,13 +157,10 @@
 - [LLMNR Poisoning and How to Prevent It - TCM Security](https://tcm-sec.com/llmnr-poisoning-and-how-to-prevent-it/)
   - [LLMNR | Pentest Everything - viperone.gitbook.io](https://viperone.gitbook.io/pentest-everything/everything/everything-active-directory/adversary-in-the-middle/llmnr)
   - [Responder](https://github.com/lgandx/Responder)
-  
 - [SMB Relay Attacks and How to Prevent Them - TCM Security](https://tcm-sec.com/smb-relay-attacks-and-how-to-prevent-them/)
   - [ntlmrelayx.py](https://github.com/fortra/impacket/blob/master/examples/ntlmrelayx.py)
-
 - [mitm6 - compromising IPv4 networks via IPv6 - Fox-IT](https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/)
   - [mitm6](https://github.com/dirkjanm/mitm6)
-
 - [How to Hack Through a Pass-Back Attack: MFP Hacking Guide](https://www.mindpointgroup.com/blog/how-to-hack-through-a-pass-back-attack)+
   - [PRET](https://github.com/RUB-NDS/PRET)
   - [Printer Security Testing Cheat Sheet - Hacking Printers](https://www.hacking-printers.net/wiki/index.php/Printer_Security_Testing_Cheat_Sheet)
@@ -171,7 +168,6 @@
 - [ldapdomaindump](https://github.com/dirkjanm/ldapdomaindump)
 - [BloodHound](https://github.com/SpecterOps/BloodHound)
   - [PlumHound](https://github.com/PlumHound/PlumHound)
-
 - [PingCastle](https://www.pingcastle.com/)
 - [Forest Druid](https://www.semperis.com/forest-druid/resources/)
 - [Purple Knight](https://www.semperis.com/purple-knight/resources/)
@@ -179,11 +175,11 @@
   - [CrackMapExec Cheat Sheet 2024 (Commands & Examples) - Stationx](https://www.stationx.net/crackmapexec-cheat-sheet/)
 - [netexec](https://github.com/Pennyw0rth/NetExec)
 - [secretsdump.py](https://github.com/fortra/impacket/blob/master/examples/secretsdump.py)
+- [HTB: Cicada | 0xdf hacks stuff](https://0xdf.gitlab.io/2025/02/15/htb-cicada.html#nmap)
 - [Kerberoasting  - CrowdStrike](https://www.crowdstrike.com/cybersecurity-101/kerberoasting/)
   - [Kerberoast | HackTricks](https://book.hacktricks.xyz/windows-hardening/active-directory-methodology/kerberoast)
   - [Kerberoasting | Red Team Notes](https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse/t1208-kerberoasting)
   - [GetUserSPNs.py](https://github.com/fortra/impacket/blob/master/examples/GetUserSPNs.py)
-
 - [Token Impersonation | Pentest Everything](https://viperone.gitbook.io/pentest-everything/everything/everything-active-directory/access-token-manipultion/token-impersonation)
   - [Fun with Incognito - Metasploit Unleashed](https://www.offsec.com/metasploit-unleashed/fun-incognito/)
 - [Forced Authentication | Red Team Notes](https://www.ired.team/offensive-security/initial-access/t1187-forced-authentication)
@@ -191,15 +187,23 @@
   - [MS14-025: Vulnerability in Group Policy Preferences could allow elevation of privilege: May 13, 2014 - Microsoft Support](https://support.microsoft.com/en-us/topic/ms14-025-vulnerability-in-group-policy-preferences-could-allow-elevation-of-privilege-may-13-2014-60734e15-af79-26ca-ea53-8cd617073c30)
   - [Exploiting-GPP-AKA-MS14_025-vulnerability](https://github.com/incredibleindishell/Windows-AD-environment-related/blob/master/Exploiting-GPP-AKA-MS14_025-vulnerability/README.md)
   - [GPP attacks | Internal Pentest](https://xedex.gitbook.io/internalpentest/internal-pentest/active-directory/post-compromise-attacks/gpp-attacks)
-
 - [mimikatz](https://github.com/gentilkiwi/mimikatz)
-
 - [Kerberos Golden Ticket Attack Explained - StationX](https://www.stationx.net/golden-ticket-attack/)
   - [Golden Ticket Attack Explained | Semperis Identity Attack Catalog](https://www.semperis.com/blog/golden-ticket-attack-explained/)
   - [Golden Ticket Attack Explained - MITRE ATT&CK T1558.001](https://www.picussecurity.com/resource/blog/golden-ticket-attack-mitre-t1558.001)
   - [rycon.hu - mimikatz's Golden Ticket](https://rycon.hu/papers/goldenticket.html)
+- [Zerologon](https://www.secura.com/blog/zero-logon)
+  - [ZeroLogon testing script](https://github.com/SecuraBV/CVE-2020-1472)
+  - [dirkjanm/CVE-2020-1472: PoC for Zerologon](https://github.com/dirkjanm/CVE-2020-1472)
+  - [What Is Zerologon? | Trend Micro (US)](https://www.trendmicro.com/en_us/what-is/zerologon.html)
 
+- [PrintNightmare Exposes Windows Servers to RCE | Huntress](https://www.huntress.com/blog/critical-vulnerability-printnightmare-exposes-windows-servers-to-remote-code-execution)
+  - [Playing with PrintNightmare | 0xdf hacks stuff](https://0xdf.gitlab.io/2021/07/08/playing-with-printnightmare.html)
+  - [cube0x0/CVE-2021-1675: C# and Impacket implementation of PrintNightmare CVE-2021-1675/CVE-2021-34527](https://github.com/cube0x0/CVE-2021-1675)
+  - [calebstewart/CVE-2021-1675: Pure PowerShell implementation of CVE-2021-1675 Print Spooler Local Privilege Escalation (PrintNightmare)](https://github.com/calebstewart/CVE-2021-1675)
 
+- [AD Case Study #1 - You Spent How Much on Security? - TCM Security](https://tcm-sec.com/pentest-tales-001-you-spent-how-much-on-security/)
+- [AD Case Study #2 - #Pentest Tales #002: Digging Deep - TCM Security](https://tcm-sec.com/pentest-tales-002-digging-deep)
 
 
 
