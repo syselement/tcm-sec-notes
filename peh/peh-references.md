@@ -205,8 +205,6 @@
 - [AD Case Study #1 - You Spent How Much on Security? - TCM Security](https://tcm-sec.com/pentest-tales-001-you-spent-how-much-on-security/)
 - [AD Case Study #2 - #Pentest Tales #002: Digging Deep - TCM Security](https://tcm-sec.com/pentest-tales-002-digging-deep)
 
-
-
 ## Post Exploitation
 
 
