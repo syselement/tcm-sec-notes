@@ -80,6 +80,7 @@
 - [crt.sh](https://crt.sh/)
 - [amass](https://github.com/owasp-amass/amass)
 - [httprobe](https://github.com/tomnomnom/httprobe)
+- [assetfinder](https://github.com/tomnomnom/assetfinder)
 - [BuiltWith.com](https://builtwith.com/)
 - [Wappalyzer.com](https://www.wappalyzer.com/)
 - [WhatWeb](https://github.com/urbanadventurer/WhatWeb/)

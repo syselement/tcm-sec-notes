@@ -40,3 +40,6 @@ Instructor: [Heath Adams - The Cyber Mentor](https://www.thecybermentor.com/)
 > ### ❗ Disclaimer
 >
 > * **Do not use the covered attacks and techniques on real IP addresses, hosts or networks without proper authorization!**
+
+---
+
