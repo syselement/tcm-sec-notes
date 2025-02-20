@@ -81,6 +81,9 @@
 - [amass](https://github.com/owasp-amass/amass)
 - [httprobe](https://github.com/tomnomnom/httprobe)
 - [assetfinder](https://github.com/tomnomnom/assetfinder)
+- [gowitness](https://github.com/sensepost/gowitness)
+- [subjack](https://github.com/haccer/subjack)
+- [waybackurls](https://github.com/tomnomnom/waybackurls)
 - [BuiltWith.com](https://builtwith.com/)
 - [Wappalyzer.com](https://www.wappalyzer.com/)
 - [WhatWeb](https://github.com/urbanadventurer/WhatWeb/)
@@ -88,6 +91,9 @@
 - [Google Search Syntax](https://www.google.com/search?client=firefox-b-e&q=google+search+syntax)
 - [Google Search Operators: The Complete List (44 Advanced Operators)](https://ahrefs.com/blog/google-advanced-search-operators/)
 - [Open-Source Intelligence Fundamentals - TCM Security](https://academy.tcm-sec.com/p/osint-fundamentals)
+- [sumrecon script - Gr1mmie](https://github.com/Gr1mmie/sumrecon)
+- [The Bug Hunter's Methodology Full 2-hour Training by Jason Haddix](https://www.youtube.com/watch?v=uKWu6yhnhbQ)
+- [Nahamsec Recon Playlist](https://www.youtube.com/watch?v=MIujSpuDtFY&list=PLKAaMVNxvLmAkqBkzFaOxqs3L66z2n8LA)
 
 ### Scanning & Enumeration
 

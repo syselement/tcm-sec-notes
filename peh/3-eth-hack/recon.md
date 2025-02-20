@@ -127,13 +127,31 @@ amass enum -d syselement.com
 
 ➡️ [httprobe](https://github.com/tomnomnom/httprobe) - take a list of domains and probe for working (alive) http and https servers
 
+```bash
+# Go is necessary (installed via pimpmykali.sh)
+go install github.com/tomnomnom/httprobe@latest
+
+# or on Kali
+sudo apt install httprobe
+```
+
+```bash
+cat tesla.com/recon/final.txt | httprobe
+
+# Skip default probes, and use only https:443 probe
+cat tesla.com/recon/final.txt | httprobe -s -p https:443
+
+# Strip only subdomains from the list
+cat tesla.com/recon/final.txt | sort -u | httprobe -s -p https:443 | sed 's/https\?:\/\///' | tr -d ':443'
+```
+
 ➡️ [assetfinder](https://github.com/tomnomnom/assetfinder) - find domains and subdomains related to a given domain
 
 ```bash
 # Go is necessary (installed via pimpmykali.sh)
 go get -u github.com/tomnomnom/assetfinder
 
-# or in Kali
+# or on Kali
 sudo apt install assetfinder
 ```
 
@@ -143,40 +161,25 @@ assetfinder syselement.com
 assetfinder --subs-only tesla.com
 ```
 
-### Automated domain recon script
+---
 
-- Little `bash` script for sub-domains hunting
+## Screenshoting websites
+
+➡️ [gowitness](https://github.com/sensepost/gowitness) - A golang, web screenshot utility using Chrome Headless
 
 ```bash
-#!/bin/bash
+# Go is necessary (installed via pimpmykali.sh)
+go install github.com/sensepost/gowitness@latest
 
-url=$1
-
-if [ ! -d "$url" ]; then
-	mkdir $url
-fi
-
-if [ ! -d "$url/recon" ]; then
-	mkdir $url/recon
-fi
-
-# Assetfinder
-echo "[+] Harvesting subdomains with assetfinder..."
-assetfinder $url >> $url/recon/assets.txt
-# get only subdomains containing $url
-cat $url/recon/assets.txt | grep $1 >> $url/recon/final.txt
-rm $url/recon/assets.txt
-
-# Amass
-# echo "[+] Harvesting subdomains with amass..."
-# amass enum -d $url >> $url/recon/f.txt
-# sort -u $url/recon/f.txt >> $url/recon/final.txt
-# rm $url/recon/f.txt
-
-
+# or on Kali
+sudo apt install gowitness
 ```
 
+```bash
+gowitness scan single --url "https://tesla.com" --write-db
 
+gowitness scan single --url "https://blog.syselement.com"
+```
 
 ---
 
@@ -199,6 +202,83 @@ whatweb https://blog.syselement.com/
 ```
 
 ![](.gitbook/assets/2024-07-03_20-17-06_571.png)
+
+---
+
+## Automated recon script
+
+- Little `bash` script for sub-domains hunting
+
+```bash
+#!/bin/bash
+
+url=$1
+
+if [ ! -d "$url" ]; then
+	mkdir $url
+fi
+
+if [ ! -d "$url/recon" ]; then
+	mkdir $url/recon
+fi
+
+# Assetfinder #
+echo "[+] Harvesting subdomains with assetfinder..."
+assetfinder $url >> $url/recon/assets.txt
+# get only subdomains containing $url
+cat $url/recon/assets.txt | grep $1 >> $url/recon/final.txt
+rm $url/recon/assets.txt
+
+# Amass #
+# echo "[+] Harvesting subdomains with amass..."
+# amass enum -d $url >> $url/recon/f.txt
+# sort -u $url/recon/f.txt >> $url/recon/final.txt
+# rm $url/recon/f.txt
+
+# httprobe #
+echo "[+] Probing for alive domains..."
+cat $url/recon/final.txt | sort -u | httprobe -s -p https:443 | sed 's/https\?:\/\///' | tr -d ':443' >> $url/recon/alive.txt
+
+###
+```
+
+➡️ [sumrecon](https://github.com/Gr1mmie/sumrecon/blob/master/sumrecon.sh) - web recon script
+
+```bash
+wget https://raw.githubusercontent.com/Gr1mmie/sumrecon/refs/heads/master/sumrecon.sh
+```
+
+- TCM's modified final script
+  - **Creates a directory structure** for reconnaissance under a given URL
+  - **Harvests subdomains** using `assetfinder`
+  - **Filters valid subdomains** and saves them to `final.txt`
+  - **Checks for live domains** using `httprobe`
+  - **Identifies potential subdomain takeovers** using `subjack`
+  - **Scans for open ports** using `nmap`
+  - **Scrapes archived URLs** from `waybackurls`
+  - **Extracts parameters** from Wayback Machine data
+  - **Categorizes JavaScript, PHP, JSON, JSP, and ASPX files** from Wayback Machine data
+  - **Removes temporary files** to keep the structure clean
+  - (Commented out) **Could run `amass` for subdomain discovery** and **use `EyeWitness` for screenshots**
+
+```bash
+# 0. Requirements
+sudo apt install amass assetfinder httprobe gowitness nmap subjack
+go install github.com/tomnomnom/waybackurls@latest
+
+# 1. Copy the code here https://pastebin.com/raw/MhE6zXVt to a new file
+
+# 2. Fix last 2 lines with gowitness and uncomment them
+# echo "[+] Running eyewitness against all compiled domains..."
+# gowitness scan file -f $url/recon/httprobe/alive.txt
+
+chmod +x finalrecon.sh
+./finalrecon.sh syselement.com
+```
+
+> - Check those additional resources
+>   - The Bug Hunter's Methodology - [The Bug Hunter's Methodology Full 2-hour Training by Jason Haddix](https://www.youtube.com/watch?v=uKWu6yhnhbQ)
+>   - [Nahamsec Recon Playlist](https://www.youtube.com/watch?v=MIujSpuDtFY&list=PLKAaMVNxvLmAkqBkzFaOxqs3L66z2n8LA)
 
 ---
 
