@@ -228,7 +228,17 @@
 
 ## Wireless Penetration Testing
 
+- [Pentesting Wifi - HackTricks](https://book.hacktricks.wiki/en/generic-methodologies-and-resources/pentesting-wifi/index.html)
+- [ricardojoserf/wifi-pentesting-guide](https://github.com/ricardojoserf/wifi-pentesting-guide)
+- [Offensive Security Tool: WEF (WiFi Exploitation Framework) | Black Hat Ethical Hacking](https://www.blackhatethicalhacking.com/tools/wef-wifi-exploitation-framework/)
+- [D3Ext/WEF: Wi-Fi Exploitation Framework](https://github.com/D3Ext/WEF)
+  - [Curso Gratis de Hacking Wifi | D3Ext](https://d3ext.github.io/posts/Curso/)
 
+- [Best Kali Linux Compatible USB Adapters 2024 – WirelesSHack](https://www.wirelesshack.org/best-kali-linux-compatible-usb-adapter-dongles.html)
+- [OpenWrt & WiFi Exploitation | syselement's Blog](https://blog.syselement.com/home/home-lab/misc/openwrt-wifi-hack#hacking-time)
+- [aircrack-ng Usage](https://www.kali.org/tools/aircrack-ng/)
+- [airmon-ng](https://www.aircrack-ng.org/doku.php?id=airmon-ng)
+- [airodump-ng](https://www.aircrack-ng.org/doku.php?id=airodump-ng)
 
 ## Legal Documents and Report Writing
 

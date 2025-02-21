@@ -163,7 +163,7 @@ assetfinder --subs-only tesla.com
 
 ---
 
-## Screenshoting websites
+## Screenshotting websites
 
 ➡️ [gowitness](https://github.com/sensepost/gowitness) - A golang, web screenshot utility using Chrome Headless
 
