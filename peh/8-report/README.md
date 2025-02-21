@@ -56,3 +56,16 @@ The report is **well-written, easy to follow, and effective** for both **technic
 
 ---
 
+## Career advice from TCM
+
+1. **Set goals** for yourself and stay motivated.
+2. **Avoid complacency** - keep pushing forward.
+3. **Apply for jobs even if you're unqualified** - growth comes from challenges.
+4. **Admit when you don’t know something** - learning starts with humility.
+5. **Prove yourself** by showing dedication and effort.
+6. **Be selective with job applications** - apply only to roles that fit your long-term goals and criteria.
+7. **Surround yourself with smarter people** - growth comes from being challenged.
+8. **Build a strong network** - connections are key to success.
+
+---
+
