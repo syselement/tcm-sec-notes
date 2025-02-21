@@ -242,9 +242,8 @@
 
 ## Legal Documents and Report Writing
 
-
-
-
+- [Sample pentest report provided by TCM Security](https://github.com/hmaverickadams/TCM-Security-Sample-Pentest-Report)
+  - [Writing a Pentest Report - TCM video](https://www.youtube.com/watch?v=EOoBAq6z4Zk)
 
 ------
 
