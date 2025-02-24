@@ -220,9 +220,11 @@
 
 ## Web Application
 
-
-
-### Top 10 Web App Vulnerabilities
+- [Alex Olsen - AppSecExplained ](https://linktr.ee/appsecexplained)
+- [Burp Suite documentation - PortSwigger](https://portswigger.net/burp/documentation)
+- [Web Security Academy - PortSwigger](https://portswigger.net/web-security)
+- [SQL injection cheat sheet | Web Security Academy](https://portswigger.net/web-security/sql-injection/cheat-sheet)
+- 
 
 
 
