@@ -2,6 +2,8 @@
 
 > - [SQL injection cheat sheet | Web Security Academy](https://portswigger.net/web-security/sql-injection/cheat-sheet)
 
+➡️ A **SQL injection** attack consist of an injection of a (malicious) SQL query via the user input from the client to the application, allowing attackers to read, modify, or delete database data, execute administrative operations, access files, or issue OS commands.
+
 ---
 
 ## Injection0x01 - UNION

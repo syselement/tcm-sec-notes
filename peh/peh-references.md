@@ -221,10 +221,31 @@
 ## Web Application
 
 - [Alex Olsen - AppSecExplained ](https://linktr.ee/appsecexplained)
+  - [AppSecExplained](https://appsecexplained.gitbook.io/appsecexplained)
 - [Burp Suite documentation - PortSwigger](https://portswigger.net/burp/documentation)
 - [Web Security Academy - PortSwigger](https://portswigger.net/web-security)
+- [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
+- [Webhook.site - Test, transform and automate Web requests and emails](https://webhook.site)
 - [SQL injection cheat sheet | Web Security Academy](https://portswigger.net/web-security/sql-injection/cheat-sheet)
-- 
+  - [SQL Injection | OWASP Foundation](https://owasp.org/www-community/attacks/SQL_Injection)
+- [Cross-Site Scripting (XSS) Cheat Sheet - 2024 Edition | Web Security Academy](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
+  - [What is cross-site scripting (XSS) and how to prevent it? | Web Security Academy](https://portswigger.net/web-security/cross-site-scripting)
+  - [Cross Site Scripting (XSS) | OWASP Foundation](https://owasp.org/www-community/attacks/xss/)
+  - [alert() is dead, long live print() | PortSwigger Research](https://portswigger.net/research/alert-is-dead-long-live-print)
+  - [The Modern JavaScript Tutorial](https://javascript.info/)
+- [PayloadsAllTheThings - Command Injection](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Command%20Injection)
+  - [What is OS command injection, and how to prevent it? | Web Security Academy](https://portswigger.net/web-security/os-command-injection)
+  - [Command Injection | OWASP Foundation](https://owasp.org/www-community/attacks/Command_Injection)
+  - [Command injection | AppSecExplained](https://appsecexplained.gitbook.io/appsecexplained/common-vulns/command-injection)
+  - [Reverse Shell Cheat Sheet - Internal All The Things](https://swisskyrepo.github.io/InternalAllTheThings/cheatsheets/shell-reverse-cheatsheet/)
+- [PayloadsAllTheThings - Upload Insecure Files](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Upload%20Insecure%20Files)
+  - [File uploads | Web Security Academy](https://portswigger.net/web-security/file-upload)
+  - [Insecure file upload | AppSecExplained](https://appsecexplained.gitbook.io/appsecexplained/common-vulns/insecure-file-upload)
+  - [List of file signatures (Magic bytes) - Wikipedia](https://en.wikipedia.org/wiki/List_of_file_signatures)
+
+- [Authentication | AppSecExplained](https://appsecexplained.gitbook.io/appsecexplained/common-vulns/authentication)
+  - [Authentication vulnerabilities | Web Security Academy](https://portswigger.net/web-security/authentication)
+
 
 
 
