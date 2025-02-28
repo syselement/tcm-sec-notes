@@ -245,7 +245,12 @@
 
 - [Authentication | AppSecExplained](https://appsecexplained.gitbook.io/appsecexplained/common-vulns/authentication)
   - [Authentication vulnerabilities | Web Security Academy](https://portswigger.net/web-security/authentication)
+- [PayloadsAllTheThings - XXE Injection](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/XXE%20Injection/README.md)
+  - [What is XXE (XML external entity) injection? | Web Security Academy](https://portswigger.net/web-security/xxe)
+  - [XXE (XML external entity) injection | AppSecExplained](https://appsecexplained.gitbook.io/appsecexplained/common-vulns/xxe-xml-external-entity-injection)
 
+- [PayloadsAllTheThings - Insecure Direct Object References](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Insecure%20Direct%20Object%20References)
+  - [Insecure direct object references (IDOR) | Web Security Academy](https://portswigger.net/web-security/access-control/idor)
 
 
 
