@@ -6,7 +6,7 @@
 
 ---
 
-## Injection0x01 - UNION
+## SQL injection - UNION
 
 ```bash
 # Basic SQLi
@@ -35,7 +35,7 @@ jeremy' union select null,null,password from injection0x01#
 
 ---
 
-## Injection0x02 - Blind
+## SQL injection - Blind
 
 - Run BurpSuite, set `http://localhost/` as project (target) **Scope** and login as `jeremy:jeremy` at `http://localhost/labs/i0x02.php`
 - Check the **Request** and **Response** in the BurpSuite HTTP history
@@ -209,7 +209,7 @@ Table: injection0x02
 
 ---
 
-## Injection0x03 - Challenge
+## SQL injection - Challenge
 
 - `http://localhost/labs/i0x03.php`
 - Find credentials and login into the users table
