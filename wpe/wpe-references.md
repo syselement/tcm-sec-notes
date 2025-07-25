@@ -26,6 +26,10 @@
 
 - Windows Priv Esc Checklist: https://book.hacktricks.xyz/windows/checklist-windows-privilege-escalation
 
+- 
+
+- 
+
   Sherlock: https://github.com/rasta-mouse/Sherlock
 
   Watson: https://github.com/rasta-mouse/Watson
