@@ -24,7 +24,7 @@
 
 - [PEASS-ng/winPEAS](https://github.com/peass-ng/PEASS-ng/tree/master/winPEAS)
 
-- Windows Priv Esc Checklist: https://book.hacktricks.xyz/windows/checklist-windows-privilege-escalation
+- [Checklist - Local Windows Privilege Escalation - HackTricks](https://book.hacktricks.wiki/en/windows-hardening/checklist-windows-privilege-escalation.html)
 
 - 
 
