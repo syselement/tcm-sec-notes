@@ -1,0 +1,6 @@
+# FreeFileSync
+*.ffs_lock
+*.ffs_db
+
+# Cache objects
+*/.vagrant
