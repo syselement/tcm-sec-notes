@@ -1,18 +1,24 @@
 name: Sync Repo To Gitlab
 
-on: [push, pull_request, create, delete]
+on:
+  push:
+  pull_request:
+  create:
+  delete:
+  workflow_dispatch:
 
 jobs:
   sync:
     name: Gitlab Sync
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
+
       - uses: action-pack/gitlab-sync@v3
         with:
           username: ${{ secrets.TARGET_USERNAME }}
           url: ${{ secrets.TARGET_URL }}
-          # Personal access token from gitlab.com 
+          # Personal access token from gitlab.com
           token: ${{ secrets.TARGET_TOKEN }}
